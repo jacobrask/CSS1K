@@ -1,0 +1,112 @@
+/* CSS1K entry 'Default'
+ * by Jacob Rask (http://jacobrask.net / jacob@jacobrask.net)
+ * This file is unminified for legibility, for size proof replace 'full' in filename with 'min' */
+h1 {
+    font: bold 300% monospace;
+    text-align: center;
+    text-shadow: 0 0 5px #eee;
+}
+a:hover,
+h2 {
+    color: #b12
+}
+h2 {
+    margin: 1em 0 0
+}
+a {
+    color: #38b;
+    text-decoration: none;
+}
+body,
+nav ul {
+    margin: 0 auto
+}
+body {
+    width: 40%;
+    max-width: 55em;
+    font: 95%/1.5 sans-serif;
+    color: #311;
+}
+body:after,
+body:before {
+    position: fixed;
+    content: '';
+    display: block;
+    top: 0;
+    left: -8px;
+    width: 30%;
+    height: 110%;
+    background: -webkit-repeating-linear-gradient(45deg, #9bc, #9bc 8px, #cde 8px, #cde 16px);
+    background:    -moz-repeating-linear-gradient(45deg, #9bc, #9bc 8px, #cde 8px, #cde 16px);
+    background:     -ms-repeating-linear-gradient(45deg, #9bc, #9bc 8px, #cde 8px, #cde 16px);
+    background:      -o-repeating-linear-gradient(45deg, #9bc, #9bc 8px, #cde 8px, #cde 16px);
+    background:         repeating-linear-gradient(45deg, #9bc, #9bc 8px, #cde 8px, #cde 16px);
+    -webkit-box-shadow: inset 0 -8px 16px #000;
+    -moz-box-shadow:    inset 0 -8px 16px #000;
+    -ms-box-shadow:     inset 0 -8px 16px #000;
+    box-shadow:         inset 0 -8px 16px #000;
+}
+body:after {
+    right: -8px;
+    left: auto;
+    background: -webkit-repeating-linear-gradient(135deg, #9bc, #9bc 8px,#cde 8px, #cde 16px);
+    background:    -moz-repeating-linear-gradient(135deg, #9bc, #9bc 8px,#cde 8px, #cde 16px);
+    background:     -ms-repeating-linear-gradient(135deg, #9bc, #9bc 8px,#cde 8px, #cde 16px);
+    background:      -o-repeating-linear-gradient(135deg, #9bc, #9bc 8px,#cde 8px, #cde 16px);
+    background:         repeating-linear-gradient(135deg, #9bc, #9bc 8px,#cde 8px, #cde 16px);
+}
+nav ul {
+    padding: 5px;
+    background: rgba(50,50,50,.9);
+    opacity: .8;
+    overflow: auto;
+}
+nav ul,
+nav li a {
+    -webkit-transition: all .2s
+    -moz-transition:    all .2s
+    -ms-transition:     all .2s
+    -o-transition:      all .2s
+    transition:         all .2s
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 200px;
+}
+nav:hover ul {
+    opacity: 1
+}
+nav li {
+    display: block;
+    font-size: 80%;
+    margin: 0 0 10px;
+}
+nav li,
+nav li a {
+    color: #fff
+}
+nav li a {
+    color: #fff
+}
+nav li a:first-of-type {
+    color: #333;
+    display: block;
+    background: #fff;
+    padding: 2px 5px;
+    -webkit-border-top-left-radius: 3px; -webkit-border-top-right-radius: 3px;
+    -moz-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+    font-weight: bold;
+}
+nav li a:first-of-type:hover {
+    background: #6bc;
+    color: #fff;
+}
+footer {
+    border-top: 1px solid #aaa;
+    text-align: center;
+    font-size: 85%;
+}
