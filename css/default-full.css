@@ -34,13 +34,13 @@ body:before {
     display: block;
     top: 0;
     left: -8px;
-    width: 30%;
+    width: 23%;
     height: 110%;
-    background: -webkit-repeating-linear-gradient(45deg, #9bc, #9bc 8px, #cde 8px, #cde 16px);
-    background:    -moz-repeating-linear-gradient(45deg, #9bc, #9bc 8px, #cde 8px, #cde 16px);
-    background:     -ms-repeating-linear-gradient(45deg, #9bc, #9bc 8px, #cde 8px, #cde 16px);
-    background:      -o-repeating-linear-gradient(45deg, #9bc, #9bc 8px, #cde 8px, #cde 16px);
-    background:         repeating-linear-gradient(45deg, #9bc, #9bc 8px, #cde 8px, #cde 16px);
+    background: -webkit-repeating-linear-gradient(45deg, #9bc, #9bc 5px, #cde 5px, #cde 10px);
+    background:    -moz-repeating-linear-gradient(45deg, #9bc, #9bc 5px, #cde 5px, #cde 10px);
+    background:     -ms-repeating-linear-gradient(45deg, #9bc, #9bc 5px, #cde 5px, #cde 10px);
+    background:      -o-repeating-linear-gradient(45deg, #9bc, #9bc 5px, #cde 5px, #cde 10px);
+    background:         repeating-linear-gradient(45deg, #9bc, #9bc 5px, #cde 5px, #cde 10px);
     -webkit-box-shadow: inset 0 -8px 16px #000;
     -moz-box-shadow:    inset 0 -8px 16px #000;
     -ms-box-shadow:     inset 0 -8px 16px #000;
@@ -49,25 +49,11 @@ body:before {
 body:after {
     right: -8px;
     left: auto;
-    background: -webkit-repeating-linear-gradient(135deg, #9bc, #9bc 8px,#cde 8px, #cde 16px);
-    background:    -moz-repeating-linear-gradient(135deg, #9bc, #9bc 8px,#cde 8px, #cde 16px);
-    background:     -ms-repeating-linear-gradient(135deg, #9bc, #9bc 8px,#cde 8px, #cde 16px);
-    background:      -o-repeating-linear-gradient(135deg, #9bc, #9bc 8px,#cde 8px, #cde 16px);
-    background:         repeating-linear-gradient(135deg, #9bc, #9bc 8px,#cde 8px, #cde 16px);
-}
-nav ul {
-    padding: 5px;
-    background: rgba(50,50,50,.9);
-    opacity: .8;
-    overflow: auto;
-}
-nav ul,
-nav li a {
-    -webkit-transition: all .2s
-    -moz-transition:    all .2s
-    -ms-transition:     all .2s
-    -o-transition:      all .2s
-    transition:         all .2s
+    background: -webkit-repeating-linear-gradient(135deg, #9bc, #9bc 5px,#cde 5px, #cde 10px);
+    background:    -moz-repeating-linear-gradient(135deg, #9bc, #9bc 5px,#cde 5px, #cde 10px);
+    background:     -ms-repeating-linear-gradient(135deg, #9bc, #9bc 5px,#cde 5px, #cde 10px);
+    background:      -o-repeating-linear-gradient(135deg, #9bc, #9bc 5px,#cde 5px, #cde 10px);
+    background:         repeating-linear-gradient(135deg, #9bc, #9bc 5px,#cde 5px, #cde 10px);
 }
 nav {
     position: fixed;
