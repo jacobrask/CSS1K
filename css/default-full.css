@@ -22,7 +22,7 @@ nav ul {
     margin: 0 auto
 }
 body {
-    width: 40%;
+    width: 50%;
     max-width: 55em;
     font: 95%/1.5 sans-serif;
     color: #311;
@@ -75,18 +75,22 @@ nav {
     left: 0;
     right: 0;
     width: 200px;
+    background: rgba(50,50,50,.9);
+    overflow: auto;
 }
-nav:hover ul {
-    opacity: 1
+nav ul {
+    padding: 3%;
+}
+nav h2 {
+    color: #fff;
+    font-size: 90%;
+    text-align: center;
+    text-transform: uppercase;
 }
 nav li {
     display: block;
     font-size: 80%;
     margin: 0 0 10px;
-}
-nav li,
-nav li a {
-    color: #fff
 }
 nav li a {
     color: #fff
