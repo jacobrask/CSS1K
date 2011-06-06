@@ -24,6 +24,7 @@ function init() {
         authorLink = document.createElement('a');
         authorLink.innerHTML = authorName;
         authorLink.href = authorUrl;
+        authorLink.setAttribute('rel', 'author');
 
         li = document.createElement('li');
         li.appendChild(styleLink);
