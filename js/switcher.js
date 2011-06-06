@@ -36,6 +36,8 @@ function init() {
 
     function switchStyle(ev) {
         styles[0].href = this.href;
+        // track style change as page view in Google Analytics 
+        _gaq.push(['_trackPageview', this.href]);
         ev.preventDefault();
     }
 }
