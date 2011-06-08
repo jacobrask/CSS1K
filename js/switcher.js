@@ -19,12 +19,12 @@ function init() {
         styleLink = document.createElement('a');
         styleLink.innerHTML = styleName;
         styleLink.href = styleUrl;
+        styleLink.setAttribute('rel', 'alternate');
         styleLink.onclick = switchStyle;
 
         authorLink = document.createElement('a');
         authorLink.innerHTML = authorName;
         authorLink.href = authorUrl;
-        authorLink.setAttribute('rel', 'author');
 
         li = document.createElement('li');
         li.appendChild(styleLink);
