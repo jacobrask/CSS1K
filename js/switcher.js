@@ -9,11 +9,9 @@ function init() {
         styles = document.querySelectorAll('link[rel^=stylesheet]'),
         defaultLink = nav.querySelector('a[href="#default"]');
    
-
     // set stylesheet from window hash
     var switchStyle = function() {
         styles[0].href = 'css/' + window.location.hash.slice(1) + '-full.css';
-        console.log(styles[0].href);
         // track style change as page view in Google Analytics 
         _gaq.push(['_trackPageview', window.location.href]);
     }
@@ -23,7 +21,7 @@ function init() {
         switchStyle();
     }
 
-    // track hash
+    // track hash changes
     if ('onhashchange' in window) {
         window.addEventListener('hashchange', switchStyle, false);
     } else {
@@ -32,7 +30,7 @@ function init() {
                 hash = window.location.hash;
                 switchStyle();
             }
-        }, 500);
+        }, 250);
     }
 
     // loop through stylesheet links and build style switcher
@@ -59,7 +57,6 @@ function init() {
         li.appendChild(styleLink);
         li.appendChild(authorLink);
         
-        styleLink.addEventListener('click', switchStyle, false);
         nav.appendChild(li);
     }
     
