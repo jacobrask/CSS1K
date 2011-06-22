@@ -6,8 +6,7 @@ function init() {
         li, s,
         hash = window.location.hash,
         nav = document.querySelector('header nav ul'),
-        styles = document.querySelectorAll('link[rel^=stylesheet]'),
-        defaultLink = nav.querySelector('a[href="#default"]');
+        styles = document.querySelectorAll('link[rel^=stylesheet]');
    
     // set stylesheet from window hash
     var switchStyle = function() {
@@ -34,7 +33,7 @@ function init() {
     }
 
     // loop through stylesheet links and build style switcher
-    // skip first one (default)
+    // skip first one (default stylesheet)
     for(var i = 1; styles.length > i; i++) {
         s = styles[i];
         styleName = s.getAttribute('title');
@@ -47,7 +46,6 @@ function init() {
         styleLink = document.createElement('a');
         styleLink.innerHTML = styleName;
         styleLink.href = '#' + styleId;
-        styleLink.setAttribute('data-src', styleUrl);
 
         authorLink = document.createElement('a');
         authorLink.innerHTML = authorName;
