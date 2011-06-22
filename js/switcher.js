@@ -2,8 +2,7 @@ document.addEventListener("DOMContentLoaded", init, false);
 
 function init() {
 
-    var styleName, styleUrl, styleLink, authorName, authorUrl, authorLink,
-        li, s,
+    var styleName, styleId, styleLink, authorName, authorUrl, authorLink, li, s,
         hash = window.location.hash,
         nav = document.querySelector('header nav ul'),
         styles = document.querySelectorAll('link[rel^=stylesheet]');
@@ -36,24 +35,17 @@ function init() {
     // skip first one (default stylesheet)
     for(var i = 1; styles.length > i; i++) {
         s = styles[i];
+
         styleName = s.getAttribute('title');
         styleId = s.getAttribute('data-id');
-        styleUrl = s.getAttribute('href');
+        styleLink = styleName.link('#' + styleId); 
 
         authorName = s.getAttribute('data-author-name');
         authorUrl = s.getAttribute('data-author-url');
-
-        styleLink = document.createElement('a');
-        styleLink.innerHTML = styleName;
-        styleLink.href = '#' + styleId;
-
-        authorLink = document.createElement('a');
-        authorLink.innerHTML = authorName;
-        authorLink.href = authorUrl;
+        authorLink = authorName.link(authorUrl);
 
         li = document.createElement('li');
-        li.appendChild(styleLink);
-        li.appendChild(authorLink);
+        li.innerHTML = styleLink + authorLink;
         
         nav.appendChild(li);
     }
