@@ -16,12 +16,10 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    overflow-x: auto;
-    overflow-y: hidden;
+    overflow: auto;
 }
 nav ul {
-    width: 99999px;
-    height: 20px;
+    white-space: nowrap;
 }
 nav li,
 nav ul {
@@ -32,15 +30,14 @@ nav ul {
     margin: 10px 0;
 }
 nav li {
-    list-style: none;
-    float: left;
+    display: inline-block;
 }
 nav a {
     text-decoration: none;
 }
 nav li a:last-child {
     float: left;
-    margin: 0 .5em;
+    margin: 0 .5em 0 1.5em;
 }
 nav li a:last-child:after {
     content: "'s";
