@@ -24,7 +24,7 @@
 
     // track hash changes
     if ('onhashchange' in window) {
-        window.addEventListener('hashchange', switchStyle, false);
+        window.onhashchange = switchStyle;
     } else {
         setInterval(function() {
             if (window.location.hash != hash) {
