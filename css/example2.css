@@ -1,6 +1,66 @@
 body {
     background: #000;
     color: #fff;
-    width: 55em;
-    margin: 0 auto;
+    width: 640px;
+    margin: 80px auto;
+    font: 12px monospace;
+}
+a {
+    color: #393;
+}
+a:hover {
+    color: #6f6;
+}
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+nav ul {
+    width: 99999px;
+    height: 20px;
+}
+nav li,
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+nav ul {
+    margin: 10px 0;
+}
+nav li {
+    list-style: none;
+    float: left;
+}
+nav a {
+    text-decoration: none;
+}
+nav li a:last-child {
+    float: left;
+    margin: 0 .5em;
+}
+nav li a:last-child:after {
+    content: "'s";
+    display: inline-block;
+}
+nav li a:first-child {
+    text-transform: uppercase;
+    padding: 0 .5em;
+    color: #000;
+    border: 3px outset #ccc;
+    background: #fff;
+    font-weight: bold;
+}
+nav li a:first-child:active {
+    border-style: inset;
+}
+nav h2 {
+    display: none;
+}
+article,
+footer {
+    border-top: 1px solid;
 }
