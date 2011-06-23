@@ -1,6 +1,4 @@
-document.addEventListener("DOMContentLoaded", init, false);
-
-function init() {
+(function() {
 
     var styleName, styleId, styleLink, authorName, authorUrl, authorLink, li, s,
         hash = window.location.hash,
@@ -54,5 +52,5 @@ function init() {
         
         nav.appendChild(li);
     }
-    
-}
+
+})();
