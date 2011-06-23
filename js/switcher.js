@@ -9,9 +9,14 @@ function init() {
    
     // set stylesheet from window hash
     var switchStyle = function() {
-        styles[0].href = 'css/' + window.location.hash.slice(1) + '.css';
-        // track style change as page view in Google Analytics 
-        _gaq.push(['_trackPageview', window.location.href]);
+        if (window.location.hash.length <= 1) {
+            newStyle = 'default';
+        } else {
+            newStyle = window.location.hash.slice(1);
+        }
+            styles[0].href = 'css/' + newStyle + '.css';
+            // track style change as page view in Google Analytics 
+            _gaq.push(['_trackPageview', window.location.href]);
     }
 
     // for hash permalinks    
