@@ -9,7 +9,7 @@ function init() {
    
     // set stylesheet from window hash
     var switchStyle = function() {
-        styles[0].href = 'css/' + window.location.hash.slice(1) + '-full.css';
+        styles[0].href = 'css/' + window.location.hash.slice(1) + '.css';
         // track style change as page view in Google Analytics 
         _gaq.push(['_trackPageview', window.location.href]);
     }
