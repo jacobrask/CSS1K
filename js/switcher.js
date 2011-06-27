@@ -2,8 +2,8 @@
 
     var styleName, styleId, styleLink, authorName, authorUrl, authorLink, li, s,
         hash = window.location.hash,
-        nav = document.querySelector('header nav ul'),
-        styles = document.querySelectorAll('link[rel^=stylesheet]');
+        nav = document.getElementsByTagName('nav')[0].getElementsByTagName('ul')[0],
+        styles = document.getElementsByTagName('link');
    
     // set stylesheet from window hash
     var switchStyle = function() {
