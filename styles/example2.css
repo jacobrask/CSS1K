@@ -37,16 +37,16 @@ nav a {
 }
 nav li a:last-child {
     float: left;
-    margin: 0 .5em 0 1.5em;
+    margin: .3em 1em 0 1.5em;
 }
 nav li a:last-child:after {
     content: "'s";
-    display: inline-block;
 }
 nav li a:first-child {
     text-transform: uppercase;
     padding: 0 .5em;
     color: #000;
+    float: right;
     border: 3px outset #ccc;
     background: #fff;
     font-weight: bold;
