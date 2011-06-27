@@ -48,7 +48,7 @@
         authorLink = authorName.link(authorUrl);
 
         li = document.createElement('li');
-        li.innerHTML = styleLink + authorLink;
+        li.innerHTML = styleLink + ' ' + authorLink;
         
         nav.appendChild(li);
     }
