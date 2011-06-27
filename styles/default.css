@@ -70,10 +70,7 @@ nav ul {
 nav li,
 nav h2 {
     font-size: 90%;
-}
-nav li {
-    display: block;
-    margin: 0 0 10px;
+    margin-bottom: 10px;
 }
 nav h2,
 nav a {
