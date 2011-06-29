@@ -20,7 +20,10 @@ body {
     width: 50%;
     margin: 0 auto;
     background: #fff;
-    box-shadow: 0 0 5px #333;
+    -webkit-box-shadow: 0 0 5px #333;
+    -moz-box-shadow:    0 0 5px #333;
+    -ms-box-shadow:     0 0 5px #333;
+    box-shadow:         0 0 5px #333;
 }
 
 h1 {
@@ -35,8 +38,11 @@ a:hover,
 h2 {
     color: #333;
     background: #FFDF39;
-    transition: all .3s;
     -webkit-transition: all .3s;
+    -moz-transition:    all .3s;
+    -ms-transition:     all .3s;
+    -o-transition:      all .3s;
+    transition:         all .3s;
 }
 
 p{
