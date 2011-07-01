@@ -1,0 +1,98 @@
+/* CSS1K entry
+* "Retro" by Bart de Bruin (http://bartdebruin.nl)
+* This file is unminified for legibility, for size proof add '-min' to the end of the filename */
+body {
+    font: 95%/1.5 arial;
+    color: #fff;
+    width: 30%;
+    background: #111;
+    margin: 273px 20px 20px 500px;
+}
+body:before,
+body > header:before,
+body > header:after {
+    position: fixed;
+    content: '';
+    display: block;
+    width: 300px;
+    height: 300px;
+    top: 20px;
+    left: 20px;
+    background: #39f;
+    -webkit-border-radius: 300px 300px;
+    -moz-border-radius:    300px 300px;
+    border-radius:         300px 300px;
+}
+body:before {
+    background: #111;
+    width: 32%;
+    height: 273px;
+    top: 0;
+    left: 490px;
+    -webkit-border-radius: 0 0;
+    -moz-border-radius:    0 0;
+    border-radius:         0 0;
+}
+body > header:after {
+    width: 150px;
+    height: 150px;
+    top: 100px;
+    left: 500px;
+    background: #f06;
+    -webkit-border-radius: 150px 150px;
+    -moz-border-radius:    150px 150px;
+    border-radius:         150px 150px;
+}
+a {
+    color: #39f
+}
+h1,
+nav h2 {
+    font-family: 'trebuchet ms';
+    font-size: 300%;
+    font-weight: 400;
+    position: fixed;
+    top: 130px;
+    left: 102px;
+    z-index: 5;
+    border-bottom: 8px dotted #111;
+    margin: 0;
+    padding: 0 5px;
+}
+h1 {
+    left: 512px
+}
+small {
+    color: #f06
+}
+nav {
+    position: relative;
+    width: 400px;
+}
+nav ul {
+    line-height: 1.8em;
+    background: #fff;
+    width: 255px;
+    -webkit-border-radius: 10px 10px;
+    -moz-border-radius:    10px 10px;
+    border-radius:         10px 10px;
+    list-style: none;
+    position: fixed;
+    top: 220px;
+    left: 102px;
+    margin: 0;
+    padding: 0 10px;
+}
+nav a {
+    text-decoration: none
+}
+nav a:hover {
+    border-bottom: 2px dotted #333
+}
+nav a:last-child {
+    color: #333
+}
+nav a:last-child:before {
+    content: ' by ';
+    display: inline;
+}

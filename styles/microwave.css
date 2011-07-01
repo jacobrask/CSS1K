@@ -1,0 +1,101 @@
+/* CSS1K entry
+ * "Microwave" by Christoph Ook (http://twitter.com/#!/chrisook)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
+html {
+    background: -webkit-repeating-linear-gradient(45deg, #333, #333 1px, #F5EEDB 1px, #F5EEDB 30px);
+    background:    -moz-repeating-linear-gradient(45deg, #333, #333 1px, #F5EEDB 1px, #F5EEDB 30px);
+    background:     -ms-repeating-linear-gradient(45deg, #333, #333 1px, #F5EEDB 1px, #F5EEDB 30px);
+    background:      -o-repeating-linear-gradient(45deg, #333, #333 1px, #F5EEDB 1px, #F5EEDB 30px);
+    background:         repeating-linear-gradient(45deg, #333, #333 1px, #F5EEDB 1px, #F5EEDB 30px);
+}
+
+body,
+nav ul {
+    margin: 0 auto
+}
+body {
+    width: 100%;
+    font: 100%/1.5 sans-serif;
+    color: #929291;
+    width: 50%;
+    margin: 0 auto;
+    background: #fff;
+    -webkit-box-shadow: 0 0 5px #333;
+    -moz-box-shadow:    0 0 5px #333;
+    -ms-box-shadow:     0 0 5px #333;
+    box-shadow:         0 0 5px #333;
+}
+
+h1 {
+    font: 40px monospace;
+    color: #111;
+}
+h1,
+nav h2 {
+    text-align: center;
+}
+a:hover,
+h2 {
+    color: #333;
+    background: #FFDF39;
+    -webkit-transition: all .3s;
+    -moz-transition:    all .3s;
+    -ms-transition:     all .3s;
+    -o-transition:      all .3s;
+    transition:         all .3s;
+}
+
+p{
+    padding: 10px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+h2{
+    padding: 0 10px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-height: 100%;
+    width: 200px;
+    background: #F5EEDB;
+}
+
+nav h2 {
+    font-size: 100%;
+    margin: 0;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+
+nav li{    padding: 5px 0 0 5px;}
+nav li:hover{
+    background: #FFDF39;
+}
+
+nav a:hover {
+    background: none;
+}
+nav a:first-child {
+    color: #333;
+    display: block;
+    font-weight: bold;
+    text-decoration: underline;
+}
+nav a:last-child {
+    color: #aaa;
+}
+footer {
+    border-top: 1px solid #aaa;
+    text-align: center;
+    font-size: 85%;
+}
