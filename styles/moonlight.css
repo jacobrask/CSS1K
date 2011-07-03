@@ -31,12 +31,12 @@ position:absolute;
 top:0;
 }
 body:before{
-position:fixed;
+position:absolute;
 font-size:2em;
 }
 body:after{
 content:'';
-position:fixed;
+position:absolute;
 left:9%;
 top:9%;
 display:block;
