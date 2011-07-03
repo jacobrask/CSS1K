@@ -53,7 +53,7 @@ box-shadow:0 0 8px #FFF,0 0 3em #FFF,0 3em 22em 16em rgba(72,85,94,0.8),inset -3
 body>*{
 position:relative;
 z-index:1;
-width:51em;
+width:42em;
 margin:0 auto;
 padding:1em 4em;
 background:rgba(0,0,0,0.4);
@@ -64,13 +64,13 @@ body>*>header{
 position:absolute;
 right:-1em;
 top:-11em;
-width:22em;
+width:19em;
 height:10em;
 padding:0 1em;
 background:#603;
--moz-box-shadow:inset -22em 0 22em -18em #c36;
--webkit-box-shadow:inset -22em 0 22em -18em #c36;
-box-shadow:inset -22em 0 22em -18em #c36;
+-moz-box-shadow:inset -22em 0 22em -20em #c36;
+-webkit-box-shadow:inset -22em 0 22em -20em #c36;
+box-shadow:inset -22em 0 22em -20em #c36;
 }
 body>*>header:before{
 content:'';
