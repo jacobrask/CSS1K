@@ -21,7 +21,7 @@ background:#111 -ms-linear-gradient(#369,transparent) no-repeat;
 background:#111 linear-gradient(#369,transparent) no-repeat;
 }
 html:after,body:before{
-content:'.. .. . .. . .. ... .. . .. .';
+content:'.. .. . .. . .. ..';
 font:bold 1em/8.5 serif;
 letter-spacing:4.5em;
 top:0;
@@ -56,8 +56,9 @@ z-index:1;
 width:51em;
 margin:0 auto;
 padding:1em 4em;
-background:rgba(0,0,0,0.5);
+background:rgba(0,0,0,0.4);
 font-family:Calibri,sans-serif;
+text-shadow:0 0 10px #000;
 }
 body>*>header{
 position:absolute;
