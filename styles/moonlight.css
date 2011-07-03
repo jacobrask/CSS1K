@@ -20,7 +20,7 @@ background:#000 -ms-linear-gradient(80deg,rgba(0,0,0,0),#2f3f48 50%,#FFF) no-rep
 background:#000 linear-gradient(80deg,rgba(0,0,0,0),#2f3f48 50%,#FFF) no-repeat;
 }
 html:after,body:before{
-content:'.. .. . .. .  . . ... .';
+content:'.. .. . .. .  . . ...';
 font:bold 1em/8.5 serif;
 letter-spacing:4.7em;
 top:0;
