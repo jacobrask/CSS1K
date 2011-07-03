@@ -14,13 +14,23 @@ FOOTER {
 	left:50px;
 	padding:0 49px;
 	background:#A7A7A7;
+	background:-webkit-linear-gradient(#CCC 0%, #AAA 100%) 0 0;
+	background:-moz-linear-gradient(#CCC 0%, #AAA 100%) 0 0;
+	background:-ms-linear-gradient(#CCC 0%, #AAA 100%) 0 0;
+	background:-o-linear-gradient(#CCC 0%, #AAA 100%) 0 0;
 	background:linear-gradient(#CCC 0%, #AAA 100%) 0 0;
+	-webkit-box-shadow:0 3px 4px #666;
+	-moz-box-shadow:0 3px 4px #666;
+	-ms-box-shadow:0 3px 4px #666;
 	box-shadow:0 3px 4px #666;
 	text-shadow:0 1px 0 #DDD;
 	}
 FOOTER {
 	top:auto;
 	bottom:0;
+	-webkit-box-shadow:0 3px 4px #666;
+	-moz-box-shadow:0 3px 4px #666;
+	-ms-box-shadow:0 3px 4px #666;
 	box-shadow:0 -3px 4px #666;
 	}
 A {
@@ -55,6 +65,9 @@ NAV UL {
 	margin:0;
 	padding:0;
 	background:#AAA;
+	-webkit-box-shadow:0 5px 4px #666;
+	-moz-box-shadow:0 5px 4px #666;
+	-ms-box-shadow:0 5px 4px #666;
 	box-shadow:0 5px 4px #666;
 	list-style:none;
 	text-align:left;
