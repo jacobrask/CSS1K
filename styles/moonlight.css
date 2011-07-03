@@ -21,13 +21,13 @@ background:#111 -ms-linear-gradient(#369,transparent) no-repeat;
 background:#111 linear-gradient(#369,transparent) no-repeat;
 }
 html:after,body:before{
-content:'.. .. . .. . .. ... .. . . .';
+content:'.. .. . .. . .. ... .. . .. .';
 font:bold 1em/8.5 serif;
-letter-spacing:4.7em;
+letter-spacing:4.5em;
 top:0;
 }
 body{
-position:fixed;
+position:absolute;
 top:0;
 }
 body:before{
@@ -74,12 +74,11 @@ box-shadow:inset -22em 0 22em -18em #c36;
 body>*>header:before{
 content:'';
 position:absolute;
-left:-5em;
+left:-10em;
 top:0;
-border:solid;
-border-width:5em 0 5em 5em;
-border-color:#603 #000 #603 transparent;
+border:5em solid transparent;
+border-right-color:#603;
 }
 a:before{
-content:'\272A';
+content:'\272A\A0';
 }
