@@ -52,6 +52,14 @@ nav ul {
 	position:relative;
 	opacity:0;
 	left:100%;
+	-webkit-transition-property:left,opacity;
+	-webkit-transition:.5s ease-in-out;
+	-moz-transition-property:left,opacity;
+	-moz-transition:.5s ease-in-out;
+	-ms-transition-property:left,opacity;
+	-ms-transition:.5s ease-in-out;
+	-o-transition-property:left,opacity;
+	-o-transition:.5s ease-in-out;
 	transition-property:left,opacity;
 	transition:.5s ease-in-out;
 }
