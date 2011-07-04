@@ -47,14 +47,14 @@ nav {
 article {
     position: relative;
     padding: 10px;
-    margin: 95px 20px 0 380px;
+    margin: 120px 20px 0 380px;
     background: #080;
     border: 10px ridge #ff0;
 }
 
 article header h2 {
     position: absolute;
-    top: -95px;
+    top: -120px;
 }
 
 @-webkit-keyframes blink {
