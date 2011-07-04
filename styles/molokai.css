@@ -13,7 +13,7 @@ a {
 a:hover {
 	color:#fff;
 }
-header,article {
+article {
 	width:33%;
 	margin:0 auto;
 }
@@ -38,9 +38,10 @@ h1:after {
 	color:#ee7;
 }
 nav {
-	position:fixed;
-	top:47px;
-	right:15px;
+	float:right;
+	overflow:hidden;
+	margin-left:-50%;
+	padding-right:18px;
 }
 nav h2 {
 	color:#6de;
