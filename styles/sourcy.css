@@ -1,5 +1,5 @@
 /* CSS1K entry
- * "Sourcy" by Roman Komarov (http://kizu.ru)
+ * "Sourcy" by Roman Komarov (http://kizu.ru/en/)
  * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
 
 /*
@@ -18,18 +18,16 @@
     color: #678;
     text-decoration: none;
     }
-* * { /* This is a regular “*”, but without HTML tag :) */
+BODY>*>* {
+    padding: 0 2.2ex; /* One monospace letter is more like 1.1ex */
+    }
+* *,
+FOOTER>* { /* This is a regular “*”, but without HTML tag :) */
     margin: 0;
     padding: 0;
 
     font: 1em/1.5 Consolas, Monaco, monospace;
     list-style: decimal inside; /* Would work only for OL, but so no need for selector */
-    }
-BODY>*>* {
-    padding: 0 2.2ex; /* One monospace letter is more like 1.1ex */
-    }
-FOOTER>* {
-    padding: 0;
     }
 H2,UL,OL,P {
     margin: 0 0 1.5em;
@@ -60,7 +58,7 @@ FOOTER:before {
     margin: 0 -4.4ex;
     }
 
-BODY>HEADER:before  { content: '!!! %html   =render :partial=>"head"   %body     %header';margin-left: -8.8ex; }
+BODY>HEADER:before  { content: '!!! %html   %head= render :partial=>"head"   %body     %header';margin-left: -8.8ex; }
 H1:before           { content: "%h1 "; margin-left: -4.4ex; }
 ARTICLE:before      { content: "%article(role='main')"; } /* Hardcoded role, need bytes */
 
