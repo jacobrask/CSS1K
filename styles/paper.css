@@ -1,0 +1,80 @@
+/*
+Name of the style: paper
+Editor name: Daniel Rauber
+Editor URL: http://daniel-rauber.de
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background: #ccc;
+}
+body {
+	background: #f9f9f9;
+	width: 740px;
+	padding: 30px;
+	font-family: "Lucida Grande",Lucida,Arial,sans-serif;
+	margin: 20px auto;
+	font-size: 12px;
+	line-height: 18px;
+}
+h1,h2 {
+	font-family: Georgia;
+	font-weight: 400;
+}
+h1 {
+	font-size: 40px;
+	line-height: 50px;
+	padding-bottom: 10px;
+}
+h2 {
+	font-size: 20px;
+	line-height: 30px;
+	padding-top: 10px;
+}
+a {
+	text-decoration: underline;
+	color: #569;
+}
+a:hover {
+	text-decoration: none;
+}
+ul,ol {
+	padding: 8px 0 8px 20px;
+}
+section {
+	display: block;
+	margin-bottom: 15px;
+}
+nav {
+	display: block;
+	position: fixed;
+	top: 40px;
+	left: -148px;
+	width: 140px;
+	padding: 0 15px 15px;
+	background: #2a2a2a;
+	border-radius: 0 10px 10px 0;
+	color: #fff;
+	-webkit-transition: left .3s;
+}
+nav:hover,nav:focus {
+	left: 0;
+}
+nav a {
+	color: #eee;
+}
+nav ul {
+	list-style: none;
+	padding: 8px 0;
+}
+nav a {
+	display: block;
+}
+nav li a:nth-child(2) {
+	padding-left: 10px;
+	font-size: 10px;
+	opacity: .8;
+}
