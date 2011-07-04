@@ -1,0 +1,97 @@
+/* CSS1K entry
+ * "Mitchiru" by Michael Fritz (http://banquo.de)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
+body {
+    font: 14px/1.5 Georgia;
+    margin: 0 20px;
+}
+header,
+nav,
+section,
+footer {
+    position: absolute;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-bottom: 20px solid #555;
+    border-top: 20px solid white;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+}
+footer {
+    top: 740px;
+    width: 950px;
+    border: 0;
+}
+header {
+    width: 550px;
+    padding-top: 62px;
+}
+ header p {
+     font-size: 9px;
+     margin: -20px 0 0;
+ }
+nav {
+    left: 600px;
+    width: 350px;
+    top: -20px;
+    z-index: 1;
+}
+section {
+    left: 620px;
+    width: 350px;
+    top: 220px;
+    height: 420px;
+}
+section:last-child {
+    width: 550px;
+    left: 20px;
+}
+nav h2:before,
+nav h2:after {
+    content: "\21E9";
+    font-size: 33px;
+    padding-top: -20px;
+}
+nav h2 {
+    font-size: 37px;
+    cursor: pointer;
+}
+ul {
+    display: none;
+    list-style: none;
+    padding: 0 32px;
+    margin-top: -36px;
+}
+li {
+    border-bottom: 1px solid #555;
+}
+li:hover,
+body {
+    background-color: #BBBAAB;
+}
+ul a:first-child {
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    width: 150px;
+}
+h1 {
+    font-size: 173px;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: -169px;
+    z-index: 1;
+}
+li:hover a,
+body {
+    color: #555;
+}
+a,
+h1 {
+    color: #02ABEC;
+}
+nav:hover ul {
+    display: block;
+}
