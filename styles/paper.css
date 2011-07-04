@@ -1,8 +1,6 @@
-/*
-Name of the style: paper
-Editor name: Daniel Rauber
-Editor URL: http://daniel-rauber.de
-*/
+/* CSS1K entry
+ * "paper" by Daniel Rauber (http://daniel-rauber.de)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
 
 * {
 	margin: 0;
@@ -56,9 +54,15 @@ nav {
 	width: 140px;
 	padding: 0 15px 15px;
 	background: #2a2a2a;
+	-webkit-border-radius: 0 10px 10px 0;
+	-moz-border-radius: 0 10px 10px 0;
 	border-radius: 0 10px 10px 0;
 	color: #fff;
 	-webkit-transition: left .3s;
+	-moz-transition: left .3s;
+	-ms-transition: left .3s;
+	-o-transition: left .3s;
+	transition: left .3s;
 }
 nav:hover,nav:focus {
 	left: 0;
