@@ -1,0 +1,97 @@
+/* CSS1K entry
+ * "Grey Matter" by Vadim Makeev (http://pepelsbey.net/)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
+
+BODY {
+	margin:auto;
+	padding:40px 0;
+	width:680px;
+	background:#92A5A9;
+	font:13px/1.5 Arial;
+	}
+A {
+	color:#F66;
+	text-decoration:none;
+	}
+H1 {
+	float:right;
+	margin:-25px 0;
+	width:300px;
+	font-size:80px;
+	}
+NAV {
+	position:relative;
+	float:left;
+	margin-left:70px;
+	}
+	NAV H2 {
+		float:left;
+		margin:0;
+		padding:5px 10px;
+		border-radius:8px;
+		font-weight:normal;
+		font-size:13px;
+		}
+		NAV H2:before {
+			content:'◀ ';
+			}
+	NAV UL {
+		position:absolute;
+		right:0;
+		margin:0;
+		display:none;
+		margin-right:100%;
+		list-style:none;
+		text-align:right;
+		}
+	NAV LI {
+		padding:5px 10px;
+		white-space:nowrap;
+		}
+	NAV A,
+	BODY {
+		color:#FFF;
+		}
+	NAV H2,
+	NAV LI {
+		background:#667476;
+		}
+	NAV:hover H2,
+	NAV LI:hover {
+		background:#F66;
+		}
+	NAV:hover H2 {
+		border-radius:0 8px 8px 0;
+		}
+	NAV:hover UL {
+		display:block;
+		}
+ARTICLE {
+	clear:both;
+	}
+	ARTICLE HEADER,
+	SECTION {
+		float:left;
+		padding:0 20px 5px;
+		border:10px solid #667476;
+		border-radius:25px;
+		background:#576365;
+		}
+	ARTICLE HEADER {
+		margin:-20px 0 0 100px;
+		width:200px;
+		}
+	SECTION:nth-child(2) {
+		position:absolute;
+		margin:40px 0 0 380px;
+		width:280px;
+		}
+	SECTION:last-child {
+		margin:20px 0 40px;
+		width:300px;
+		}
+FOOTER {
+	clear:both;
+	text-align:center;
+	color:#576365;
+	}
