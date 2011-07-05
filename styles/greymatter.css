@@ -44,6 +44,7 @@ NAV H2 {
 	NAV H2,
 	UL LI {
 		padding:6px 1em;
+		background:#667476;
 		white-space:nowrap;
 		}
 	UL {
@@ -59,13 +60,12 @@ NAV H2 {
 	H1:before {
 		color:#FFF;
 		}
+	UL LI:last-child {
+		border-radius:0 0 8px 8px;
+		}
 	UL A:last-child:before {
 		content:'by ';
 		color:#CCC;
-		}
-	NAV H2,
-	UL LI {
-		background:#667476;
 		}
 	NAV:hover H2,
 	UL LI:hover {
@@ -74,11 +74,11 @@ NAV H2 {
 	NAV:hover UL {
 		display:block;
 		}
-ARTICLE,
+[role],
 FOOTER {
 	clear:both;
 	}
-	ARTICLE HEADER,
+	[role] HEADER,
 	SECTION {
 		float:left;
 		margin:-2em 30em 0 10em;
@@ -87,12 +87,12 @@ FOOTER {
 		border-radius:2em;
 		background:#576365;
 		}
-	SECTION:nth-child(2) {
+	[role] > HEADER + * {
 		position:absolute;
 		margin:3em 0 0 32em;
 		width:22em;
 		}
-	SECTION:last-child {
+	[role] > * + * + * {
 		margin:2em 30em 4em 2em;
 		}
 FOOTER {
