@@ -1,0 +1,121 @@
+/* CSS1K entry
+ * "Bbubles" by Akella (http://cssing.org.ua)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
+/*  Whoah! Bbubles!
+Design idea by Genn @ http://genn.org
+css&hackery by Akella @ http://cssing.org.ua
+---------------------------------------- */
+body,a{
+	color:#333;
+	text-decoration:none;
+	font:12px/1.4 Arial;
+	text-align:center;
+	}
+ol a,p a{
+	background:#fff;
+	}
+	h1{
+		color:#cd2;
+		font-size:6em;
+		-webkit-text-stroke:6px #cd2;
+		text-stroke:6px #cd2;
+		left:4.5em;
+		top:-20px;
+		}
+/* bubblesArial
+---------------------------------------- */
+[role],[role]>*,nav,h1{
+	position:absolute;
+	}
+body,[role]>*{
+	background:#eed;
+	}
+	[role]{
+		top:9em;
+		left:20em;
+		}
+	h2{
+		font:italic normal 130%/1 Arial;
+		text-transform:uppercase;
+		}
+	[role]>*{
+		width:15em;
+		height:15em;
+		-webkit-border-radius:25em;
+		-moz-border-radius:25em;
+		border-radius:25em;
+		border:5em solid #cd2;
+		-webkit-transition: ease-in-out .3s;
+		-moz-transition: ease-in-out .3s;
+		-o-transition: ease-in-out .3s;
+		transition: ease-in-out .3s;
+		padding:5em;
+		/*background-clip:padding-box; stupid safari and +28 bytes TT */
+		}
+		[role]>*:hover{
+			width:25em;
+			height:25em;
+			margin:-10em 0 0 -5em;
+			z-index:9;
+			} 
+			section{
+				left:30em;
+				}
+			section+section{
+				left:15em;
+				top:26em;
+				}
+				/*i like it*/
+			  [role]>*+*+*:hover{
+				width:32em ;
+				height:32em;
+				margin-left:-8em;
+				}
+/* rest of the chaos
+---------------------------------------- */
+	nav{
+		padding:1em;
+		}
+		 ul{
+			width:1em;
+			padding:0;
+			}
+			ul li{
+				width:3em;
+				height:3em;
+				background:#ddc;
+				overflow:hidden;
+				-webkit-border-radius:3em;
+				-moz-border-radius:3em;
+				border-radius:3em;
+				}
+			ul a{
+				opacity:0;
+				display:block;
+				}
+			ul li:hover{
+				width:14em;
+				}
+footer{
+	font-size:.9em;
+	padding:80em 0 0 2em;
+	}
+/* one of my favourite places =) */
+ul li,[role]>*>*:not(h2),ul li:hover a{
+	-webkit-transition: ease-out .1s;
+	-moz-transition: ease-out .1s;
+	-o-transition: ease-out .1s;
+	transition: ease-out .1s;
+	opacity:1;
+	}
+[role]>*>*:not(h2){
+	opacity:0;
+	text-align:left;
+	}
+	[role]>*:hover>*{
+		opacity:1;	
+		-webkit-transition: ease-in-out 1s;
+		-o-transition: ease-in-out 1s;
+		-moz-transition: ease-in-out 1s;
+		transition: ease-in-out 1s;
+		}
