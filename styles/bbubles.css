@@ -1,3 +1,6 @@
+/* CSS1K entry
+ * "Bbubles" by Akella (http://cssing.org.ua)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
 /*  Whoah! Bbubles!
 Design idea by Genn @ http://genn.org
 css&hackery by Akella @ http://cssing.org.ua
@@ -15,6 +18,7 @@ ol a,p a{
 		color:#cd2;
 		font-size:6em;
 		-webkit-text-stroke:6px #cd2;
+		text-stroke:6px #cd2;
 		left:4.5em;
 		top:-20px;
 		}
@@ -37,6 +41,8 @@ body,[role]>*{
 	[role]>*{
 		width:15em;
 		height:15em;
+		-webkit-border-radius:25em;
+		-moz-border-radius:25em;
 		border-radius:25em;
 		border:5em solid #cd2;
 		-webkit-transition: ease-in-out .3s;
@@ -79,6 +85,8 @@ body,[role]>*{
 				height:3em;
 				background:#ddc;
 				overflow:hidden;
+				-webkit-border-radius:3em;
+				-moz-border-radius:3em;
 				border-radius:3em;
 				}
 			ul a{
