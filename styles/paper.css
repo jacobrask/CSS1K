@@ -17,6 +17,10 @@ body {
 	margin: 20px auto;
 	font-size: 12px;
 	line-height: 18px;
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,.2);
+	-ms-box-shadow: 0 0 5px rgba(0,0,0,.2);
+	box-shadow: 0 0 5px rgba(0,0,0,.2);
 }
 h1,h2 {
 	font-family: Georgia;
@@ -48,21 +52,19 @@ section {
 }
 nav {
 	display: block;
-	position: fixed;
-	top: 40px;
+	position: absolute;
+	top: 0;
 	left: -148px;
 	width: 140px;
 	padding: 0 15px 15px;
 	background: #2a2a2a;
-	-webkit-border-radius: 0 10px 10px 0;
-	-moz-border-radius: 0 10px 10px 0;
-	border-radius: 0 10px 10px 0;
 	color: #fff;
 	-webkit-transition: left .3s;
 	-moz-transition: left .3s;
 	-ms-transition: left .3s;
 	-o-transition: left .3s;
 	transition: left .3s;
+	overflow: auto;
 }
 nav:hover,nav:focus {
 	left: 0;
@@ -73,6 +75,9 @@ nav a {
 nav ul {
 	list-style: none;
 	padding: 8px 0;
+}
+nav li {
+	display: block;
 }
 nav a {
 	display: block;
