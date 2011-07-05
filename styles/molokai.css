@@ -1,6 +1,6 @@
 body,nav ul {
 	background:#272822;
-	font:88%/1.5 'Palatino Linotype',serif;
+	font:88%/1.5 Palatino Linotype,Palatino;
 	color:#fff;
 }
 a {
@@ -11,7 +11,7 @@ a:hover {
 	color:#fff;
 }
 article p {
-	text-indent:.5em;
+	text-indent:6px;
 }
 h1,article,footer {
 	width:825px;
