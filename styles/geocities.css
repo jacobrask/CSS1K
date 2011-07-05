@@ -46,6 +46,7 @@ nav {
 
 article {
     position: relative;
+    display: block;
     padding: 10px;
     margin: 120px 20px 0 380px;
     background: #080;
@@ -57,7 +58,7 @@ article header h2 {
     top: -120px;
 }
 
-@-webkit-keyframes blink {
+@-webkit-keyframes bl {
     from { opacity: 1; }
     to  { opacity: 0; }
 }
@@ -65,7 +66,7 @@ article header h2 {
 abbr {
     color: lime;
     text-decoration: blink;
-    -webkit-animation-name: blink;
+    -webkit-animation-name: bl;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-duration: .6s;
 }
