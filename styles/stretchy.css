@@ -13,7 +13,10 @@ BODY,H1,UL {
 	}
 A {
 	color:#09F;
-	transition:color 0.5s;
+	-webkit-transition:color 0.5s;
+	-moz-transition:color 0.5s;
+	-o-transition:color 0.5s;
+	-ms-transition:color 0.5s;
 	}
 A:hover,
 NAV A:last-child:hover {
@@ -25,8 +28,8 @@ BODY>HEADER {
 	}
 H1, FOOTER, [role] HEADER {
 	position:fixed;
-	width:100%;
 	padding:0 30px;
+	width:100%;
 	}
 	H1 {
 		width:120px;
@@ -35,8 +38,8 @@ H1, FOOTER, [role] HEADER {
 		font-size:40px;
 		}
 	H1,FOOTER {
-		background:#000;
 		z-index:9;
+		background:#000;
 		color:#FFF;
 		}
 	H1:before,
@@ -84,6 +87,7 @@ H1, FOOTER, [role] HEADER {
 		padding:0;
 		height:98px;
 		background:#C93;
+		-webkit-box-shadow:0 5px 10px #999;
 		box-shadow:0 5px 10px #999;
 		}
 		[role] HEADER H2 {
@@ -97,5 +101,6 @@ H1, FOOTER, [role] HEADER {
 			}
 FOOTER {
 	bottom:0;
+	-webkit-box-shadow:0 -5px 9px #999;
 	box-shadow:0 -5px 9px #999;
 	}
