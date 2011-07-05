@@ -1,4 +1,4 @@
-body {
+body,nav ul {
 	background:#272822;
 	font:88%/1.5 'Palatino Linotype',serif;
 	color:#fff;
@@ -27,7 +27,6 @@ nav {
 	float:right;
 	margin-left:-50%;
 	overflow:hidden;
-	color:#272822;
 }
 nav h2 {
 	color:#6de;
@@ -48,6 +47,7 @@ nav ul {
 	position:relative;
 	left:100%;
 	opacity:0;
+	color:#272822;
 }
 h1,nav h2,nav ul {
 	-webkit-transition:all .5s ease;
