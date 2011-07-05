@@ -82,7 +82,7 @@ nav{
 }
 
 nav {
-	position: fixed;
+	position: absolute;
 	left: 0;
 	margin: 0;
 	width: 165px
