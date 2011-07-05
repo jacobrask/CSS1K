@@ -17,6 +17,9 @@ body {
 	margin: 20px auto;
 	font-size: 12px;
 	line-height: 18px;
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,.2);
+	-ms-box-shadow: 0 0 5px rgba(0,0,0,.2);
 	box-shadow: 0 0 5px rgba(0,0,0,.2);
 }
 h1,h2 {
