@@ -17,6 +17,7 @@ A {
 	-moz-transition:color 0.5s;
 	-o-transition:color 0.5s;
 	-ms-transition:color 0.5s;
+	transition:color 0.5s;
 	}
 A:hover,
 NAV A:last-child:hover {
@@ -88,6 +89,8 @@ H1, FOOTER, [role] HEADER {
 		height:98px;
 		background:#C93;
 		-webkit-box-shadow:0 5px 10px #999;
+		-moz-box-shadow:0 5px 10px #999;
+		-ms-box-shadow:0 5px 10px #999;
 		box-shadow:0 5px 10px #999;
 		}
 		[role] HEADER H2 {
@@ -102,5 +105,7 @@ H1, FOOTER, [role] HEADER {
 FOOTER {
 	bottom:0;
 	-webkit-box-shadow:0 -5px 9px #999;
+	-moz-box-shadow:0 -5px 9px #999;
+	-ms-box-shadow:0 -5px 9px #999;
 	box-shadow:0 -5px 9px #999;
 	}
