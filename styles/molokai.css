@@ -5,6 +5,13 @@ body,nav ul {
 }
 a {
 	color:#ae3;
+	text-decoration:none;
+}
+a:hover {
+	color:#fff;
+}
+article p {
+	text-indent:.5em;
 }
 h1,article,footer {
 	width:825px;
@@ -14,7 +21,7 @@ h1 {
 	color:#f27;
 	font-size:94px;
 	margin-bottom:-1.34em;
-	text-shadow:0 1px 0 #444,0 2px 0 #666,0 3px 0 #666,0 4px 0 #666,0 5px 0 #666,0 6px 0 #666,0 7px 0 #666,0 8px 0 #666,0 9px 0 #666,0 10px 0 #666;
+	text-shadow:0 1px 0 #444,0 2px 0 #666,0 3px 0 #666,0 4px 0 #666,0 5px 0 #666;
 }
 h1:hover {
 	color:#f92;
