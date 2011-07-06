@@ -5,3 +5,13 @@ Fork to participate!
 Available at http://css1k.com
 
 News at http://twitter.com/css1k
+
+If you want to make life easier for me, please follow these guidelines:
+
+ * Submit one easily readable main CSS file with all necessary vendor prefixes included
+ * Also submit one minified version of the same file, with only the non prefixed properties included. This is the file that needs to be 1024 bytes or less.
+ * Add a link to your stylesheet in index.html
+
+You should be able to figure it out by looking at the current examples.
+
+Thanks!

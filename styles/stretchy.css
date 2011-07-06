@@ -1,0 +1,111 @@
+/* CSS1K entry
+ * "Stretchy" by Denis Koltsov (http://twitter.com/#!/mistadikay)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
+BODY {
+	font:16px 'Trebuchet MS';
+	}
+BODY,
+HEADER {
+	min-width:57em;
+	}
+BODY,H1,UL {
+	margin:0;
+	}
+A {
+	color:#09F;
+	-webkit-transition:color 0.5s;
+	-moz-transition:color 0.5s;
+	-o-transition:color 0.5s;
+	-ms-transition:color 0.5s;
+	transition:color 0.5s;
+	}
+A:hover,
+NAV A:last-child:hover {
+	color:#C93;
+	}
+BODY>HEADER {
+	position:relative;
+	height:98px;
+	}
+H1, FOOTER, [role] HEADER {
+	position:fixed;
+	padding:0 30px;
+	width:100%;
+	}
+	H1 {
+		width:120px;
+		height:98px;
+		line-height:98px;
+		font-size:40px;
+		}
+	H1,FOOTER {
+		z-index:9;
+		background:#000;
+		color:#FFF;
+		}
+	H1:before,
+	NAV {
+		position:absolute;
+		}
+	H1:before {
+		top:0;
+		right:-50px;
+		border-color:transparent transparent transparent #000;
+		border-style:solid;
+		border-width:49px 25px;
+		content:'';
+		}
+	NAV {
+		display:block;
+		padding:0 30px 70px;
+		width:120px;
+		}
+		H2 {
+			margin:9px 0 1em;
+			font-size:1em;
+			}
+		NAV H2 {
+			margin-top:8em;
+			}
+		UL {
+			padding:0;
+			list-style:none;
+			}
+			UL LI {
+				margin:0 0 10px;
+				}
+				NAV A:last-child {
+					display:block;
+					color:#999;
+					font-size:9px;
+					}
+[role] {
+	padding:22px 30px 70px 14em;
+	}
+	[role] HEADER {
+		top:0;
+		left:0;
+		padding:0;
+		height:98px;
+		background:#C93;
+		-webkit-box-shadow:0 5px 10px #999;
+		-moz-box-shadow:0 5px 10px #999;
+		-ms-box-shadow:0 5px 10px #999;
+		box-shadow:0 5px 10px #999;
+		}
+		[role] HEADER H2 {
+			margin:15px 30px 13px 14em;
+			}
+		[role] HEADER P {
+			margin:0 30px 0 14em;
+			}
+		[role] P {
+			margin:0 0 15px;
+			}
+FOOTER {
+	bottom:0;
+	-webkit-box-shadow:0 -5px 9px #999;
+	-moz-box-shadow:0 -5px 9px #999;
+	-ms-box-shadow:0 -5px 9px #999;
+	box-shadow:0 -5px 9px #999;
+	}
