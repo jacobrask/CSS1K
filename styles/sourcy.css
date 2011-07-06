@@ -21,8 +21,8 @@
 BODY>*>* {
     padding: 0 2.2ex; /* One monospace letter is more like 1.1ex */
     }
-* *,
-FOOTER>* { /* This is a regular “*”, but without HTML tag :) */
+* *, /* This is a regular “*”, but without HTML tag :) */
+FOOTER>* {
     margin: 0;
     padding: 0;
 
@@ -48,29 +48,27 @@ A:hover * {
     }
 
 /* Block-level HAML tags */
-ARTICLE:before,
-HEADER:before,
-SECTION:before,
+BODY:before,
+[role]:before,
+[role]>*:before,
 NAV:before,
-FOOTER:before {
+[role]:after {
     display: block;
-    width: 0; /* Wrapping on spaces */
-    margin: 0 -4.4ex;
+    margin: 0 100% 0 -4.4ex;
     }
 
-BODY>HEADER:before  { content: '!!! %html   %head= render :partial=>"head"   %body     %header';margin-left: -8.8ex; }
-H1:before           { content: "%h1 "; margin-left: -4.4ex; }
-ARTICLE:before      { content: "%article(role='main')"; } /* Hardcoded role, need bytes */
+BODY:before   { content: '!!! %html   %head= render :partial=>"head"   %body     %header';margin-left: -8.8ex; }
+H1:before     { content: "%h1 "; margin-left: -4.4ex; }
+[role]:before { content: "%article(role='main')   %header     :markdown "; width: 14em; } /* Hardcoded role, need bytes */
 
 /* tags with MarkDown inside */
 NAV:before     { content: "%nav   :markdown"; }
-HEADER:before  { content: "%header   :markdown"; }
-FOOTER:before  { content: "%footer   :markdown"; }
+[role]:after   { content: "%footer   :markdown"; }
 SECTION:before { content: "%section   :markdown"; }
 
 /* Inline MarkDown tags */
-H2:before              { content: "## "; }
-UL>LI:before           { content: "* "; }
+H2:before              { content: "## "; }
+UL>LI:before           { content: "* "; }
 A:before               { content: "["; }
 A:after                { content: "]("attr(href)")"; }
 CODE:before,CODE:after { content: "`"; }
