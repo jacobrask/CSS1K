@@ -1,4 +1,112 @@
 /* CSS1K entry
  * "Twttr" by Eugene Isakov (http://twitter.com/mem0ry_)
  * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
-body{width:60em;margin:5em auto;background:#eee;font:14px/1.5 arial}a{color:#444;text-shadow:-1px 0 0 #000}body>header:before{content:'';display:block;position:fixed;width:100%;height:4em;left:0;top:0;background:linear-gradient(#111 0%, #444 100%);box-shadow:0 4px 4px #999}body>header{position:fixed;width:60em;top:0;color:#aaa}body>header>*{position:relative}h1{float:left;margin:0;font:3.5em serif;text-shadow:1px 0 0 #fff}nav{float:right}nav h2{display:inline-block;height:2em;margin:0;padding:1em;font-size:1em}nav h2:after{content:' ▼'}nav:hover>*{color:#fff}ul{list-style:none;display:none;position:absolute;width:20em;margin:0;right:0;box-shadow:0 4px 4px #444;background:#444}ul>*{padding:4px 1em;text-align:right}ul>*:hover{margin-left:-2.5em}ul *{transition:ease 1s}*:hover>ul{display:block}ul a{float:left;color:#aaa;text-decoration:none}ul a:hover{text-decoration:underline}ul>*:hover a{opacity:1;color:#fff}ul a+a{float:none;opacity:0;font-size:11px}ul a+a:before{content:'by '}footer{text-align:center}
+
+body {
+    width: 60em;
+    margin: 5em auto;
+    background: #eee;
+    font: 14px/1.5 arial
+    }
+a {
+    color: #444;
+    text-shadow: -1px 0 0 #000
+    }
+body > header:before {
+    content: '';
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 4em;
+    left: 0;
+    top: 0;
+    background: -webkit-linear-gradient(#111 0%, #444 100%);
+    background: -moz-linear-gradient(#111 0%, #444 100%);
+    background: -o-linear-gradient(#111 0%, #444 100%);
+    background: linear-gradient(#111 0%, #444 100%);
+    -webkit-box-shadow: 0 4px 4px #999;
+    -moz-box-shadow: 0 4px 4px #999;
+    box-shadow: 0 4px 4px #999
+    }
+body > header {
+    position: fixed;
+    width: 60em;
+    top: 0;
+    color: #aaa
+    }
+body > header > * {
+    position: relative
+    }
+h1 {
+    float: left;
+    margin: 0;
+    font: 3.5em serif;
+    text-shadow: 1px 0 0 #fff
+    }
+nav {
+    float: right
+    }
+nav h2 {
+    display: inline-block;
+    height: 2em;
+    margin: 0;
+    padding: 1em;
+    font-size: 1em
+    }
+nav h2:after {
+    content: ' ▼'
+    }
+nav:hover > * {
+    color: #fff
+    }
+ul {
+    list-style: none;
+    display: none;
+    position: absolute;
+    width: 20em;
+    margin: 0;
+    right: 0;
+    -webkit-box-shadow: 0 4px 4px #444;
+    -moz-box-shadow: 0 4px 4px #444;
+    box-shadow: 0 4px 4px #444;
+    background: #444
+    }
+ul > * {
+    padding: 4px 1em;
+    text-align: right
+    }
+ul > *:hover {
+    margin-left: -2.5em
+    }
+ul * {
+    -webkit-transition: ease 1s;
+    -moz-transition: ease 1s;
+    -o-transition: ease 1s;
+    transition: ease 1s
+    }
+*:hover > ul {
+    display: block
+    }
+ul a {
+    float: left;
+    color: #aaa;
+    text-decoration: none
+    }
+ul a:hover {
+    text-decoration: underline
+    }
+ul > *:hover a {
+    opacity: 1;
+    color: #fff
+    }
+ul a + a {
+    float: none;
+    opacity: 0;
+    font-size: 11px
+    }
+ul a + a:before {
+    content: 'by '
+    }
+footer {
+    text-align: center
+    }
