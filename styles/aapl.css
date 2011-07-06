@@ -47,6 +47,7 @@ nav{
 
     nav ul{
         padding: 0;
+				overflow: 0;
     }
 
         nav ul li{
