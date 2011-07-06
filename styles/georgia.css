@@ -1,0 +1,24 @@
+/* CSS1K entry
+ * "Georgia" by Elena Polupan (http://twitter.com/#!/elena_polupan)
+ */
+body{font:16px/20px georgia;background:#6bb;color:#000;}
+header{width:100%;background:#000;position:fixed;}
+nav{background:#000;width:190px;padding:9px;height:50px;overflow:hidden;font-size:12px;position:absolute;top:0;right:20px;}
+nav:hover{height:1000px;}
+h2{font:italic bold 20px/26px georgia;}
+nav h2{border-bottom:1px dashed #fff;display:inline-block;}
+nav:hover h2{border:none;}
+body,nav ul,nav li,h1{list-style:none;margin:0;padding:0;}
+h1{font:italic 32px/36px georgia;color:#6bb;padding:20px;}
+h1:after{content:' * open in WebKit';font-size:14px;}
+nav a:last-child{font-style:italic;}
+nav a:last-child:before{content:'by '}
+[role]{margin:0 250px 0 20px;}
+[role] header{background:none;color:#fff;position:static;padding-top:80px;}
+[role] header h2{font-size:26px;}
+section{padding:20px;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;background:#fff;margin:20px 0;}
+section h2{margin:0 0 10px;text-align:center;}
+[role] a{color:#999;}
+a:hover{text-decoration:none;}
+footer{margin-left:40px;}
+footer,footer a,nav,nav *{color:#fff;}

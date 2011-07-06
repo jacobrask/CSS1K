@@ -13,8 +13,10 @@
             newStyle = window.location.hash.slice(1);
         }
             styles[0].href = 'styles/' + newStyle + '.css';
-            // track style change as page view in Google Analytics 
-            _gaq.push(['_trackPageview', window.location.hash]);
+            // track style change as page view in Google Analytics if on the live site
+            if (window.location.host === 'css1k.com') {
+                _gaq.push(['_trackPageview', window.location.hash]);
+            }
     }
 
     // for hash permalinks    
