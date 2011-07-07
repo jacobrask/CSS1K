@@ -1,39 +1,86 @@
-header, section, footer{
-    position: absolute;
-    color: #FCF6CF;
-background-color:black;
-background-image:
-  -webkit-radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
-  -webkit-radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
-  -webkit-radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
-  -webkit-radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
-  radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
-  radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
-  radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
-  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
-background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
-background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
-    -webkit-border-radius: 100em;
-    border-radius: 100em;
+/* CSS1K entry
+ * "Goodnight Moon" by Dethe Elza (http://livingcode.org/)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
+
+body{
+    background-color:black;
+    background-image:
+      -webkit-radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+      -webkit-radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+      -webkit-radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+      -webkit-radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+      radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+      radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+      radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+      radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+    font: Helvetica 10pt;
 }
 
-h2{
+header, section, footer{
+    position: absolute;
+    background-color:#FCF6CF;
+    -webkit-border-radius: 100em;
+    border-radius: 100em;
+    -webkit-box-shadow: 10px 10px 100px #000 inset;
+    -moz-box-shadow: 10px 10px 100px #000 inset;
+    box-shadow: 10px 10px 100px #000 inset;
+}
+
+section{
+    -webkit-box-shadow: 100px 100px 100px rgba(0,0,0,.7) inset;
+    -moz-box-shadow: 100px 100px 100px rgba(0,0,0,.7) inset;
+    box-shadow: 100px 100px 100px rgba(0,0,0,.7) inset;
+}
+
+p{
     text-align: center;
 }
 
-nav{
-    display: none;
+h1,h2{
+    text-align: center;
+    font-size: 14pt;
 }
 
-header:nth-of-type(1){
+nav{
+    height: 2em;
+    overflow: hidden;
+    background: #FCF6CF;
+}
+
+@keyframes scrolling {
+	0% {
+		top: 2em;
+	}
+	100% {
+	    top: -100%;
+	}
+}
+
+nav ul{
+    position: absolute;
+    animation-name: scrolling;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+
+}
+
+header{
+    width: 8em;
+    height: 8em;
+    padding: 2em;
+    right: 50%;
+    top: 70%;
+}
+
+article header{
     width: 12em;
     height: 12em;
     padding: 1em;
     right: 40%;
     top: 1em;
-}
-
-header:nth-of-type(2){
 }
 
 section:nth-of-type(1){
