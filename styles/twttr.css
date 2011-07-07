@@ -22,10 +22,10 @@ body > header:before {
     top: 0;
     background: -webkit-linear-gradient(#111 0%, #444 100%);
     background: -moz-linear-gradient(#111 0%, #444 100%);
+    background: -ms-linear-gradient(#111 0%, #444 100%);
     background: -o-linear-gradient(#111 0%, #444 100%);
     background: linear-gradient(#111 0%, #444 100%);
     -webkit-box-shadow: 0 4px 4px #999;
-    -moz-box-shadow: 0 4px 4px #999;
     box-shadow: 0 4px 4px #999
     }
 body > header {
@@ -67,7 +67,6 @@ ul {
     margin: 0;
     right: 0;
     -webkit-box-shadow: 0 4px 4px #444;
-    -moz-box-shadow: 0 4px 4px #444;
     box-shadow: 0 4px 4px #444;
     background: #444
     }
@@ -81,6 +80,7 @@ ul > *:hover {
 ul * {
     -webkit-transition: ease 1s;
     -moz-transition: ease 1s;
+    -ms-transition: ease 1s;
     -o-transition: ease 1s;
     transition: ease 1s
     }
