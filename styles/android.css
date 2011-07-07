@@ -9,13 +9,9 @@ body {
     width: 554px;
     border: 0 solid #333;
     border-width: 35px 20px 1px;
-	-webkit-border-radius: 35px;
-	-moz-border-radius: 35px;
     border-radius: 35px;
     background: #333;
 	-webkit-box-shadow: 0 0 2em #333;
-	-moz-box-shadow: 0 0 2em #333;
-	-ms-box-shadow: 0 0 2em #333;
     box-shadow: 0 0 2em #333;
     color: #ccc;
     font: 15px/20px 'Droid Sans', sans-serif;
@@ -42,8 +38,6 @@ article {
     padding: 100px 34px 75px;
     width: 482px;
     border: 2px solid #666;
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
     border-radius: 20px;
     background: #000;
 }
@@ -68,13 +62,9 @@ nav {
     float: right;
     margin: 0 -400px 50px 0;
     border: 2px solid #fff;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
     border-radius: 6px;
     background: #fff;
 	-webkit-box-shadow: 0 0 13px #000;
-	-moz-box-shadow: 0 0 13px #000;
-	-ms-box-shadow: 0 0 13px #000;
     box-shadow: 0 0 13px #000;
 }
 ul {
