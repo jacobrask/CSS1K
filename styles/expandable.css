@@ -16,11 +16,8 @@ article[role=main] {
 }
 h1, ul, article header, section {
     padding: 20px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
     border-radius: 12px;
     -webkit-box-shadow: 0 0 4px #fff;
-    -moz-box-shadow: 0 0 4px #fff;
     box-shadow: 0 0 4px #fff;
     background: -webkit-linear-gradient(top, #444, #999);
     background: -moz-linear-gradient(top, #444, #999);
@@ -28,7 +25,6 @@ h1, ul, article header, section {
     background: linear-gradient(top, #444, #999);
     text-shadow: 1px 1px 3px #888;
     color: rgba(0, 0, 0, 0.6);
-    -webkit-background-size: 100% 100%;
     background-size: 100% 100%;
     margin:  20px;
 }
