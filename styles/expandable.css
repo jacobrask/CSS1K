@@ -10,17 +10,14 @@ body > header {
     float: left;
     width: 30%
 }
-article[role=main] {
+[role] {
     float: left;
     width: 70%
 }
-h1, ul, article header, section {
+h1, ul, [role]>* {
     padding: 20px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
     border-radius: 12px;
     -webkit-box-shadow: 0 0 4px #fff;
-    -moz-box-shadow: 0 0 4px #fff;
     box-shadow: 0 0 4px #fff;
     background: -webkit-linear-gradient(top, #444, #999);
     background: -moz-linear-gradient(top, #444, #999);
@@ -28,9 +25,28 @@ h1, ul, article header, section {
     background: linear-gradient(top, #444, #999);
     text-shadow: 1px 1px 3px #888;
     color: rgba(0, 0, 0, 0.6);
-    -webkit-background-size: 100% 100%;
     background-size: 100% 100%;
     margin:  20px;
+}
+[role]>* {
+    height: 25px;
+    overflow: hidden;
+    background: -webkit-linear-gradient(top, #feb300, #fedd00);
+    background: -moz-linear-gradient(top, #feb300, #fedd00);
+    background: -o-linear-gradient(top, #feb300, #fedd00);
+    background: linear-gradient(top, #feb300, #fedd00);
+}
+section:nth-child(2) {
+    margin: 20px;
+}
+[role]>*:hover h2 {
+    color: #fff;
+}
+[role]>*:hover {
+    height: 100%;
+}
+article header a, section a {
+    color: #fff;
 }
 h1 {
     font-size: 500%;
@@ -69,24 +85,6 @@ ul li a {
     font-size: 11px;
 }
 ul li a:first-child {
-    color: #fff;
-}
-article header, section {
-    height: 25px;
-    overflow: hidden;
-    background: -webkit-linear-gradient(top, #feb300, #fedd00);
-    background: -moz-linear-gradient(top, #feb300, #fedd00);
-    background: -o-linear-gradient(top, #feb300, #fedd00);
-    background: linear-gradient(top, #feb300, #fedd00);
-}
-
-section:nth-child(2) {
-    margin: 20px;
-}
-article header:hover, section:hover {
-    height: auto;
-}
-article header a, section a {
     color: #fff;
 }
 footer {
