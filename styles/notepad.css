@@ -1,18 +1,17 @@
 /* CSS1K entry
- * "Default" by Wout Mager (http://woutmager.nl)
+ * "Notepad" by Wout Mager (http://woutmager.nl)
  * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
 html {
-    border-left: 100px solid #513201;
-    border-right: 100px solid #513201;
-    border-top: 40px solid #513201;
-    border-bottom: 80px solid #513201;
+    border-width: 40px 100px 80px 100px;
+    border-color: #513201;
+    border-style: solid;
     background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(0,0,0,0) 40%, rgba(0,0,0,0.25) 50%, rgba(0,0,0,0.12) 51%, rgba(0,0,0,0) 60%, rgba(255,255,255,0) 100%);
     background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(40%,rgba(0,0,0,0)), color-stop(50%,rgba(0,0,0,0.25)), color-stop(51%,rgba(0,0,0,0.12)), color-stop(60%,rgba(0,0,0,0)), color-stop(100%,rgba(255,255,255,0)));
     background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0.25) 50%,rgba(0,0,0,0.12) 51%,rgba(0,0,0,0) 60%,rgba(255,255,255,0) 100%);
     background: -o-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0.25) 50%,rgba(0,0,0,0.12) 51%,rgba(0,0,0,0) 60%,rgba(255,255,255,0) 100%);
     background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0.25) 50%,rgba(0,0,0,0.12) 51%,rgba(0,0,0,0) 60%,rgba(255,255,255,0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 );
-    background: linear-gradient(left, rgba(255,255,255,0) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0.25) 50%,rgba(0,0,0,0.12) 51%,rgba(0,0,0,0) 60%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(left, rgba(255,255,255,0) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0.25) 50%,rgba(0,0,0,0.12) 51%,rgba(0,0,0,0) 60%,rgba(255,255,255,0) 100%)
 }
 
 body {
@@ -25,28 +24,18 @@ body {
     background: -moz-repeating-linear-gradient(transparent, transparent 29px, rgba(26,146,208,0.2) 29px, rgba(26,146,208,0.2) 30px);
     background: -ms-repeating-linear-gradient(transparent, transparent 29px, rgba(26,146,208,0.2) 29px, rgba(26,146,208,0.2) 30px);
     background: -o-repeating-linear-gradient(transparent, transparent 29px, rgba(26,146,208,0.2) 29px, rgba(26,146,208,0.2) 30px);
-    background: repeating-linear-gradient(transparent, transparent 29px, rgba(26,146,208,0.2) 29px, rgba(26,146,208,0.2) 30px);
+    background: repeating-linear-gradient(transparent, transparent 29px, rgba(26,146,208,0.2) 29px, rgba(26,146,208,0.2) 30px)
 }
 
 * {
     font: 13px/30px "Lucida Grande", Arial, sans-serif;
-    margin: 0;
     position: relative
 }
 
 h1, nav h2 {
-    margin: 0 0 30px;
     top: -6px;
     font-size: 32px;
-    font-weight: bold;
-}
-
-nav h2 {
-    -webkit-transform:rotate(-2.3deg);
-	-moz-transform:rotate(-2.3deg);
-	-o-transform:rotate(-2.3deg);
-	transform:rotate(-2.3deg);
-	text-decoration: underline;
+    font-weight: bold
 }
 
 h2 {
@@ -59,9 +48,8 @@ h2 abbr {
     font-weight: bold
 }
 
-p, ul, ol {
-    margin: 0;
-    margin-bottom: 30px
+p, ul, ol, h1, nav h2 {
+    margin: 0 0 30px;
 }
 
 a {
@@ -73,26 +61,25 @@ a:hover {
     text-decoration: underline
 }
 
-article {
+article, nav {
     width: 45%
 }
 
 nav {
-    width: 45%;
     float: right;
-    top: -60px;
+    top: -60px
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
+    padding: 0
 }
 
-nav h2, nav a {
-    font-family: "Comic Sans", "Comic Sans MS", cursive;
+nav * {
+    font-family: "Comic Sans", "Comic Sans MS", cursive
 }
 
-nav li a:first-child, nav li a:first-child:hover {
+nav li a:first-child {
     display: inline;
     background: #066eb7;
     color: #fff;
@@ -100,31 +87,16 @@ nav li a:first-child, nav li a:first-child:hover {
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
-    text-decoration: none;
-    font-size: 14px;
+    text-decoration: none
 }
 
 nav li a:first-child:hover {
-    background: #000;
+    background: #000
 }
 
 nav ul li:nth-child(3n+1) {
 	-webkit-transform:rotate(-1.8deg);
 	-moz-transform:rotate(-1.8deg);
 	-o-transform:rotate(-1.8deg);
-	transform:rotate(-1.8deg);
-}
- 
-nav ul li:nth-child(3n+2) {
-	-webkit-transform:rotate(0.7deg);
-	-moz-transform:rotate(0.7deg);
-	-o-transform:rotate(0.7deg);
-	transform:rotate(0.7deg);
-}
- 
-nav ul li:nth-child(3n+3) {
-	-webkit-transform:rotate(-1.3deg);
-	-moz-transform:rotate(-1.3deg);
-	-o-transform:rotate(-1.3deg);
-	transform:rotate(-1.3deg);
+	transform:rotate(-1.8deg)
 }
