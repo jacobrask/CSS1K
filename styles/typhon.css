@@ -1,3 +1,6 @@
+/* CSS1K entry
+ * "Typhon" by ESWAT (http://eswat.ca)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
 /* ==============================================================================
 Premature Optimization
 ============================================================================== */
@@ -66,7 +69,6 @@ article {
   float: left;
   padding: 52px 52px 26px;
   -webkit-box-shadow: 0 1px 3px #a3c3dc;
-  -moz-box-shadow: 0 1px 3px #a3c3dc;
   box-shadow: 0 1px 3px #a3c3dc;
 }
 
@@ -77,7 +79,6 @@ nav {
   margin-top: 52px;
   background: #e5eef5;
   -webkit-box-shadow: 0 1px 3px #a3c3dc;
-  -moz-box-shadow: 0 1px 3px #a3c3dc;
   box-shadow: 0 1px 3px #a3c3dc;
 }
 nav li {
