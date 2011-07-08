@@ -1,0 +1,136 @@
+/* CSS1K entry
+ * "Typhon" by ESWAT (http://eswat.ca)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
+/* ==============================================================================
+Premature Optimization
+============================================================================== */
+footer,
+h1 {
+  text-align: center;
+}
+
+ul,
+ol {
+  margin: 0 0 26px;
+  padding: 0;
+}
+
+/* ==============================================================================
+Everything Else
+============================================================================== */
+@-webkit-keyframes g {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes g {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes g {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+html {
+  border: 13px solid #b9d1e4;
+}
+
+body {
+  background: #dae7f1;
+  width: 940px;
+  font: 16px/26px georgia;
+  color: #445d6e;
+  margin: auto;
+  -webkit-animation: g .5s 1 ease-in;
+  -moz-animation: g .7s 1 ease-in;
+  animation: g .7s 1 ease-in;
+}
+
+article {
+  background: #f0f5f9;
+  width: 536px;
+  float: left;
+  padding: 52px 52px 26px;
+  -webkit-box-shadow: 0 1px 3px #a3c3dc;
+  box-shadow: 0 1px 3px #a3c3dc;
+}
+
+nav {
+  width: 248px;
+  float: right;
+  padding: 26px 26px 0;
+  margin-top: 52px;
+  background: #e5eef5;
+  -webkit-box-shadow: 0 1px 3px #a3c3dc;
+  box-shadow: 0 1px 3px #a3c3dc;
+}
+nav li {
+  font: 14px/26px "helvetica neue", arial;
+  list-style: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+nav a {
+  text-decoration: none;
+}
+nav a:first-child {
+  font-weight: 700;
+}
+nav a:last-child:before {
+  content: '(';
+}
+nav a:last-child:after {
+  content: ')';
+}
+
+footer {
+  padding: 78px 0 52px;
+  clear: both;
+}
+
+a {
+  color: #5aa5dc;
+}
+
+h1 {
+  font: 100 128px/130px "helvetica neue", arial;
+  margin: 78px;
+  color: #b9d1e4;
+  text-shadow: 0 1px 0 #fff;
+}
+
+h2 {
+  font: 700 16px/26px "helvetica neue", arial;
+  text-transform: uppercase;
+  margin: 52px 0 26px;
+}
+
+header h2 {
+  margin-top: 0;
+}
+
+p {
+  margin: 0 0 26px;
+}
+
+ol {
+  list-style-position: outside;
+}

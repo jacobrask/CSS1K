@@ -1,29 +1,92 @@
 /* CSS1K entry
  * "Android" by Aleksej Romanovskij (http://agat.in)
  * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
-body		{ font: 15px/20px 'Droid Sans', sans-serif; width: 480px; margin: 0; background: #333; color: #ccc; }
-a			{ text-decoration: none; border-bottom: 1px dashed #ccc; color: #ccc; }
-
-/* content */
-h1			{ background: #999; color: #fff; font: bold 14px/25px 'Droid Sans', sans-serif; padding: 0 6px; margin: 0; text-shadow: 0 0 3px #000; }
-footer,
-article		{ padding: 0 16px 16px; background: #000; }
-h2			{ color: #fff; font-size: 22px; font-weight: 400; }
+html {
+    background: #999;
+}
+body {
+    margin: 5em;
+    width: 554px;
+    border: 0 solid #333;
+    border-width: 35px 20px 1px;
+    border-radius: 35px;
+    background: #333;
+	-webkit-box-shadow: 0 0 2em #333;
+    box-shadow: 0 0 2em #333;
+    color: #ccc;
+    font: 15px/20px 'Droid Sans', sans-serif;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+section,
+article header {
+    border: 1px solid #444;
+}
+h1 {
+    position: absolute;
+    top: 140px;
+    left: 70px;
+    width: 554px;
+    color: #555;
+    text-align: center;
+    font: bold 20px sans-serif;
+    font-style: italic;
+}
+article {
+    padding: 100px 34px 75px;
+    width: 482px;
+    border: 2px solid #666;
+    border-radius: 20px;
+    background: #000;
+}
+h2 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+}
+section h2 {
+    margin-top: -4px;
+    background: #000;
+}
 h2,
+p {
+    padding: 0 16px;
+}
 ol,
-ol		 	{ padding-left: 32px; }
-h2		 	{ margin: 0 -16px; padding: 13px 16px 0 16px; }
-h2,
-footer 		{ border-top: 1px solid #666; }
-
-/* popup */
-nav 		{ position: absolute; left: 505px; top: 25px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; border: 2px solid #fff; background: #fff; color: #000; -webkit-box-shadow: 0 0 13px #000; -moz-box-shadow: 0 0 13px #000; -ms-box-shadow: 0 0 13px #000; box-shadow: 0 0 13px #000; }
-ul	 		{ padding: 0; margin: 0; overflow: auto; max-height: 800px; }
-nav li 		{ list-style: none; padding: 13px 16px; border-top: 1px solid #999; white-space: nowrap; }
-nav li:hover 		{ background: #f90; }
-li:first-child,
-header h2,
-nav a 		{ border: none; }
-nav a 		{ color: #000; }
-nav a:first-child:after { content: ' —'; }
-nav h2 		{ color: #000; margin: 0; background: #333; font: 400 22px/43px 'Droid Sans', sans-serif; color: #fff; padding: 0 10px; -webkit-border-radius: 6px 6px 0 0; -moz-border-radius: 6px 6px 0 0; border-radius: 6px 6px 0 0; }
+footer {
+    padding: 0 3em;
+}
+nav {
+    float: right;
+    margin: 0 -400px 50px 0;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    background: #fff;
+	-webkit-box-shadow: 0 0 13px #000;
+    box-shadow: 0 0 13px #000;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    padding: 13px 1em;
+    border-top: 1px solid #999;
+    list-style: none;
+}
+nav li:hover {
+    background: #f90;
+}
+nav a {
+    color: #000;
+}
+nav h2 {
+    margin: 0;
+    padding: 0 10px;
+    border-radius: 6px 6px 0 0;
+    background: #333;
+    color: #fff;
+    font: 400 22px/43px 'Droid Sans', sans-serif;
+}
