@@ -4,7 +4,7 @@
 
 body{
     background: #f5f6f7;
-  	font: 14px/1.5 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  	font: 14px/1.5 'Lucida Grande';
   	margin: 0 auto;
   	width: 800px
 }
@@ -12,13 +12,13 @@ body{
 h1{  
     color: #222;  
     -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.2)), to(rgba(0,0,0,1)));
-    mask-image: linear-gradient(top, rgba(0,0,0,.2), rgba(0,0,0,1));
+		mask-image: linear-gradient(top, rgba(0,0,0,.2), rgba(0,0,0,1));
 }  
 
 a{color: #08C}
 
 header{
-		position: relative;
+		position: relative
 }
 
 		header p{
@@ -28,16 +28,12 @@ header{
 
 article{
     background: #FFF;
-    border: 1px solid #CECECE;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    -webkit-box-shadow: 1px 1px 2px #CECECE;
-    -moz-box-shadow: 1px 1px 2px #CECECE;
-    -ms-box-shadow: 1px 1px 2px #CECECE;
-    box-shadow: 1px 1px 2px #CECECE;
+	-webkit-box-shadow: 1px 1px 2px #CECECE;
+    box-shadow: 1px 1px 2px #ccc;
     overflow: auto;
-    padding: 10px 10px 50px 10px
+    padding: 10px
 }
 
 section{
@@ -51,13 +47,22 @@ nav{
 		width: 200px
 }
 
-    nav ul{
+    ul{
         padding: 0;
-				overflow: 0;
+				height: 670px;
+				overflow-y: scroll;
     }
 
-        nav ul li{
-            border: 1px solid #CACACA;
+		::-webkit-scrollbar {
+		  width: 9px;
+		  height: 9px }
+		
+			::-webkit-scrollbar-thumb:vertical {
+			  background: #ccc;
+			}
+
+        ul li{
+            border: 1px solid #ccc;
             border-bottom: 0;
             background-image: -webkit-linear-gradient(top, #F1F1F1, #E1E1E1);
             background-image: -moz-linear-gradient(top, #F1F1F1, #E1E1E1);
@@ -72,23 +77,23 @@ nav{
 						text-shadow: 1px 1px 0 #FFF
         }
 
-						nav ul li a:first-child{
+						ul li a:first-child{
 	          		color: #777;
 	           		display: block
 	        	}
         
-        nav ul li:hover{
+        ul li:hover{
             background: #FFF;
 						height: 38px
         }
 
-            nav ul li:hover:after{
+            ul li:hover:after{
                 content: '▶';
                 position: absolute;
                 right: 5px;            
                 top: 15px
             }
 
-        nav ul li:last-child{
-            border-bottom: 1px solid #CACACA
+        ul li:last-child{
+            border-bottom: 1px solid #ccc
         }
