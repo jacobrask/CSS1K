@@ -1,0 +1,67 @@
+/* CSS1K entry
+ * "Spring" by Marvin Labod (http://www.inlovewithcss.com)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
+
+* {margin:0px;padding:0px;text-decoration:none; line-height:20px}
+body {background:#f0f0f0; color:#777; font:normal 14px "Arial"}
+
+body:before {
+content: "";
+display:block;
+height:10px;
+background: -webkit-repeating-linear-gradient(0deg, #E0E4CC, #E0E4CC 20px, #69D2E7 20px, #69D2E7 40px);
+box-shadow: 0px 0px 5px #ccc;
+border-bottom:1px solid #fff}
+
+a {color:#69D2E7; font-weight: bold}
+h1 {width:200px;margin:20px auto}
+h2 {font-size:16px; border-bottom: 1px solid #eee; margin-bottom:5px; padding-bottom:5px}
+article, nav, footer {border-radius:5px; box-shadow: 0px 4px 5px #ddd}
+
+article {
+float:left;
+background:white;
+width:40%;
+margin-left:20%}
+
+	article > * {padding:10px 10px 0px 10px}
+	
+	article p {margin-bottom:10px}
+	
+	article li {list-style: disc; margin:0px 20px 10px 20px}
+
+nav {
+font-size:11px;
+padding:1%;
+float:right;
+background:white;
+width:17%;
+margin-right:20%}
+
+nav li {clear:left; height:26px; list-style: none}
+
+nav a:first-child {
+float:left;
+border-radius:3px;
+border:1px solid #69D2E7;
+box-shadow:0px 0px 3px #ddd;
+display:block;
+color:white;
+padding:0px 6px;
+background:-webkit-linear-gradient(#A7DBD8, #69D2E7)}
+
+nav a:first-child:hover {background:-webkit-linear-gradient(#69D2E7, #A7DBD8)}
+
+nav a:last-child {margin-left:5px;color:#999}
+nav a:last-child:hover {text-decoration: underline}
+
+footer {
+position:fixed;
+border-radius:0px 5px 5px 0px;
+width:100px;
+font-size:10px;
+left:0px;
+top:100px; 
+background:white}
+
+	footer p {padding:10px; }
