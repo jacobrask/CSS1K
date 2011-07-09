@@ -1,0 +1,24 @@
+html,body{height:100%;}
+body{background-color:black;background-image:radial-gradient(white,rgba(255,255,255,.2) 2px,transparent 40px),
+radial-gradient(white,rgba(255,255,255,.15) 1px,transparent 30px),
+radial-gradient(white,rgba(255,255,255,.1) 2px,transparent 40px),
+radial-gradient(rgba(255,255,255,.4),rgba(255,255,255,.1) 2px,transparent 30px);background-size:550px 550px,350px 350px,250px 250px,150px 150px;background-position:0 0,40px 60px,130px 270px,70px 100px;font:Helvetica 10pt;}
+header,section,footer{position:absolute;background-color:#FCF6CF;border-radius:100em;box-shadow:10px 10px 100px #000 inset;margin:1em;}
+header:hover,section:hover,footer:hover{z-index:4;}
+section{box-shadow:100px 100px 100px rgba(0,0,0,.7) inset;}
+p{text-align:center;}
+h1,h2{text-align:center;font-size:14pt;}
+nav{position:relative;width:100%;height:7em;overflow:hidden;}
+nav h2{position:relative;top:-2em;}
+ul{list-style-type:none;}
+ul li{margin-top:.6em;}
+ul li a{display:block;}
+@keyframes scrolling{from{top:0em;}
+to{top:-100em;}
+}
+nav ul{position:absolute;animation-name:scrolling;animation-duration:30s;animation-iteration-count:infinite;}
+header{width:12em;height:12em;padding:1em;right:45%;top:66%;z-index:2;}
+article header{left:45%;top:1em;}
+section{width:27em;height:27em;padding:4em;top:1em;}
+section:nth-of-type(2){right:1em;bottom:1em;}
+footer{width:7em;height:7em;padding:1em;bottom:1em;}
