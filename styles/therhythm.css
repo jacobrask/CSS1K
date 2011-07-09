@@ -1,0 +1,142 @@
+/* CSS1K entry
+ * "The Rhythm" by Roman Komarov (http://kizu.ru/en/)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
+
+/* Commons */
+HTML,
+BODY>*,
+A,
+H1,
+H2 {
+	position: relative;
+	}
+HTML {
+	padding: 1.6em 0 1.1em;
+
+	font-size: 14px;
+
+	color: #333;
+	background: #FFF;
+	}
+* {
+	padding: 0;
+	margin: 0;
+
+	font: 1em/1.5 "Helvetica Neue";
+	text-decoration: none;
+	}
+
+/* Somewhat responsible layout (middle column centered if there is enough space) */
+BODY {
+	max-width: 42em;
+	padding: 0 18em 0 2em;
+	margin: 0 auto;
+	}
+BODY>* {
+	width: 26em;
+	margin-left: auto;
+	}
+
+/* Styles for afters */
+* :after { /* Star needed 'cause there is a bug in Chrome */
+	content:"";
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: -.5em;
+	left: 0;
+
+	pointer-events: none;
+	}
+
+/* Grid background */
+BODY:after {
+	background: -webkit-gradient(linear, 0 0, 0 1, from(#000), to(transparent));
+	background: -webkit-linear-gradient(#000 0,transparent 1px);
+	background:    -moz-linear-gradient(#000 0,transparent 1px);
+	background:      -o-linear-gradient(#000 0,transparent 1px);
+	background:         linear-gradient(#000 0,transparent 1px);
+	background-size: 1% 1.5em;
+
+	opacity: 0.2;
+	}
+
+/* Gradient for headers */
+H1:after,
+H2:after {
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(hsla(0,0%,100%,0)), to(hsla(0,0%,100%,1)));
+	background: -webkit-linear-gradient(hsla(0,0%,100%,0),hsla(0,0%,100%,1));
+	background:    -moz-linear-gradient(hsla(0,0%,100%,0),hsla(0,0%,100%,1));
+	background:      -o-linear-gradient(hsla(0,0%,100%,0),hsla(0,0%,100%,1));
+	background:         linear-gradient(hsla(0,0%,100%,0),hsla(0,0%,100%,1));
+	}
+
+/* Sidebar */
+NAV {
+	float: right;
+	margin: 10.5em -16em 0;
+
+	width: 14em;
+	}
+UL>* {
+	display: block;
+
+	white-space: nowrap;
+	}
+
+/* Headers */
+H1 {
+	top: -.03em;
+	left: -7px; /* Better typography */
+
+	font: bold 8em/1.125 "Helvetica Neue",Arial; /* Neue 'cause plain Helvetica have issues with line-height in different browsers */
+	letter-spacing: -2px;
+	}
+H2 {
+	top: 0.75em;
+	left: -2px; /* Better typography */
+
+	font-size: 2em;
+	line-height: .75;
+	}
+H2>* {
+	line-height: 0;
+	}
+
+/* Styles for content */
+H1,
+H2 {
+	color: #777;
+	}
+
+P,H2 {
+	margin: 0 0 1.5em;
+	}
+
+FOOTER>P,
+UL A+A {
+	margin: 0.2em 0;
+
+	font-size: 12px;
+
+	color: #888;
+	}
+
+/* Links */
+A {
+	z-index: 9;
+
+	padding: .2em 0;
+
+	color: #33F;
+	}
+A:hover {
+	text-decoration: underline;
+	}
+UL A+A:hover {
+	color: #000;
+	}
+UL A {
+	margin-right: 0.5em;
+	}
