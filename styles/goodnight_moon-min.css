@@ -1,24 +1,3 @@
-html,body{height:100%;}
-body{background-color:black;background-image:radial-gradient(white,rgba(255,255,255,.2) 2px,transparent 40px),
-radial-gradient(white,rgba(255,255,255,.15) 1px,transparent 30px),
-radial-gradient(white,rgba(255,255,255,.1) 2px,transparent 40px),
-radial-gradient(rgba(255,255,255,.4),rgba(255,255,255,.1) 2px,transparent 30px);background-size:550px 550px,350px 350px,250px 250px,150px 150px;background-position:0 0,40px 60px,130px 270px,70px 100px;font:Helvetica 10pt;}
-header,section,footer{position:absolute;background-color:#FCF6CF;border-radius:100em;box-shadow:10px 10px 100px #000 inset;margin:1em;}
-header:hover,section:hover,footer:hover{z-index:4;}
-section{box-shadow:100px 100px 100px rgba(0,0,0,.7) inset;}
-p{text-align:center;}
-h1,h2{text-align:center;font-size:14pt;}
-nav{position:relative;width:100%;height:7em;overflow:hidden;}
-nav h2{position:relative;top:-2em;}
-ul{list-style-type:none;}
-ul li{margin-top:.6em;}
-ul li a{display:block;}
-@keyframes scrolling{from{top:0em;}
-to{top:-100em;}
-}
-nav ul{position:absolute;animation-name:scrolling;animation-duration:30s;animation-iteration-count:infinite;}
-header{width:12em;height:12em;padding:1em;right:45%;top:66%;z-index:2;}
-article header{left:45%;top:1em;}
-section{width:27em;height:27em;padding:4em;top:1em;}
-section:nth-of-type(2){right:1em;bottom:1em;}
-footer{width:7em;height:7em;padding:1em;bottom:1em;}
+html,body{height:100%}body{background:#000;background-image:radial-gradient(#FFF 1px,transparent 4px),radial-gradient(#CCC 1px,transparent 3px),radial-gradient(#FFF 1px,transparent 3px);background-size:250px 250px,175px 175px,300px 300px;font-size:10pt;text-align:center}header,section,footer{position:absolute;background:#FCF6CF;border-radius:99em;box-shadow:10px 15px 50px #000 inset;margin:1em}section:hover{z-index:4}h1,h2{font-size:14pt}nav{position:relative;height:7em;overflow:hidden}nav h2{position:absolute;margin:0 1em;background:#FCF6CF;z-index:2}ul,ol{text-align:left}ul li{margin-top:.6em}ul li a{display:block}
+@keyframes scrolling{from{top:0em} to{top:-100em}}
+ul{position:absolute;list-style:none;animation:scrolling 30s linear infinite}header{width:12em;height:12em;padding:2em;right:45%;top:66%;z-index:2}article header{left:45%;top:0}section{width:27em;height:27em;padding:4em}section:nth-of-type(2){right:0;bottom:0}footer{width:7em;height:7em;padding:1em;bottom:0}

@@ -1,77 +1,64 @@
 /* CSS1K entry
  * "Goodnight Moon" by Dethe Elza (http://livingcode.org/)
- * "Starry Night" pattern by  Lea Verou ( http://leaverou.me/css3patterns/#starry-night)
+ * "Starry Night" pattern originally by  Lea Verou ( http://leaverou.me/css3patterns/#starry-night) (heavily modified for brevity)
  * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
 
 html, body{
     height: 100%;
 }
 body{
-    background-color:black;
+    background:#000;
     background-image:
-        -webkit-radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px), 
-        -webkit-radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px), 
-        -webkit-radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px), 
-        -webkit-radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+        -webkit-radial-gradient(#FFF 1px, transparent 8px), 
+        -webkit-radial-gradient(#CCC 1px, transparent 4px), 
+        -webkit-radial-gradient(#FFF 1px, transparent 2px);
     background-image:
-      -moz-radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
-      -moz-radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
-      -moz-radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
-      -moz-radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+        -moz-radial-gradient(#FFF 1px, transparent 4px), 
+        -moz-radial-gradient(#CCC 1px, transparent 3px), 
+        -moz-radial-gradient(#FFF 1px, transparent 3px);
     background-image:
-      radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
-      radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
-      radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
-      radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
-    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
-    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
-    font: Helvetica 10pt;
+        radial-gradient(#FFF 1px, transparent 4px), 
+        radial-gradient(#CCC 1px, transparent 3px), 
+        radial-gradient(#FFF 1px, transparent 3px);
+    background-size: 250px 250px, 175px 175px, 300px 300px; 
+    font-size: 10pt;
+    text-align: center;
 }
 
 header, section, footer{
     position: absolute;
-    background-color:#FCF6CF;
-    -webkit-border-radius: 100em;
-    border-radius: 100em;
-    -webkit-box-shadow: 10px 10px 100px #000 inset;
-    -moz-box-shadow: 10px 10px 100px #000 inset;
-    box-shadow: 10px 10px 100px #000 inset;
+    background:#FCF6CF;
+    -webkit-border-radius: 99em;
+    border-radius: 99em;
+    -webkit-box-shadow: 10px 10px 50px #000 inset;
+    -moz-box-shadow: 10px 10px 50px #000 inset;
+    box-shadow: 10px 15px 50px #000 inset;
     margin: 1em;
 }
 
-header:hover, section:hover, footer:hover{
+section:hover{
     z-index: 4;
 }
 
-section{
-    -webkit-box-shadow: 100px 100px 100px rgba(0,0,0,.7) inset;
-    -moz-box-shadow: 100px 100px 100px rgba(0,0,0,.7) inset;
-    box-shadow: 100px 100px 100px rgba(0,0,0,.7) inset;
-}
-
-p{
-    text-align: center;
-}
-
 h1,h2{
-    text-align: center;
     font-size: 14pt;
 }
 
 nav{
     position: relative;
-    width: 100%;
     height: 7em;
     overflow: hidden;
 }
 
 nav h2{
-    position: relative;
-    top: -2em;
+    position: absolute;
+    margin: 0 1em;
+    background: #FCF6CF;
+    z-index: 2;
 }
 
-ul{
-    list-style-type: none;
+ul, ol{
+    text-align: left;
 }
 
 ul li{
@@ -109,23 +96,18 @@ ul li a{
     }
 }
 
-nav ul{
+ul{
     position: absolute;
-    -moz-animation-name: scrolling;
-	-moz-animation-duration: 30s;
-	-moz-animation-iteration-count: infinite;
-    -webkit-animation-name: scrolling;
-	-webkit-animation-duration: 30s;
-    -webkit-animation-iteration-count: infinite;
-    animation-name: scrolling;
-	animation-duration: 30s;
-	animation-iteration-count: infinite;
+    list-style: none;
+	-moz-animation: scrolling 30s linear infinite;
+    -webkit-animation: scrolling 30s linear infinite;
+    animation: scrolling 30s linear infinite;
 }
 
 header{
     width: 12em;
     height: 12em;
-    padding: 1em;
+    padding: 2em;
     right: 45%;
     top: 66%;
     z-index: 2;
@@ -133,24 +115,23 @@ header{
 
 article header{
     left: 45%;
-    top: 1em;
+    top: 0;
 }
 
 section{
     width: 27em;
     height: 27em;
     padding: 4em;
-    top: 1em;
 }
 
 section:nth-of-type(2){
-    right: 1em;
-    bottom: 1em;
+    right: 0;
+    bottom: 0;
 }
 
 footer{
     width: 7em;
     height:7em;
     padding: 1em;
-    bottom: 1em;
+    bottom: 0;
 }
