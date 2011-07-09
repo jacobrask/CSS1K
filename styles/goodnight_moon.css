@@ -1,18 +1,25 @@
 /* CSS1K entry
  * "Goodnight Moon" by Dethe Elza (http://livingcode.org/)
+ * "Starry Night" pattern by  Lea Verou ( http://leaverou.me/css3patterns/#starry-night)
  * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
 
+html, body{
+    height: 100%;
+}
 body{
+    height: 100%;
     background-color:black;
+    background-image:
+        -webkit-radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px), 
+        -webkit-radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px), 
+        -webkit-radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px), 
+        -webkit-radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
     background-image:
       -moz-radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
       -moz-radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
       -moz-radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
       -moz-radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
-      -webkit-radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
-      -webkit-radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
-      -webkit-radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
-      -webkit-radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+    background-image:
       radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
       radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
       radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
