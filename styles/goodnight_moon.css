@@ -5,6 +5,10 @@
 body{
     background-color:black;
     background-image:
+      -moz-radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+      -moz-radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+      -moz-radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+      -moz-radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
       -webkit-radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
       -webkit-radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
       -webkit-radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
@@ -28,6 +32,10 @@ header, section, footer{
     box-shadow: 10px 10px 100px #000 inset;
 }
 
+header:hover, section:hover, footer:hover{
+    z-index: 40;
+}
+
 section{
     -webkit-box-shadow: 100px 100px 100px rgba(0,0,0,.7) inset;
     -moz-box-shadow: 100px 100px 100px rgba(0,0,0,.7) inset;
@@ -44,27 +52,74 @@ h1,h2{
 }
 
 nav{
-    height: 2em;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 3em;
     overflow: hidden;
-    background: #FCF6CF;
 }
 
-@keyframes scrolling {
-	0% {
-		top: 2em;
+nav h2{
+    position: relative;
+    top: -2em;
+}
+
+ul{
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+ul li{
+    margin-top: .6em;
+}
+
+ul li a{
+    display: block;
+}
+
+@-moz-keyframes scrolling {
+	from {
+	    top: 1em;
 	}
-	100% {
-	    top: -100%;
+	to {
+	    -100em;
 	}
+}
+
+@-webkit-keyframes scrolling{
+    from {
+        top: 0em;
+    }
+    to{
+        top: -100em;
+    }
+}
+
+@keyframes scrolling{
+    from {
+        top: 0em;
+    }
+    to{
+        top: -100em;
+    }
 }
 
 nav ul{
     position: absolute;
+    top: 1em;
+    -moz-animation-name: 'scrolling-links';
+	-moz-animation-duration: 30s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: linear;
+    -webkit-animation-name: scrolling;
+	-webkit-animation-duration: 30s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
     animation-name: scrolling;
 	animation-duration: 30s;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
-
 }
 
 header{
