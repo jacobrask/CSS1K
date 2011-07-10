@@ -17,6 +17,10 @@ body{
         -moz-radial-gradient(#CCC 1px, transparent 3px),
         -moz-radial-gradient(#FFF 1px, transparent 3px);
     background-image:
+        -o-radial-gradient(#FFF 1px, transparent 4px),
+        -o-radial-gradient(#CCC 1px, transparent 3px),
+        -o-radial-gradient(#FFF 1px, transparent 3px);
+    background-image:
         radial-gradient(#FFF 1px, transparent 4px),
         radial-gradient(#CCC 1px, transparent 3px),
         radial-gradient(#FFF 1px, transparent 3px);
