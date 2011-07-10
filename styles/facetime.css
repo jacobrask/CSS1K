@@ -1,0 +1,28 @@
+/* CSS1K entry
+ * "Facetime" by Bernard Nijenhuis (http://twitter.com/bnijenhuis)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
+body {
+font: 12px/1.4 Arial;
+margin: 0 auto;
+width: 980px;
+background-color: #fedaf9;
+text-align: center;
+overflow: scroll; }
+
+/* yes, this is hair, and no, they're not couches :) */
+nav { position: relative; }
+  nav h2 { color: #fff; position: absolute; left: 420px; opacity: .6; z-index: 2; }
+  nav ul { padding: 0; list-style-type: none; }
+    nav ul li { position: relative; display: inline-block; margin: -10px 0 0 0; padding: .2em; border: 2px solid #fff; background: #6d3e1b; border-radius: 50% 50% 15% 15%; }
+      nav ul li:nth-child(5n-2) { background: #926547; }
+      nav ul li a { color: transparent; display: block; }
+      nav ul li:hover { z-index: 2; }
+        nav ul li:hover a { color: #fff; }
+		
+article { overflow: hidden; }
+  article header { float: left; clear: both; padding: 0 0 60px 0; border-bottom: 80px solid #000; width: 100%; }
+
+/* these are glasses */
+section { position: relative; float: left; color: transparent; margin: -120px 40px 0 40px; padding: 10px; border: 40px solid #000; width: 310px; height: 150px; border-radius: .3em .3em 3em 3em; text-shadow: #000 0 0 8px; -webkit-transition: ease-in-out .3s; -moz-transition: ease-in-out .3s; -ms-transition: ease-in-out .3s; -o-transition: ease-in-out .3s; transition: ease-in-out .3s; background: #fff; overflow: hidden; }
+  section a { color: transparent; font-style: italic; }
+  section:hover { text-shadow: #000 0 0 0; height: 500px; }
