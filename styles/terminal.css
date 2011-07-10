@@ -1,3 +1,6 @@
+/* CSS1K entry
+ * "Terminal" by Mikhail Korepanov (http://twitter.com/PanyaKor)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
 * {
     color:#0f0;
     font:13px/1.4 courier;
@@ -60,8 +63,6 @@ body:before {
     background:-o-linear-gradient(#cfcfcf, #a7a7a7);
     background:-ms-linear-gradient(#cfcfcf, #a7a7a7);
     background:linear-gradient(#cfcfcf, #a7a7a7);
-    -moz-border-radius:5px 5px 0 0;
-    -webkit-border-radius:5px 5px 0 0;
     border-radius:5px 5px 0 0;
     padding:1px 0;
 }
