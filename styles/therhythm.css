@@ -4,32 +4,27 @@
 
 /* Commons */
 HTML,
-BODY>*,
-A,
-H1,
-H2 {
+BODY * {
 	position: relative;
-	}
-HTML {
-	padding: 1.6em 0 1.1em;
 
-	font-size: 14px;
-               
-	color: #333;
-	background: #FFF;
-	}
-* {
 	padding: 0;
 	margin: 0;
 
 	font: 1em/1.5 Calibri, "Helvetica Neue", Arial;
 	text-decoration: none;
 	}
+HTML {
+	padding: 1.6em 18em 1.1em 2em;
+
+	font-size: 14px;
+               
+	color: #333;
+	background: #FFF;
+	}
 
 /* Somewhat responsible layout (middle column centered if there is enough space) */
 BODY {
 	max-width: 42em;
-	padding: 0 18em 0 2em;
 	margin: 0 auto;
 	}
 BODY>* {
@@ -52,11 +47,11 @@ BODY>* {
 
 /* Grid background */
 BODY:after {
-	background: -webkit-gradient(linear, 0 0, 0 1, from(#000), to(transparent));
-	background: -webkit-linear-gradient(#000 0,transparent 1px);
-	background:    -moz-linear-gradient(#000 0,transparent 1px);
-	background:      -o-linear-gradient(#000 0,transparent 1px);
-	background:         linear-gradient(#000 0,transparent 1px);
+	background: -webkit-gradient(linear, 0 0, 0 1, from(#000), to(#FFF));
+	background: -webkit-linear-gradient(#000 0,#FFF 1px);
+	background:    -moz-linear-gradient(#000 0,#FFF 1px);
+	background:      -o-linear-gradient(#000 0,#FFF 1px);
+	background:         linear-gradient(#000 0,#FFF 1px);
 	background-size: 1% 1.5em;
 
 	opacity: 0.2;
@@ -65,11 +60,11 @@ BODY:after {
 /* Gradient for headers */
 H1:after,
 H2:after {
-	background: -webkit-gradient(linear, 0 0, 0 100%, from(hsla(0,0%,100%,0)), to(hsla(0,0%,100%,1)));
-	background: -webkit-linear-gradient(hsla(0,0%,100%,0),hsla(0,0%,100%,1));
-	background:    -moz-linear-gradient(hsla(0,0%,100%,0),hsla(0,0%,100%,1));
-	background:      -o-linear-gradient(hsla(0,0%,100%,0),hsla(0,0%,100%,1));
-	background:         linear-gradient(hsla(0,0%,100%,0),hsla(0,0%,100%,1));
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(hsla(0,0%,100%,0)), to(#FFF));
+	background: -webkit-linear-gradient(hsla(0,0%,100%,0),#FFF);
+	background:    -moz-linear-gradient(hsla(0,0%,100%,0),#FFF);
+	background:      -o-linear-gradient(hsla(0,0%,100%,0),#FFF);
+	background:         linear-gradient(hsla(0,0%,100%,0),#FFF);
 	}
 
 /* Sidebar */
@@ -107,7 +102,7 @@ H2>* {
 /* Styles for content */
 H1,
 H2 {
-	color: #777;
+	color: #555;
 	}
 
 P,H2 {
@@ -125,8 +120,6 @@ UL A+A {
 
 /* Links */
 A {
-	z-index: 9;
-
 	padding: .2em 0;
 
 	color: #33F;
@@ -139,4 +132,16 @@ UL A+A:hover {
 	}
 UL A {
 	margin-right: 0.5em;
+	margin: 0 0.5em 0 0;
+	}
+
+/* Clearing long list of designs */
+script {
+	display: block;
+	clear: both;
+	}
+
+/* Showing elements through body's before */
+P,OL,A {
+	z-index: 9;
 	}
