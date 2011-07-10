@@ -1,0 +1,92 @@
+/* CSS1K entry
+ * "Android" by Aleksej Romanovskij (http://agat.in)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
+html {
+    background: #999;
+}
+body {
+    margin: 5em;
+    width: 554px;
+    border: 0 solid #333;
+    border-width: 35px 20px 1px;
+    border-radius: 35px;
+    background: #333;
+	-webkit-box-shadow: 0 0 2em #333;
+    box-shadow: 0 0 2em #333;
+    color: #ccc;
+    font: 15px/20px 'Droid Sans', sans-serif;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+section,
+article header {
+    border: 1px solid #444;
+}
+h1 {
+    position: absolute;
+    top: 140px;
+    left: 70px;
+    width: 554px;
+    color: #555;
+    text-align: center;
+    font: bold 20px sans-serif;
+    font-style: italic;
+}
+article {
+    padding: 100px 34px 75px;
+    width: 482px;
+    border: 2px solid #666;
+    border-radius: 20px;
+    background: #000;
+}
+h2 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+}
+section h2 {
+    margin-top: -4px;
+    background: #000;
+}
+h2,
+p {
+    padding: 0 16px;
+}
+ol,
+footer {
+    padding: 0 3em;
+}
+nav {
+    float: right;
+    margin: 0 -400px 50px 0;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    background: #fff;
+	-webkit-box-shadow: 0 0 13px #000;
+    box-shadow: 0 0 13px #000;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    padding: 13px 1em;
+    border-top: 1px solid #999;
+    list-style: none;
+}
+nav li:hover {
+    background: #f90;
+}
+nav a {
+    color: #000;
+}
+nav h2 {
+    margin: 0;
+    padding: 0 10px;
+    border-radius: 6px 6px 0 0;
+    background: #333;
+    color: #fff;
+    font: 400 22px/43px 'Droid Sans', sans-serif;
+}

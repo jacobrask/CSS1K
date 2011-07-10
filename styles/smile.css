@@ -1,0 +1,93 @@
+/* CSS1K entry
+/* "smile" by Michael Scharnagl (http://twitter.com/realmuecke)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
+
+/*************************************/
+/* style by Michael Scharnagl
+/*************************************/
+html {
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	background: #66a0a1;
+	color: #666;
+}
+
+body {
+	width: 1024px;
+	margin: 20px auto
+}
+
+a {color: #1c578e}
+
+a:hover {opacity: 0.8}
+
+p, li {line-height: 20px}
+
+/* head */
+body > *:first-child{
+	border: 2px solid #eee;
+	-webkit-border-radius: 70px;
+	-moz-border-radius: 70px;
+	border-radius: 70px;
+	-webkit-box-shadow: 0 0 25px #888;
+	-moz-box-shadow: 0 0 25px #888;
+	-ms-box-shadow: 0 0 25px #888;
+	box-shadow: 0 0 25px #888;
+	background-color: #e0ecec;
+	float: left;
+	height: 70px;
+	padding: 31px 35px
+}
+
+body > *:first-child h1 {
+	font-family: "Lucida Grande", sans-serif;
+	-moz-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+	margin: 10px 0 0;
+	font-size: 18px;
+}
+
+body > *:first-child h1:after {
+	color: #b5565a;
+	content: ")";
+	font-size: 70px;
+	top: -35px;
+	right:-30px;
+	position: absolute
+}
+
+body > *:first-child:after,
+body > *:first-child:before{
+	content: ".";
+	font-size: 160px;
+	position: absolute;
+	top: -80px;
+	margin: 0 -20px;
+	color: #8eb1cf
+}
+
+body > *:first-child:after {margin: 0 43px}
+
+article,
+nav{
+	margin: 0 0 0 125px;
+	clear: both;
+	background-color: #e0ecec;
+	padding: 10px 20px;
+	font-family: "Lucida Grande", sans-serif;
+}
+
+nav {
+	position: absolute;
+	left: 0;
+	margin: 0;
+	width: 165px
+}
+
+nav li a:first-child {color: #b5565a; display: block}
+
+footer p {color: #eee; padding: 10px 124px}

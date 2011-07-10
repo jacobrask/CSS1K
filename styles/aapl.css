@@ -1,0 +1,99 @@
+/* CSS1K entry
+ * "AAPL" by Joffrey Jaffeux (http://twitter.com/joffreyjaffeux)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
+
+body{
+    background: #f5f6f7;
+  	font: 14px/1.5 'Lucida Grande';
+  	margin: 0 auto;
+  	width: 800px
+}
+
+h1{  
+    color: #222;  
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.2)), to(rgba(0,0,0,1)));
+		mask-image: linear-gradient(top, rgba(0,0,0,.2), rgba(0,0,0,1));
+}  
+
+a{color: #08C}
+
+header{
+		position: relative
+}
+
+		header p{
+		    font-size: 20px;
+		    color: #9A9A9A
+		}
+
+article{
+    background: #FFF;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+	-webkit-box-shadow: 1px 1px 2px #CECECE;
+    box-shadow: 1px 1px 2px #ccc;
+    overflow: auto;
+    padding: 10px
+}
+
+section{
+		width: 500px
+}
+
+nav{
+		position: absolute;
+		top: 200px;
+		right: 10px;
+		width: 200px
+}
+
+    ul{
+        padding: 0;
+				height: 670px;
+				overflow-y: scroll;
+    }
+
+		::-webkit-scrollbar {
+		  width: 9px;
+		  height: 9px }
+		
+			::-webkit-scrollbar-thumb:vertical {
+			  background: #ccc;
+			}
+
+        ul li{
+            border: 1px solid #ccc;
+            border-bottom: 0;
+            background-image: -webkit-linear-gradient(top, #F1F1F1, #E1E1E1);
+            background-image: -moz-linear-gradient(top, #F1F1F1, #E1E1E1);
+            background-image: -ms-linear-gradient(top, #F1F1F1, #E1E1E1);
+            background-image: -o-linear-gradient(top, #F1F1F1, #E1E1E1);
+            background-image: linear-gradient(top, #F1F1F1, #E1E1E1);
+						height: 17px;
+            list-style: none;
+						overflow: hidden;
+            padding: 5px;
+            position: relative;
+						text-shadow: 1px 1px 0 #FFF
+        }
+
+						ul li a:first-child{
+	          		color: #777;
+	           		display: block
+	        	}
+        
+        ul li:hover{
+            background: #FFF;
+						height: 38px
+        }
+
+            ul li:hover:after{
+                content: '▶';
+                position: absolute;
+                right: 5px;            
+                top: 15px
+            }
+
+        ul li:last-child{
+            border-bottom: 1px solid #ccc
+        }
