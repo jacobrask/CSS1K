@@ -64,7 +64,7 @@ article header {
 	left:0
 }
 nav {
-	overflow:hidden;
+	overflow-y:hidden;
 	right:0;
 	top:0;
 	height:90px;
@@ -74,7 +74,8 @@ article section h2, nav h2, nav:hover {
 	position:absolute
 }
 nav:hover {
-	height:1500px
+	height:500px;
+	overflow-y:scroll
 }
 nav h2 {
 	width:50px;
@@ -93,7 +94,7 @@ nav h2 {
 }
 nav ul {
 	font-size:11px;
-	margin:95px 0 0 5px;
+	margin:95px 0 5px 5px
 }
 nav ul li {
 	margin:0
