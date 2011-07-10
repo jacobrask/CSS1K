@@ -22,7 +22,7 @@ HTML {
 	padding: 0;
 	margin: 0;
 
-	font: 1em/1.5 "Helvetica Neue";
+	font: 1em/1.5 Calibri, "Helvetica Neue", Arial;
 	text-decoration: none;
 	}
 
@@ -90,7 +90,7 @@ H1 {
 	top: -.03em;
 	left: -7px; /* Better typography */
 
-	font: bold 8em/1.125 "Helvetica Neue",Arial; /* Neue 'cause plain Helvetica have issues with line-height in different browsers */
+	font: bold 8em/1.125 Calibri, "Helvetica Neue",Arial; /* Neue 'cause plain Helvetica have issues with line-height in different browsers */
 	letter-spacing: -2px;
 	}
 H2 {
