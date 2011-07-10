@@ -6,7 +6,7 @@ body {
     font:13px/1.4 courier;
     text-align:justify;
     background:#000;
-    width:800px;
+    width:62em;
     margin:auto;
 }
 
@@ -57,7 +57,7 @@ h1:before {
 }
 
 h1:after {
-    padding:10px 0 0;
+    margin:10px 0 0;
     content:' | |     \\___ \\\\___ \\ | |  <  ';
 }
 
