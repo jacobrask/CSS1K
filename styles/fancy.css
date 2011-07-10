@@ -1,0 +1,26 @@
+/* CSS1K entry
+ * "Fancy" by Michele Cipriani (http://www.trustweb.it)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
+*{margin:0; border-radius:4px;}
+a,a:visited{color:#007FFF;}
+a:hover{color:#666;}
+html{font-family:Georgia, serif; background:#F0F0F0; color:#333;}
+header{background-color:#E0E0E0; display:block; padding:40px; border-radius:0px; }
+nav{background-color:#CCC; padding:10px; margin-top:10px; overflow:auto; -webkit-box-shadow:0px 1px 0px #AAA;box-shadow:0px 1px 0px #AAA;}
+h1,h2 {
+	font-size:72px;
+	color:#333;
+	text-shadow:0px 1px 0px #FFF;
+}
+h2{font-size:22px;}
+nav ul{margin:0; padding:0; list-style-position:inside; padding-top:20px; display:none;}
+nav ul li{display:block; float:left; padding:4px; background-color:#333; margin:4px;}
+nav ul li a,nav ul li a:visited{color:#fff; text-decoration:none;}
+nav ul li a:last-child,nav ul li a:last-child:visited{color:#999; text-decoration:none;}
+nav ul li a:hover{color:#e0e0e0; text-decoration:underline;}
+nav:hover > ul{display:block;}
+article{padding:40px;}
+article header{ background-color:#ccc; padding:10px;}
+section h2{margin-top:30px; margin-bottom:20px; color:#007FFF;}
+ol{margin-bottom:20px;}
+footer{background-color:#CCC; margin:0 40px 40px 40px; padding:10px; text-align:center;}
