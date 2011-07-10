@@ -86,8 +86,6 @@ nav h2 {
 	right:5px;
 	top:-5px;
 	padding:15px;
-	-webkit-border-radius:60px;
-	-moz-border-radius:60px;
 	border-radius:60px;
 	z-index:5
 }
@@ -99,10 +97,7 @@ nav ul li {
 	margin:0
 }
 article section, nav ul, article header, nav ul, article section h2 {
-	-webkit-border-radius:6px;
-	-moz-border-radius:6px;
 	border-radius:6px;
 	-webkit-box-shadow:-1px 1px 3px rgba(0,0,0,.2);
-	-moz-box-shadow:-1px 1px 3px rgba(0,0,0,.2);
 	box-shadow:-1px 1px 3px rgba(0,0,0,.2)
 }
