@@ -7,11 +7,14 @@ html {
 	background: -webkit-linear-gradient(#bff 60%, #7f3 100%);
 	background: -moz-linear-gradient(#bff 60%, #7f3 100%);
 	background: -ms-linear-gradient(#bff 60%, #7f3 100%);
-	background: -o-linear-gradient(#bff 60%, #7f3 100%);
+	background: -o-linear-gradient(#bff 60%, #7f3 100%) no-repeat #7f3;
 	background: linear-gradient(#bff 60%, #7f3);
 	font: 15px/19px Arial;
-	padding: 4em;
 	color: #555;
+}
+
+body {
+	margin: 4em;
 }
 
 a {
@@ -73,7 +76,7 @@ article header p {
 }
 
 nav {
-	padding: 0 0 0 8em;
+	padding: 0 0 4em 8em;
 	float: left;
 }
 
