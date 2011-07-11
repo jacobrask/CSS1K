@@ -41,15 +41,15 @@ nav a {
     transition: all linear .2s 1s;
     backface-visibility: hidden;
     color: #000;
-    -moz-box-shadow: rgba(0, 0, 0, .2) 1px 1px 1em;
     -webkit-box-shadow: rgba(0, 0, 0, .2) 1px 1px 1em;
-    -o-box-shadow: rgba(0, 0, 0, .2) 1px 1px 1em;
     box-shadow: rgba(0, 0, 0, .2) 1px 1px 1em;
 }
 nav a+a {
     background: #6cf;
     -webkit-transform: rotatex(180deg);
     -moz-transform: rotatex(180deg);
+    -ms-transform: rotatex(180deg);
+    -o-transform: rotatex(180deg);
     transform: rotateX(180deg);
     opacity: 0;
 }
@@ -57,6 +57,8 @@ nav li:hover a{
     opacity: 0;
     -webkit-transform: rotateX(180deg);
     -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
     transform: rotateX(180deg);
 }
 nav li:hover a+a {
@@ -64,6 +66,8 @@ nav li:hover a+a {
     color: #fff;
     -webkit-transform: rotateX(360deg);
     -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
     transform: rotateX(360deg);
 }
 nav a:hover {
