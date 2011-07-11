@@ -9,15 +9,17 @@ html {
 	background: -ms-linear-gradient(#bff 60%, #7f3 100%);
 	background: -o-linear-gradient(#bff 60%, #7f3 100%);
 	background: linear-gradient(#bff 60%, #7f3);
-	font: 15px Arial;
-	line-height: 130%;
+	font: 15px/19px Arial;
 	padding: 4em;
 	color: #555;
 }
 
-body>header {
+a {
+	color: #369;
+}
+
+header {
 	float: left;
-	width: 31em;
 }
 
 h1 {
