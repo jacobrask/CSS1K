@@ -1,0 +1,119 @@
+﻿/* CSS1K entry
+ * "Skewed" by Paul Steffens (http://twitter.com/sntxrrr)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
+
+html {
+   background: #83c4e2;
+}
+
+* {
+   -webkit-transition: all 0.4s;
+   -moz-transition: all 0.4s;
+   -ms-transition: all 0.4s;
+   -o-transition: all 0.4s;
+   transition: all 0.4s;
+}
+
+body {
+   font: 10px/1.5 "Segoe UI", Helvetica, sans-serif;
+   padding: 50px;
+}
+
+body,a {
+   color: #ffd;
+}
+
+a:hover {
+   color: #83c4e2;
+   background: #ffd;
+}
+
+a:visited {
+   color: #ddc;
+}
+
+ul {
+   list-style: none;
+}
+
+li a+a {
+   float: right;
+   font-style: italic;
+}
+
+ul li {
+   border-bottom: 1px solid rgba(255,255,221,0.1);
+}
+
+ol,ul {
+   padding: 0;
+}
+
+body > * > * {
+   min-width: 130px;
+   width: 15%;
+   -webkit-transform: skew(0,12deg) scaleX(0.9) translate(0,90px);
+   -moz-transform: skew(0,12deg) scaleX(0.9) translate(0,90px);
+   -ms-transform: skew(0,12deg) scaleX(0.9) translate(0,90px);
+   -o-transform: skew(0,12deg) scaleX(0.9) translate(0,90px);
+   transform: skew(0,12deg) scaleX(0.9) translate(0,90px);
+   padding: 20px;
+   float: left;
+   min-height: 500px;
+   opacity: 0.3;
+}
+
+body > * > *:nth-child(2n), article:before, footer p {
+   -webkit-transform: skew(0,-20deg) scaleX(0.9) translate(0);
+   -moz-transform: skew(0,-20deg) scaleX(0.9) translate(0);
+   -ms-transform: skew(0,-20deg) scaleX(0.9) translate(0);
+   -o-transform: skew(0,-20deg) scaleX(0.9) translate(0);
+   transform: skew(0,-20deg) scaleX(0.9) translate(0);
+}
+
+h1 {
+   font-size: 500px;
+   position: fixed;
+   top: -300px;
+   left: -150px;
+   color: rgba(0,0,0,0);
+   text-shadow: 0 0 40px rgba(255,255,221,0.1);
+   z-index: -1;
+   opacity: 1;
+}
+
+body > * > *:hover:not(h1) {
+   -webkit-transform: skew(0) translate(0);
+   -moz-transform: skew(0) translate(0);
+   -ms-transform: skew(0) translate(0);
+   -o-transform: skew(0) translate(0);
+   transform: skew(0) translate(0);
+   margin: 0;
+   width: 40%;
+   min-width: 200px;
+   color: #ffd;
+   font-size: 175%;
+   opacity: 1;
+}
+
+nav {
+   position: absolute;
+   right: 0;
+   z-index: 1;
+}
+
+article:before {
+   content: "SKEWED";
+   position: fixed;
+   left: 45%;
+   top: 50px;
+   font-size: 200px;
+   opacity: 0.05;
+   font-weight: 900;
+   z-index: -2;
+}
+
+footer p {
+   clear: both;
+   margin: 160px 12% 0;
+}
