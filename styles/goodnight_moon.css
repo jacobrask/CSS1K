@@ -17,6 +17,10 @@ body{
         -moz-radial-gradient(#CCC 1px, transparent 3px), 
         -moz-radial-gradient(#FFF 1px, transparent 3px);
     background-image:
+        -o-radial-gradient(#FFF 1px, transparent 4px), 
+        -o-radial-gradient(#CCC 1px, transparent 3px), 
+        -o-radial-gradient(#FFF 1px, transparent 3px);
+    background-image:
         radial-gradient(#FFF 1px, transparent 4px), 
         radial-gradient(#CCC 1px, transparent 3px), 
         radial-gradient(#FFF 1px, transparent 3px);
@@ -28,10 +32,8 @@ body{
 header, section, footer{
     position: absolute;
     background:#FCF6CF;
-    -webkit-border-radius: 99em;
     border-radius: 99em;
     -webkit-box-shadow: 10px 10px 50px #000 inset;
-    -moz-box-shadow: 10px 10px 50px #000 inset;
     box-shadow: 10px 15px 50px #000 inset;
     margin: 1em;
 }
