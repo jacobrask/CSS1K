@@ -78,12 +78,8 @@ section:hover {
   transition: all .5s ease;
 }
 
-header h1 {
-  font: normal 11px verdana;
-}
-
-article {
-  height: 400px;
+nav:hover {
+  overflow: auto;
 }
 
 nav ul {
@@ -93,8 +89,22 @@ nav ul {
 nav li {
   display: inline-block;
   margin: 0 15px 5px 0;
+  width: 46%;
+}
+
+nav li:nth-child(2) {
+  clear: both;
 }
 
 nav a:last-child {
   color: rgba(0,0,0,.3);
+}
+
+header h1 {
+  font: normal 11px verdana;
+}
+
+article {
+  display: block;
+  height: 400px;
 }
