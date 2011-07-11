@@ -2,13 +2,13 @@
  * "Cloudy" by Sergey Leschina (http://twitter.com/putnik/)
  * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
 
-body {
+html {
 	background: #bff;
 	background: -webkit-linear-gradient(#bff 60%, #7f3 100%);
 	background: -moz-linear-gradient(#bff 60%, #7f3 100%);
 	background: -ms-linear-gradient(#bff 60%, #7f3 100%);
 	background: -o-linear-gradient(#bff 60%, #7f3 100%);
-	background: linear-gradient(#bff 60%, #7f3 100%);
+	background: linear-gradient(#bff 60%, #7f3);
 	font: 15px Arial;
 	line-height: 130%;
 	padding: 4em;
@@ -30,7 +30,9 @@ h1 {
 
 article *,
 h1 {
-	border-radius: 3em;
+	-moz-border-radius: 4em;
+	-webkit-border-radius: 4em;
+	border-radius: 4em;
 }
 
 article header,
@@ -49,11 +51,11 @@ h2 {
 }
 
 article header h2 {
-	height: 122%;
-	padding-top: 4%;
+	height: 7em;
+	padding-top: 6%;
 	width: 82%;
 	left: 11%;
-	top: -39%;
+	top: -42%;
 }
 
 p {
@@ -85,12 +87,15 @@ nav li {
 
 nav li a {
 	float: left;
-	visibility: hidden;
+	color: rgba(0,0,0,0);
 }
 
-nav:hover a,
-nav li a:after {
-	visibility: visible;
+nav:hover a {
+	color: #9BF;
+}
+
+nav a:hover {
+	color: #555;
 }
 
 nav li a:after {
@@ -98,9 +103,11 @@ nav li a:after {
 	float: right;
 	width: 9px;
 	height: 15px;
+	-moz-border-radius: 4px/9px 9px 5px 5px;
+	-webkit-border-radius: 4px/9px 9px 5px 5px;
 	border-radius: 4px/9px 9px 5px 5px;
 	background: #9bf;
-	margin: 3px 5px;
+	margin: 4px;
 }
 
 article,
