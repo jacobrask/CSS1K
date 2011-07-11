@@ -1,0 +1,32 @@
+/* CSS1K entry
+ * "Yelo" by Bart de Bruin (http://bartdebruin.nl)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
+html{background:#000;font-family:sans-serif}
+body:hover{background-size:100%}
+body,
+body:active{
+	border:1em solid #ff0;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ff0), color-stop(1, #ff0)), -webkit-gradient(linear, left top, left bottom, color-stop(0, #ff0), color-stop(1, #ff0)), -webkit-gradient(linear, left top, left bottom, color-stop(0, #ff0), color-stop(1, #ff0)), -webkit-gradient(linear, left top, left bottom, color-stop(0, #ff0), color-stop(1, #ff0));
+    background: -webkit-linear-gradient(#ff0, #ff0), -webkit-linear-gradient(#ff0, #ff0), -webkit-linear-gradient(#ff0, #ff0), -webkit-linear-gradient(#ff0, #ff0);
+    background: -moz-linear-gradient(#ff0, #ff0), -moz-linear-gradient(#ff0, #ff0), -moz-linear-gradient(#ff0, #ff0), -moz-linear-gradient(#ff0, #ff0);
+    background: -o-linear-gradient(#ff0, #ff0), -o-linear-gradient(#ff0, #ff0), -o-linear-gradient(#ff0, #ff0), -o-linear-gradient(#ff0, #ff0);
+    background: linear-gradient(#ff0, #ff0), linear-gradient(#ff0, #ff0), linear-gradient(#ff0, #ff0), linear-gradient(#ff0, #ff0);
+    background-repeat: no-repeat;
+	background-size:0%;
+	background-position:0% 0%,0% 100%,100% 0%,100% 100%;
+	-webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out}
+nav{-webkit-transform: rotate(-5deg);-moz-transform: rotate(-5deg);-ms-transform: rotate(-5deg);-o-transform: rotate(-5deg);transform: rotate(-5deg)}
+nav li{display:inline-block;padding:4px;border:1px dotted #990;margin:2px}
+nav li a:first-child{font-weight:bold;}
+article header,
+section{display:inline-block;width:29%;padding:2%;position:relative}
+article h2{position:absolute;top:-20px;background:#ff0;width:90%}
+article h2,
+footer{text-align:center}
+a{background:#000;color:#ff0;display:inline-block;padding:1px;text-decoration:none}
+a:hover{background:#fff;color:#000;}
+a,h2{border-radius:3px}
