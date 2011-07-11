@@ -1,0 +1,139 @@
+/* CSS1K entry
+ * "Cloudy" by Sergey Leschina (http://twitter.com/putnik/)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
+
+html {
+	background: #bff;
+	background: -webkit-linear-gradient(#bff 60%, #7f3 100%);
+	background: -moz-linear-gradient(#bff 60%, #7f3 100%);
+	background: -ms-linear-gradient(#bff 60%, #7f3 100%);
+	background: -o-linear-gradient(#bff 60%, #7f3 100%) no-repeat #7f3;
+	background: linear-gradient(#bff 60%, #7f3);
+	font: 15px/19px Arial;
+	color: #555;
+}
+
+body {
+	margin: 4em;
+}
+
+a {
+	color: #369;
+}
+
+header {
+	float: left;
+}
+
+h1 {
+	width: 6em;
+	height: 4em;
+	padding-top: 2em;
+	margin: 0;
+	background: #fe4;
+}
+
+article *,
+h1 {
+	-moz-border-radius: 4em;
+	-webkit-border-radius: 4em;
+	border-radius: 4em;
+}
+
+article header,
+article header>* {
+	background: #fff;
+	position: absolute;
+	width: 23em;
+	top: 9em;
+	left: 12em;
+}
+
+h2 {
+	color: #aaa;
+	text-align: center;
+	font-size: 120%;
+}
+
+article header h2 {
+	height: 7em;
+	padding-top: 6%;
+	width: 82%;
+	left: 11%;
+	top: -42%;
+}
+
+p {
+	text-align: justify;
+}
+
+article header p {
+	padding: 0 20%;
+	width: 75%;
+	top: 0;
+	left: -9%;
+	position: relative;
+}
+
+nav {
+	padding: 0 0 4em 8em;
+	float: left;
+}
+
+nav h2 {
+	color: #9bf;
+}
+
+nav li {
+	clear: left;
+	list-style: none;
+	padding: 4px;
+}
+
+nav li a {
+	float: left;
+	color: rgba(0,0,0,0);
+}
+
+nav:hover a {
+	color: #9BF;
+}
+
+nav a:hover {
+	color: #555;
+}
+
+nav li a:after {
+	content: '';
+	float: right;
+	width: 9px;
+	height: 15px;
+	-moz-border-radius: 4px/9px 9px 5px 5px;
+	-webkit-border-radius: 4px/9px 9px 5px 5px;
+	border-radius: 4px/9px 9px 5px 5px;
+	background: #9bf;
+	margin: 4px;
+}
+
+article,
+footer {
+	padding-left: 35em;
+}
+
+section,
+footer p {
+	max-width: 30em;
+	padding: 1em 3em;
+	margin: 0 auto 5em;
+}
+
+section {
+	background: #fff;
+	border: 2px solid #eee;
+}
+
+h1,
+footer p {
+	text-align: center;
+}
+
