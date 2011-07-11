@@ -1,0 +1,126 @@
+/* CSS1K entry
+ * "Turn around" by Bas van Dorst (http://www.basvandorst.nl, http://www.twitter.com/basvandorst)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
+body{
+	background: #DDD;
+	font: 12px/30px Helvetica;
+	color:#333;
+	width:870px;
+	margin:0 auto;
+	
+}
+* {
+	-webkit-transition: all 2s;
+	-moz-transition: all 2s; 
+	-ms-transition: all 2s; 
+	-o-transition: all 2s; 
+	transition: all 2s; 
+}
+
+h1 {
+	padding:10px 0px 0px 70px;
+	color: #fff;
+	clear:left;
+	width: 150px;
+	margin:0 auto 120px;
+	-webkit-transform:  scale(-4);
+	-moz-transform:  scale(-4);
+	-ms-transform:  scale(-4);
+	-o-transform:  scale(-4);
+	transform:  scale(-4);
+	-webkit-box-shadow: #666 0px 0px 3px;
+	box-shadow: #666 0px 0px 3px;
+	border:solid 2px #fff;
+	border-radius: 30px;
+}
+*:hover h1{
+	-webkit-transform: scale(4);
+	-moz-transform: scale(4);
+	-ms-transform: scale(4);
+	-o-transform: scale(4);
+	transform: scale(4); 
+}
+
+h2 {
+	clear:left;
+	text-align:center;
+}
+ul {
+	list-style-type:none;
+	padding:0;
+}
+ul li {
+	margin:5px;
+	float:left;
+	width:60px;
+	height:60px;
+	line-height:60px;
+	-webkit-box-shadow: #666 0px 2px 3px;
+	box-shadow: #666 0px 2px 3px;
+	border-radius: 50px;
+	overflow:hidden;
+	text-align:center;
+	border:solid 4px #FFF;
+}
+ul li, h1 {
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#66B1E8), to(#3C85BC));
+	background: -webkit-linear-gradient(#66B1E8, #3C85BC);
+	background: -moz-linear-gradient(#66B1E8, #3C85BC);
+	background: -ms-linear-gradient(#66B1E8, #3C85BC);
+	background: -o-linear-gradient(#66B1E8, #3C85BC);
+	background: linear-gradient(#66B1E8, #3C85BC);
+}
+ul li:hover{
+	-webkit-transform: rotate(720deg) scale(5);
+	-moz-transform: rotate(720deg) scale(5);
+	-ms-transform: rotate(720deg) scale(5);
+	-o-transform: rotate(720deg) scale(5);
+	transform: rotate(720deg) scale(5);
+}
+
+section {
+	float:left;
+	width:50%;	
+	-webkit-transform: rotate(-180deg);
+	-moz-transform: rotate(-180deg); 
+	-ms-transform: rotate(-180deg); 
+	-o-transform: rotate(-180deg); 
+	transform: rotate(-180deg);  
+}
+section+section {
+	-webkit-transform: rotate(180deg); 
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg); 
+	-o-transform: rotate(180deg); 
+	transform: rotate(180deg);  
+}
+section:hover {
+	-webkit-transform: rotate(0deg); 
+	-moz-transform: rotate(0deg); 
+	-ms-transform: rotate(0deg); 
+	-o-transform: rotate(0deg); 
+	transform: rotate(0deg); 
+}
+
+nav a {
+	color:#fff;
+}
+a {
+	color: #1CE;
+	text-decoration:none;
+}
+
+footer {
+	position:absolute;
+	height:30px;
+	top:80px;
+	overflow:hidden; 
+}
+footer:before {
+	content:"↓"; 
+	font-size:25px;
+}
+
+footer:hover {
+	height:80px;
+}
