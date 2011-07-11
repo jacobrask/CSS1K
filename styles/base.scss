@@ -38,6 +38,7 @@ ol li {
   list-style: decimal;
 }
 
+// Some base classes to extend
 .content-link {
   color: #000;
   font-weight: bold;
@@ -46,6 +47,9 @@ ol li {
     text-decoration: underline;
   }
 }
+.group {
+  @include clearfix;
+}
 
 nav {
   &:hover ul {
@@ -53,6 +57,7 @@ nav {
   }
   h2 {
     color: #777;
+    cursor: pointer;
     font-size: 13px;
     font-weight: normal;
     padding: 10px 20px;
@@ -64,7 +69,7 @@ nav {
     }
   }
   ul {
-    @include clearfix;
+    @extend .group;
     display: none;
     position: absolute;
     left: 0;
@@ -102,7 +107,7 @@ nav {
 }
 
 [role] {
-  @include clearfix;
+  @extend .group;
   header {
     color: #b3b3b3;
     margin-bottom: 75px;
