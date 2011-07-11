@@ -13,4 +13,4 @@ line_comments         = false
 preferred_syntax      = :scss
 
 # CSS output style - :nested, :expanded, :compact, or :compressed
-output_style          = :expanded
+output_style          = :compressed
