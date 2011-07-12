@@ -4,7 +4,7 @@
 
 body {
 	background: #fafafa;
-	color: #656565;
+	color: #666;
 	text-shadow: #fff 1px 1px 0;
 	font: 14px Trebuchet, Sans-Serif;
 	margin: 0;
@@ -34,17 +34,23 @@ h1, h2, a {
 h1 {
 	background: #558ed5;
 	color: #fff;
-	text-shadow: 0 0 0;
+	text-shadow: 1px 1px 1px #333;
 	text-align: center;
 	width: 270px;
 	-webkit-box-shadow: 0 4px 4px -2px #aaa;
-	-moz-box-shadow: 0 4px 4px -2px #aaa;
-	-ms-box-shadow: 0 4px 4px -2px #aaa;
 	box-shadow: 0 4px 4px -2px #aaa;
-	padding: 2px 3px;
-	-webkit-border-radius: 3px
-	-moz-border-radius: 3px
+	padding: 5px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
 	border-radius: 3px
+}
+
+nav {
+	opacity: 0.5;
+}
+
+nav:hover {
+	opacity: 1;
 }
 
 nav h2 {
@@ -64,13 +70,25 @@ li a:nth-child(2) {
 
 li a:nth-child(2):hover {
 	color: #558ed5;
-	background: transparent;
+	background: #fafafa;
 	text-shadow: 0 0 0;
 	border-bottom: 0
 }
 
 li a:nth-child(2):before {
 	content: "- "
+}
+
+header p {
+	font-style: italic
+}
+
+header p:before {
+	content: "{ "
+}
+
+header p:after {
+	content: " }"
 }
 
 a {
@@ -89,7 +107,7 @@ p:last-child {
 footer {
 	position: absolute;
 	top: 960px;
-	left: 100px;
+	left: 430px;
 	font-style: italic;
-	color: #ccc
+	color: #ccc;
 }

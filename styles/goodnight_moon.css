@@ -1,0 +1,139 @@
+/* CSS1K entry
+ * "Goodnight Moon" by Dethe Elza (http://livingcode.org/)
+ * "Starry Night" pattern originally by  Lea Verou ( http://leaverou.me/css3patterns/#starry-night) (heavily modified for brevity)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
+
+html, body{
+    height: 100%;
+}
+body{
+    background:#000;
+    background-image:
+        -webkit-radial-gradient(#FFF 1px, transparent 8px), 
+        -webkit-radial-gradient(#CCC 1px, transparent 4px), 
+        -webkit-radial-gradient(#FFF 1px, transparent 2px);
+    background-image:
+        -moz-radial-gradient(#FFF 1px, transparent 4px), 
+        -moz-radial-gradient(#CCC 1px, transparent 3px), 
+        -moz-radial-gradient(#FFF 1px, transparent 3px);
+    background-image:
+        -o-radial-gradient(#FFF 1px, transparent 4px), 
+        -o-radial-gradient(#CCC 1px, transparent 3px), 
+        -o-radial-gradient(#FFF 1px, transparent 3px);
+    background-image:
+        radial-gradient(#FFF 1px, transparent 4px), 
+        radial-gradient(#CCC 1px, transparent 3px), 
+        radial-gradient(#FFF 1px, transparent 3px);
+    background-size: 250px 250px, 175px 175px, 300px 300px; 
+    font-size: 10pt;
+    text-align: center;
+}
+
+header, section, footer{
+    position: absolute;
+    background:#FCF6CF;
+    border-radius: 99em;
+    -webkit-box-shadow: 10px 10px 50px #000 inset;
+    box-shadow: 10px 15px 50px #000 inset;
+    margin: 1em;
+}
+
+section:hover{
+    z-index: 4;
+}
+
+h1,h2{
+    font-size: 14pt;
+}
+
+nav{
+    position: relative;
+    height: 10em;
+    overflow: hidden;
+}
+
+nav h2{
+    position: absolute;
+    margin: 0 0 0 2em;
+    background: #FCF6CF;
+    z-index: 2;
+}
+
+ul, ol{
+    text-align: left;
+}
+
+ul li{
+    margin-top: .6em;
+}
+
+ul li a{
+    display: block;
+}
+
+@-moz-keyframes scrolling {
+	from {
+	    top: 1em;
+	}
+	to {
+	   top: -100em;
+	}
+}
+
+@-webkit-keyframes scrolling{
+    from {
+        top: 0em;
+    }
+    to{
+        top: -100em;
+    }
+}
+
+@keyframes scrolling{
+    from {
+        top: 0em;
+    }
+    to{
+        top: -100em;
+    }
+}
+
+ul{
+    position: absolute;
+    list-style: none;
+	-moz-animation: scrolling 60s linear infinite;
+    -webkit-animation: scrolling 60s linear infinite;
+    animation: scrolling 60s linear infinite;
+}
+
+header{
+    width: 14em;
+    height: 14em;
+    padding: 2em;
+    right: 45%;
+    top: 66%;
+    z-index: 2;
+}
+
+article header{
+    left: 45%;
+    top: 0;
+}
+
+section{
+    width: 27em;
+    height: 27em;
+    padding: 4em;
+}
+
+section:nth-of-type(2){
+    right: 0;
+    bottom: 0;
+}
+
+footer{
+    width: 7em;
+    height:7em;
+    padding: 1em;
+    bottom: 0;
+}
