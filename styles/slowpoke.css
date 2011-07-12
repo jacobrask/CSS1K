@@ -33,12 +33,12 @@ nav a {
     line-height: 30px;
     height: 30px;
     opacity: 1;
-    -moz-transition: opacity linear .2s 1s;
-    -o-transition: opacity linear .2s 1s;
-    transition: opacity linear .2s 1s;
+    -moz-transition: opacity linear .2s 2s;
+    -o-transition: opacity linear .2s 2s;
+    transition: opacity linear .2s 2s;
     -webkit-backface-visibility: hidden;
-    -webkit-transition: all linear .2s 1s;
-    transition: all linear .2s 1s;
+    -webkit-transition: all linear .2s 2s;
+    transition: all linear .2s 2s;
     backface-visibility: hidden;
     color: #000;
     -moz-box-shadow: rgba(0, 0, 0, .2) 1px 1px 1em;
