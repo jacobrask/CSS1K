@@ -1,0 +1,117 @@
+/* CSS1K entry
+ * "Yvelious style" by Stas Levyshev (http://yvelious.com/)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	margin:0 100px;
+	background:#ABE9F7;
+	font:12px/1.5 Arial;
+	color:#666;
+}
+h2, h1 {
+	text-align:center
+}
+h1 {
+	font-size:120px;
+	color:#fff
+}
+a {
+	color:#294C7B;
+}
+ul {
+	display:none
+}
+li {
+	margin-left:36px
+}
+
+/* header */
+
+header {
+	text-align:center
+}
+
+article header {
+	margin:0 220px
+}
+
+
+/* nav */
+
+nav:hover ul {
+	padding-bottom:28px;
+	bottom:0;
+	display:block;
+	position:absolute
+}
+
+nav {
+	position:absolute;
+	
+	bottom:28px;
+	right:0;
+	left:0
+}
+nav li {
+	display:inline;
+	margin:0;
+	padding:0 6px;
+	font-size:.9em;
+}
+/* section */
+
+section {
+	float:left;
+	width:50%;
+	margin-top:80px ;
+
+}
+section:last-child {
+	float:right;
+}
+section h2 {
+	position:relative;
+	font-size:22px;
+	background:#D3F2F9;
+	line-height:100px;
+	border-radius:30px;
+}
+section:hover h2 {
+	background:#fff;
+}
+section p, ol {
+	display:none;
+	width:194%;
+	margin-top:-68px;
+	padding:0 3% 3%;
+	padding-top:80px;
+		
+width:auto\9;
+}
+
+section p:last-child {
+	padding-bottom:18px;
+}
+section:hover p, section:hover ol {
+	display:block;
+	background:#fff;
+	border-radius:30px;
+
+}
+section:last-child:hover p, section:hover ol {
+	margin-left:-100%;
+}
+/* footer */
+
+footer {
+	position:fixed;
+	left:0;
+	right:0;
+	bottom:0;
+	text-align:center;
+	background:#fff;
+	border-radius:30px 30px 0 0;
+}
