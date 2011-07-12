@@ -30,7 +30,7 @@ li {
 
 /* header */
 
-header, footer {
+header {
 	text-align:center
 }
 
@@ -42,14 +42,15 @@ article header {
 /* nav */
 
 nav:hover ul {
-	bottom:28px;
+	padding-bottom:28px;
+	bottom:0;
 	display:block;
 	position:absolute
 }
 
 nav {
 	position:absolute;
-	text-align:center;
+	
 	bottom:28px;
 	right:0;
 	left:0
@@ -87,7 +88,7 @@ section p, ol {
 	margin-top:-68px;
 	padding:0 3% 3%;
 	padding-top:80px;
-
+		
 width:auto\9;
 }
 
