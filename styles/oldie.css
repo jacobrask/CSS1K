@@ -1,0 +1,125 @@
+/* CSS1K entry
+ * "Oldie" by Alexander Mankuta (http://pointlessone.org)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
+
+body {
+  background: #42322D;
+  font-family: Georgia, serif;
+  color: #42322D;
+  margin: 40px;
+}
+
+a {
+  color: #D6642C;
+}
+
+nav {
+  height: 0;
+}
+nav:hover {
+  height: auto;
+}
+nav h2 {
+  position: relative;
+  top: -20px;
+  font-size: 16px;
+}
+
+nav ul {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+}
+
+body > * {
+  width: 900px;
+  margin: 0 auto 20px;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+
+  background: -moz-linear-gradient(right,
+      transparent 76px,
+      #922718 76px, #922718 87px,
+      transparent 87px, transparent),
+    -moz-linear-gradient(bottom,
+      transparent 76px,
+      #922718 76px, #922718 87px,
+      transparent 87px, transparent);
+  background: -webkit-linear-gradient(right,
+      transparent 76px,
+      #922718 76px, #922718 87px,
+      transparent 87px, transparent),
+    -webkit-linear-gradient(bottom,
+      transparent 76px,
+      #922718 76px, #922718 87px,
+      transparent 87px, transparent);
+  background: -o-linear-gradient(right,
+      transparent 76px,
+      #922718 76px, #922718 87px,
+      transparent 87px, transparent),
+    -o-linear-gradient(bottom,
+      transparent 76px,
+      #922718 76px, #922718 87px,
+      transparent 87px, transparent);
+  background: linear-gradient(right,
+      transparent 76px,
+      #922718 76px, #922718 87px,
+      transparent 87px, transparent),
+    linear-gradient(bottom,
+      transparent 76px,
+      #922718 76px, #922718 87px,
+      transparent 87px, transparent);
+}
+
+body > *:before, body > *:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+body > *:before {
+  right: 4px;
+  bottom: 4px;
+  background-color: #F5E5D5;
+  border-radius: 10px;
+}
+
+body > *:after {
+  background: -moz-linear-gradient(135deg,
+      transparent 30px,
+      #799697 30px, #799697 40px,
+      #415D5E 40px, #415D5E 46px,
+      #F5E5D5 46px, #F5E5D5 51px,
+      #BF402C 51px, #BF402C 61px,
+      transparent 61px, transparent);
+  background: -webkit-linear-gradient(135deg,
+      transparent 30px,
+      #799697 30px, #799697 40px,
+      #415D5E 40px, #415D5E 46px,
+      #F5E5D5 46px, #F5E5D5 51px,
+      #BF402C 51px, #BF402C 61px,
+      transparent 61px, transparent);
+  background: -o-linear-gradient(135deg,
+      transparent 30px,
+      #799697 30px, #799697 40px,
+      #415D5E 40px, #415D5E 46px,
+      #F5E5D5 46px, #F5E5D5 51px,
+      #BF402C 51px, #BF402C 61px,
+      transparent 61px, transparent);
+  background: linear-gradient(135deg,
+      transparent 30px,
+      #799697 30px, #799697 40px,
+      #415D5E 40px, #415D5E 46px,
+      #F5E5D5 46px, #F5E5D5 51px,
+      #BF402C 51px, #BF402C 61px,
+      transparent 61px, transparent);
+}
+
+body > header {
+  overflow: hidden;
+}
