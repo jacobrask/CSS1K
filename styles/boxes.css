@@ -6,7 +6,7 @@ body {
 	color:#333;
 	font:16px/24px Helvetica,Arial,sans-serif;
 	margin:0 auto;
-	padding:130px
+	padding:90px
 }
 a {
 	color:#fa5232
@@ -16,7 +16,6 @@ a:hover {
 }
 header {
 	background:rgba(0,0,0,.7);
-	color:#ccc;
 	position:fixed;
 	top:0;
 	left:0;
@@ -25,7 +24,7 @@ header {
 	z-index:2
 }
 h1, h2 {
-	font-family:Georgia,times,serif
+	font:bold 30px/25px Georgia,times,serif
 }
 p {
 	margin:1em 0 1.5em
@@ -38,66 +37,66 @@ li {
 	list-style:decimal;
 	margin:0 0 8px
 }
-article {
-	margin:-90px 0 0
+article section h2, nav h2, nav {
+	position:absolute
 }
 article section, nav ul {
 	background:#fff;
 	position:relative;
 	margin:0 0 60px;
-	padding:60px 50px 50px
+	padding:5em 2em 1em
 }
 article section h2, article header {
 	background:rgba(250,82,50,.8);
 	color:#fff;
 	text-align:center;
-	position:relative;
-	width:auto;
 	top:-10px;
 	left:10px;
 	right:auto;
 	padding:15px 20px
 }
 article header {
+	position:relative;
 	display:inline-table;
 	text-align:left;
-	left:0
+	left:0;
+	z-index:1
 }
 nav {
-	overflow-y:hidden;
 	right:0;
 	top:0;
-	height:90px;
-	z-index:4
+	width:250px;
+	z-index:9
 }
-article section h2, nav h2, nav:hover {
-	position:absolute
+nav ul {
+	opacity:0;
+	padding:20px 5px 10px 30px;
+	overflow-y:scroll;
 }
-nav:hover {
+nav ul:hover {
 	height:500px;
-	overflow-y:scroll
+	opacity:1
 }
 nav h2 {
 	width:50px;
 	height:50px;
+	padding:15px;
 	background:rgba(249,101,73,.8);
 	color:#fff;
-	font-size:12px;
 	text-align:center;
-	right:5px;
-	top:-5px;
-	padding:15px;
+	right:7px;
 	-webkit-border-radius:60px;
 	-moz-border-radius:60px;
-	border-radius:60px;
-	z-index:5
+	border-radius:60px
 }
-nav ul {
-	font-size:11px;
-	margin:95px 0 5px 5px
+nav h2, nav ul {
+	font-size:11px
 }
 nav ul li {
 	margin:0
+}
+header, ul a + a {
+	color:#ccc
 }
 article section, nav ul, article header, nav ul, article section h2 {
 	-webkit-border-radius:6px;
