@@ -1,5 +1,5 @@
 /* CSS1K entry  
- * "BundlerInspired" by PhilG (none)
+ * "BundlerInspired" by PhilG (https://github.com/PhilG)
  * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
 body {
 	background: #C6E7EC;
@@ -38,7 +38,23 @@ nav {
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
+	height: 50px;
+	overflow: hidden;
+}
+nav h2:after {
+	content: '←';
+	margin-left: 5px;
+}
+nav:hover h2:after {
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
 
+nav:hover {
+	height: auto;
+	overflow: visible;
 }
 
 nav h2 {
