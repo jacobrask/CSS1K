@@ -1,0 +1,89 @@
+/* CSS1K entry  
+ * "BundlerInspired" by PhilG (https://github.com/PhilG)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
+body {
+	background: #C6E7EC;
+	color: #043042;
+	font: 16px Helvetica, Arial, sans-serif;
+	line-height: 1.6em;
+	margin: auto;
+	width: 590px;
+}
+
+a {
+	color: #14173a;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	border-bottom: 1px #14173a dashed;
+}
+
+header h1 {
+	font: 144px Georgia;
+	font-weight: bolder;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	text-shadow: #f3f3f3 2px 2px 0px;
+}
+
+nav {
+	background: rgba(0, 0, 0, 0.0975);
+	font-size: 75%;
+	left: 30px;
+	padding: 0px 15px 0px 0px;
+	position: absolute;
+	top: 35px;
+	border-radius: 5px;
+	height: 50px;
+	overflow: hidden;
+}
+nav h2:after {
+	content: '←';
+	margin-left: 5px;
+}
+nav:hover h2:after {
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+nav:hover {
+	height: auto;
+	overflow: visible;
+}
+
+nav h2 {
+	text-align: center;
+}
+
+nav ul {
+	list-style: none;
+}
+
+article h2 {
+	border-bottom: 2px solid #505050;
+	padding-bottom: 5px;
+}
+
+section {
+	background: rgba(0, 0, 0, 0.0975);
+	margin-bottom: 40px;
+	padding: 10px 30px 10px 30px;
+	border-radius: 5px;
+}
+
+section ol {
+	background: black;
+	color: #fff;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-radius: 5px;
+}
+
+section ol a {
+	color: #4d6aff;
+}

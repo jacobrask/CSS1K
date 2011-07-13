@@ -83,11 +83,11 @@ nav h2 {
 article,
 footer,
 nav {
-    -webkit-transform: skewX(-2deg)
-    -moz-transform: skewX(-2deg)
-    -o-transform: skewX(-2deg)
-    -ms-transform: skewX(-2deg)
-    transform: skewX(-2deg)
+    -webkit-transform: skewX(-2deg);
+    -moz-transform: skewX(-2deg);
+    -o-transform: skewX(-2deg);
+    -ms-transform: skewX(-2deg);
+    transform: skewX(-2deg);
 }
 article,
 footer {
