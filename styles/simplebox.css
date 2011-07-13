@@ -35,6 +35,7 @@ text-align:right;
 }
 
 header nav {
+-webkit-box-shadow:0 0 60px #ccc;
 box-shadow:0 0 60px #ccc;
 background:#f3f3f3;
 position:absolute;
@@ -78,6 +79,7 @@ float:left;
 }
 
 section {
+-webkit-box-shadow:0 0 60px #C1C1C1;
 box-shadow:0 0 60px #C1C1C1;
 border-radius:50px 0 50px;
 border:1px solid #ccc;
