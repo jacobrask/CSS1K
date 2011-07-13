@@ -11,12 +11,13 @@ body {
     background:         linear-gradient(top, #fff, #dce5f2);
     counter-reset: l;
     overflow-x: hidden;
+    margin: 0;
 }
 
 h1 {
-    font: 800 10em/1.45 Palatino,serif;
+    font: 800 10em/1.4 Palatino,serif;
     color: #98a2b1;
-    text-shadow: .7mm .7mm .1mm #fff;
+    text-shadow: .9mm .7mm .1mm #fff;
     left: -.7%;
 }
 
@@ -33,16 +34,19 @@ h1:before, *:after {
 
 h1, article {
     margin: 0 auto;
-    max-width: 15cm;
+    width: 15cm;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
 }
 
 h2 {
     font-size: 120%;
-    display: inline-block;
 }
 
 h2, ol li {
     border-bottom: 1mm solid #ccd;
+    display: inline-block;
 }
 
 nav {
@@ -50,8 +54,7 @@ nav {
 }
 
 nav > *, footer {
-    margin: 1mm -5mm;
-    padding: 2.5mm 1cm;
+    padding: 0 5mm;
     font-weight: 800
 }
 
@@ -78,7 +81,7 @@ article *:after {
     z-index: -1;
     user-select: none;
     font: 400 10em sans-serif;
-    text-shadow: 1em 1em .05em #e0e9f2;
+    text-shadow: 1em 1em .04em #e0e9f2;
 }
 
 *:nth-child(2n):after {
@@ -94,7 +97,7 @@ li {
 }
 
 ol li {
-    margin: 0 -3% 2%;
+    margin: 0 0 2% -3%;
 }
 
 h1:before, *:after, li:before {
@@ -105,5 +108,5 @@ ol li:before {
     content: counter(l);
     counter-increment: l;
     font: 800 150%/1 sans-serif;
-    left: -4.5%;
+    left: -7mm;
 }
