@@ -1,0 +1,79 @@
+body {
+  font-family: serif;
+}
+h1:before, h1:after {
+  content : '';
+  display : block;
+  border-style: solid; 
+  border-color: #ff0 transparent;
+  position : absolute;
+  bottom : -30px;
+}
+h1:before {
+  border-width: 30px 0 0 40px; 
+}
+h1:after {
+  border-width: 30px 40px 0 0 ; 
+  right: 0;
+}
+h1 {
+  position : relative;
+  background-color : #00f;
+  margin : auto;
+  text-align : center;
+  top : 50px;
+  width : 800px;
+}
+nav {
+  border : 1px solid yellow;
+  width : 200px;
+  height : 250px;
+  float : right;
+  overflow : auto;
+}
+article {
+  background: #fff;
+  padding : 20px;
+  height : 760px;
+  width : 680px;
+  margin : -20px auto;
+  box-shadow : 0px 0px 5px #000;
+}
+article > *{
+  background: #e66119;
+  width : 300px;
+  margin : 85px 10px 10px;
+  padding : 10px;
+  float : left;
+  -webkit-transform: rotate(3deg);
+}
+article > *:hover{
+  -webkit-transform: rotate(0deg);
+  -webkit-transition : all 0.2s ease-in-out;
+}
+article header{
+  position : absolute;
+}
+article section{
+  margin-top : 265px;
+  -webkit-transform: rotate(-2deg);
+}
+article section:nth-child(3){
+  margin-top : 85px;
+}
+footer {
+  border: 1px dashed #0000ff;
+  clear : both;
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {     
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {     
+  border-radius: 10px;
+  background : red;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
