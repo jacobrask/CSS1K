@@ -30,7 +30,8 @@ article {
 }
 
 nav ul {
-  margin: 0 auto 75px 250px;
+  margin: 75px 50% 75px auto;
+  padding-right: 85px;
   width: 450px;
 }
 
