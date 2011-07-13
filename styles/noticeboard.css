@@ -1,9 +1,7 @@
 body {
-  font-family: serif;
   background: #b38000;
-  color : #111;
 }
-body a {
+a {
   text-decoration : none;
   color : #f10;
 }
@@ -18,12 +16,11 @@ nav {
   width : 230px;
   height : 550px;
   margin-top : 60px;
-  border-radius : 5px;
   float : right;
   padding : 9px;
   overflow : auto;
   background : #fefefe;
-  box-shadow : 0 0 9px #000;
+  box-shadow : 0px 0px 9px #000;
 }
 nav li a:nth-child(2):before{
   content : ' - ';
@@ -35,16 +32,20 @@ article {
   height : 900px;
   width : 680px;
   margin : -20px auto;
-  box-shadow : 0px 0px 10px #000;
+  box-shadow : 0px 0px 9px #000;
 }
 article > *{
   background: #fe0;
   box-shadow : 1px 3px 5px #999;
   width : 300px;
-  margin : 85px 10px 10px;
+  margin : 85px 9px 9px;
   padding : 10px;
   float : left;
   -webkit-transform: rotate(3deg);
+}
+article > *:hover{
+  -webkit-transition : all 0.2s ease-in;
+  -webkit-transform: rotate(0deg);
 }
 p, ol, ul {
   margin-top : 50px;
@@ -54,7 +55,7 @@ article header{
 }
 article section{
   margin-top : 265px;
-  -webkit-transform: rotate(-2deg);
+  -webkit-transform: rotate(-1deg);
 }
 article h2:before{
   content : '●';
@@ -72,10 +73,7 @@ footer {
 ::-webkit-scrollbar {
   width: 9px;
 }
-::-webkit-scrollbar-track {     
-  -webkit-box-shadow: inset 0 0 6px #333;
-}
 ::-webkit-scrollbar-thumb {     
-  border-radius: 10px;
-  -webkit-box-shadow: 0 0 6px #555;
+  background: red;
+  border-radius : 3px;
 }
