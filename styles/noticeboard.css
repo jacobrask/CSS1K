@@ -23,6 +23,7 @@ nav {
   padding : 9px;
   overflow : auto;
   background : #fefefe;
+  -webkit-box-shadow : 0px 0px 9px #000;
   box-shadow : 0px 0px 9px #000;
 }
 nav li a:nth-child(2):before{
@@ -35,20 +36,33 @@ article {
   height : 900px;
   width : 680px;
   margin : -20px auto;
+  -webkit-box-shadow : 0px 0px 9px #000;
   box-shadow : 0px 0px 9px #000;
 }
 article > *{
   background: #fe0;
+  -webkit-box-shadow : 1px 3px 5px #999;
   box-shadow : 1px 3px 5px #999;
   width : 300px;
   margin : 85px 9px 9px;
   padding : 10px;
   float : left;
   -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  transform: rotate(3deg);
 }
 article > *:hover{
   -webkit-transition : all 0.2s ease-in;
+  -moz-transition : all 0.2s ease-in;
+  -o-transition : all 0.2s ease-in;
+  transition : all 0.2s ease-in;
   -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 p, ol, ul {
   margin-top : 50px;
@@ -59,6 +73,10 @@ article header{
 article section{
   margin-top : 265px;
   -webkit-transform: rotate(-1deg);
+  -moz-transform: rotate(-1deg);
+  -ms-transform: rotate(-1deg);
+  -o-transform: rotate(-1deg);
+  transform: rotate(-1deg);
 }
 article h2:before{
   content : '●';
