@@ -1,9 +1,9 @@
 ﻿body {
     background: #000;
-    -webkit-background: repeating-linear-gradient(-45deg,#000,#0C0C0C.1%,#000.15%);
-    -moz-background: repeating-linear-gradient(-45deg,#000,#0C0C0C.1%,#000.15%);
-    -ms-background: repeating-linear-gradient(-45deg,#000,#0C0C0C.1%,#000.15%);
-    -o-background: repeating-linear-gradient(-45deg,#000,#0C0C0C.1%,#000.15%);
+    background: -webkit-repeating-linear-gradient(-45deg,#000,#0C0C0C.1%,#000.15%);
+    background: -moz-repeating-linear-gradient(-45deg,#000,#0C0C0C.1%,#000.15%);
+    background: -ms-repeating-linear-gradient(-45deg,#000,#0C0C0C.1%,#000.15%);
+    background: -o-repeating-linear-gradient(-45deg,#000,#0C0C0C.1%,#000.15%);
     background: repeating-linear-gradient(-45deg,#000,#0C0C0C.1%,#000.15%);
     color: #fff;
     font: normal 1.2em/1.8em Verdana;
@@ -83,6 +83,10 @@ nav h2 {
 article,
 footer,
 nav {
+    -webkit-transform: skewX(-2deg)
+    -moz-transform: skewX(-2deg)
+    -o-transform: skewX(-2deg)
+    -ms-transform: skewX(-2deg)
     transform: skewX(-2deg)
 }
 article,
