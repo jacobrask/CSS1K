@@ -6,6 +6,10 @@ html,body,h1,h2,nav,p,a,article,section,header,footer{
     padding:0;
     border-width:0;
 }
+html,body{
+    width:100%;
+    height:100%;
+}
 html{
     font:13pt "Helvetica Neue",Helvetica,sans-serif;
     background:#EFEFEF;
@@ -18,7 +22,10 @@ html{
 header h1{
     display:none;
 }
-article h2,nav h2{
+nav h2:after{
+    content:" for CSS1K";
+}
+article h2,nav h2,footer{
     color:#717880;
     font-size:18px;
     line-height:42px;
@@ -69,4 +76,7 @@ ul a:first-child{
 ul li:hover,ul li:hover a{
     background:blue;
     color:white;
+}
+footer:after{
+    content:"iPad style written by Ad@m";
 }
