@@ -7,7 +7,7 @@ body a {
   text-decoration : none;
   color : #f10;
 }
-h1 {
+h1, h2 {
   text-shadow : 0px 1px #999;
   position : relative;
   margin : auto;
@@ -32,7 +32,7 @@ nav li a:nth-child(2):before{
 article {
   background : #fefefe;
   padding : 20px;
-  height : 760px;
+  height : 900px;
   width : 680px;
   margin : -20px auto;
   box-shadow : 0px 0px 10px #000;
@@ -46,6 +46,9 @@ article > *{
   float : left;
   -webkit-transform: rotate(3deg);
 }
+p, ol, ul {
+  margin-top : 50px;
+}
 article > *:hover{
   -webkit-transform: rotate(0deg);
   -webkit-transition : all 0.2s ease-in-out;
@@ -56,6 +59,11 @@ article header{
 article section{
   margin-top : 265px;
   -webkit-transform: rotate(-2deg);
+}
+article h2:before{
+  content : '●';
+  position : absolute;
+  margin : -25px 140px;
 }
 article section:nth-child(3){
   margin-top : 85px;
