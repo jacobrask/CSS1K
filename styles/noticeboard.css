@@ -1,24 +1,33 @@
 body {
   font-family: serif;
-  background: -webkit-gradient(
-    linear, 
-    left top, 
-    left bottom, 
-    color-stop(0%,#fff), 
-    color-stop(100%, #e5e5e5));
+  background: #b38000;
+  color : #111;
+}
+body a {
+  text-decoration : none;
+  color : #f10;
 }
 h1 {
+  text-shadow : 0px 1px #999;
   position : relative;
   margin : auto;
   text-align : center;
   top : 50px;
 }
 nav {
-  border : 1px solid yellow;
-  width : 200px;
-  height : 250px;
+  width : 230px;
+  height : 550px;
+  margin-top : 60px;
+  border-radius : 5px;
   float : right;
+  padding : 10px;
   overflow : auto;
+  background : #fefefe;
+  box-shadow : 0px 0px 10px #000;
+}
+nav li a:nth-child(2):before{
+  content : ' - ';
+  color : #000;
 }
 article {
   background : #fefefe;
@@ -26,10 +35,11 @@ article {
   height : 760px;
   width : 680px;
   margin : -20px auto;
-  box-shadow : 0px 0px 5px #000;
+  box-shadow : 0px 0px 10px #000;
 }
 article > *{
-  background: #e66119;
+  background: #fe0;
+  box-shadow : 1px 3px 5px #999;
   width : 300px;
   margin : 85px 10px 10px;
   padding : 10px;
@@ -51,8 +61,9 @@ article section:nth-child(3){
   margin-top : 85px;
 }
 footer {
-  border: 1px dashed #0000ff;
   clear : both;
+  margin-top : 50px;
+  text-align : center;
 }
 ::-webkit-scrollbar {
   width: 12px;
@@ -63,6 +74,5 @@ footer {
 }
 ::-webkit-scrollbar-thumb {     
   border-radius: 10px;
-  background : red;
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
 }
