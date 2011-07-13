@@ -1,0 +1,100 @@
+/* CSS1K entry
+ * "Notice Board" by Nihar Sawant (htt://www.about.me/niharsawant)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
+body {
+  background: #b38000;
+}
+a {
+  text-decoration : none;
+  color : #f10;
+}
+h1, h2 {
+  text-shadow : 0px 1px #999;
+  position : relative;
+  margin : auto;
+  text-align : center;
+  top : 50px;
+}
+nav {
+  width : 230px;
+  height : 550px;
+  margin-top : 60px;
+  float : right;
+  padding : 9px;
+  overflow : auto;
+  background : #fefefe;
+  -webkit-box-shadow : 0px 0px 9px #000;
+  box-shadow : 0px 0px 9px #000;
+}
+nav li a:nth-child(2):before{
+  content : ' - ';
+  color : #000;
+}
+article {
+  background : #fefefe;
+  padding : 20px;
+  height : 900px;
+  width : 680px;
+  margin : -20px auto;
+  -webkit-box-shadow : 0px 0px 9px #000;
+  box-shadow : 0px 0px 9px #000;
+}
+article > *{
+  background: #fe0;
+  -webkit-box-shadow : 1px 3px 5px #999;
+  box-shadow : 1px 3px 5px #999;
+  width : 300px;
+  margin : 85px 9px 9px;
+  padding : 10px;
+  float : left;
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+article > *:hover{
+  -webkit-transition : all 0.2s ease-in;
+  -moz-transition : all 0.2s ease-in;
+  -o-transition : all 0.2s ease-in;
+  transition : all 0.2s ease-in;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+p, ol, ul {
+  margin-top : 50px;
+}
+article header{
+  position : absolute;
+}
+article section{
+  margin-top : 265px;
+  -webkit-transform: rotate(-1deg);
+  -moz-transform: rotate(-1deg);
+  -ms-transform: rotate(-1deg);
+  -o-transform: rotate(-1deg);
+  transform: rotate(-1deg);
+}
+article h2:before{
+  content : '●';
+  position : absolute;
+  margin : -25px 140px;
+}
+article section:nth-child(3){
+  margin-top : 85px;
+}
+footer {
+  clear : both;
+  margin-top : 50px;
+  text-align : center;
+}
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-thumb {     
+  background: red;
+  border-radius : 3px;
+}
