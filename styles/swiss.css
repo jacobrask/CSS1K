@@ -2,14 +2,22 @@
  * "Swiss" by Chris Lee (http://chrsl.net)
  * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
 
+body, nav h2 {
+	margin: 0;
+	padding: 10px 40px;
+}
+
 body {
-	background: #c30 ;
+	background: #c30;
 	color: #fafafa;
 	font: 14px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
-	margin: 0;
 	padding: 60px 0 10px;
-	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+	text-shadow: 0 1px 3px rgba(0, 0, 0, .3);
 	width: 800px;
+}
+
+ul, ol {
+	padding: 0 0 0 40px;
 }
 
 a {
@@ -21,37 +29,37 @@ a:hover {
 	text-decoration: underline;
 }
 
-ul, ol {
-	padding: 0 0 0 40px;
-}
-
 nav {
 	background: #fff;
-	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-	-ms-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
 	color: #444;
 	font-size: 12px;
 	position: absolute;
+	text-shadow: none;
 	top: 0;
 	width: 100%;
-	text-shadow: none;
-}
-
-nav h2 {
-	margin: 0;
-	padding: 10px 40px;
 }
 
 nav ul {
 	display: none;
 	list-style: none;
-	padding-bottom: 10px;
+	max-height: 300px;
+	overflow-y: scroll;
+}
+
+nav ul, section {
+	margin: 0 0 20px;
 }
 
 nav:hover ul {
 	display: block;
+}
+
+nav li {
+	float: left;
+	margin-right: 10px;
+	width: 190px;
 }
 
 nav a {
@@ -60,48 +68,37 @@ nav a {
 
 nav a:first-child {
 	color: #888;
-	font-weight: bold;
+	font-weight: 900;
 	margin-right: 5px;
 }
 
 h1 {
 	font-size: 144px;
 	line-height: 1;
+}
+
+h1, article header h2 {
+	font-weight: 600;
 	margin: 0;
-	padding: 0 40px;
 	text-transform: lowercase;
 }
 
-article {
+h1, article, footer {
 	padding: 0 40px;
 }
 
-article header{
-	margin-bottom: 60px;
+article header {
+	margin: 0 0 60px;
 }
 
 article header h2 {
-	font-weight: normal;
 	font-style: italic;
-	margin: 0;
-	text-transform: lowercase;
 }
 
 section {
-	background: rgba(0, 0, 0, 0.2);
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
+	background: rgba(0, 0, 0, .2);
 	border-radius: 5px;
-	-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.3);
-	-moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.3);
-	-ms-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.3);
-	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.3);
-	margin-bottom: 20px;
+	-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2), 0 1px rgba(255, 255, 255, .3);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2), 0 1px rgba(255, 255, 255, .3);
 	padding: 20px;
-}
-
-
-footer {
-	font-size: 12px;
-	padding: 0 40px;
 }
