@@ -1,53 +1,70 @@
 body{
     color:#fff;
-    font: 1em "Trebuchet MS";
-    background: #000;
-    background: -webkit-gradient(
+    font:1em"Trebuchet MS";
+    background:#000;
+    background:-webkit-gradient(
         radial,
         50% 0,200,
-        50% -200,900,
-        from(rgba(0,0,0,0)),to(rgba(0,0,0,1))
+        50% -99,900,
+        from(rgba(0,0,0,0)),to(#000)
     ),
     -webkit-gradient(
         linear,
         right top,
         left top,
-        color-stop(0,#fb0),
-        color-stop(.3,#f14),
+        from(#f14),
         color-stop(.6,#e1b),
-        color-stop(1,#0ae)
+        to(#0ae)
     );
     background: -moz-radial-gradient(
         50% 0,
         circle closest-corner,
         rgba(0,0,0,0),
-        rgba(0,0,0,1)
+        #000
     ), 
     -moz-linear-gradient(
         right center,
-        #fb0 0%,
         #f14 30%,
         #e1b 60%,
         #0ae 99%
-    );
+    )
 }
 
-body>header,article{float:left}
-body>header{margin:0 0 0 5%;width:30%}
+abbr:after,p a:before{
+    content:"";
+    position:absolute;
+    margin-left:-22%;
+    top:0;
+    width:8em;
+    height:999px;
+    opacity:.17;
+    z-index:-1;
+    background-image: -webkit-gradient(
+        linear,
+        right top,
+        left top,
+        from(rgba(0,0,0,0)),
+        color-stop(.5,#000),
+        to(rgba(0,0,0,0))
+    );
+    background-image:-moz-linear-gradient(
+        right center,
+        rgba(0,0,0,0) 0,
+        #000 50%,
+        rgba(0,0,0,0) 99%
+    );
+}
+p a:before{margin-left: 2%}
 
+
+body>header,article{float:left;width:35%}
 a{color:#f14}
-h1{font-size:600%}
+h1{font-size:6em}
+h1,nav{text-align:right}
+nav li{list-style:none;margin:1em 0}
+nav a{margin:-3px 0;display:block}
+a+a{color:#fff}
 
-h1,nav{margin:1em 15% 0}
-nav ul{list-style:none;padding:0;display:none}
-nav:hover ul{display:block}
-nav li{margin:1em 0}
-nav h2:after{content:" ↓"}
-nav a{margin:-6px 0 0;display:block;color: #fff}
-nav a:first-child{font-size:180%;text-decoration:none;color:#f14}
+article{margin:250px 0 0 50px;background:rgba(0,0,0,.2);padding:0 30px}
 
-article{margin-top:160px;width:55%}
-article>*{border-radius:40px;padding:30px 40px;background:rgba(0,0,0,.2)}
-article header{margin:0 -80px 0 80px}
-header+section{margin:-30px}
-footer{font-size:80%;padding:20px 0 40px 35%;clear:both}
+footer{padding:20px 0 40px 35%;clear:both}
