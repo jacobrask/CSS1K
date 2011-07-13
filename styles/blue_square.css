@@ -35,15 +35,19 @@ nav ul {
 }
 
 nav li {
-  box-align: center; -moz-box-align: center; -ms-box-align: center; -webkit-box-align: center;
-  box-orient: vertical; -moz-box-orient: vertical; -ms-box-orient: vertical; -webkit-box-orient: vertical;
-  box-pack: center; -moz-box-pack: center; -ms-box-pack: center; -webkit-box-pack: center;
-  display: box !important; display: -moz-box !important; display: -webkit-box !important;
+  -moz-box-align: center; -ms-box-align: center; -webkit-box-align: center;
+  box-align: center; 
+  -moz-box-orient: vertical; -ms-box-orient: vertical; -webkit-box-orient: vertical;
+  box-orient: vertical; 
+  -moz-box-pack: center; -ms-box-pack: center; -webkit-box-pack: center;
+  box-pack: center; 
+  display: -moz-box !important; display: -webkit-box !important;
+  display: box !important; 
   float: left;
   height: 150px;
   position: relative;
-  transform: rotateZ(-45deg); -moz-transform: rotateZ(-45deg); -o-transform: rotateZ(-45deg); -webkit-transform: rotateZ(-45deg);
-
+  -moz-transform: rotateZ(-45deg); -o-transform: rotateZ(-45deg); -webkit-transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg); 
   width: 150px;
 }
 
@@ -63,7 +67,7 @@ nav a {
 
 nav a:first-child {
   background: #FFF; 
-  border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+  border-radius: 5px;
   font-weight: bold;
   padding: 4px 6px;
 }
