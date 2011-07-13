@@ -36,8 +36,6 @@ nav {
 	position: absolute;
 	top: 35px;
 	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
 	height: 50px;
 	overflow: hidden;
 }
@@ -48,6 +46,7 @@ nav h2:after {
 nav:hover h2:after {
 	-webkit-transform: rotate(-90deg);
 	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
 	-o-transform: rotate(-90deg);
 	transform: rotate(-90deg);
 }
@@ -75,8 +74,6 @@ section {
 	margin-bottom: 40px;
 	padding: 10px 30px 10px 30px;
 	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
 }
 
 section ol {
@@ -85,8 +82,6 @@ section ol {
 	padding-bottom: 10px;
 	padding-top: 10px;
 	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
 }
 
 section ol a {
