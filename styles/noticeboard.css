@@ -49,10 +49,6 @@ article > *{
 p, ol, ul {
   margin-top : 50px;
 }
-article > *:hover{
-  -webkit-transform: rotate(0deg);
-  -webkit-transition : all 0.2s ease-in-out;
-}
 article header{
   position : absolute;
 }
@@ -78,7 +74,6 @@ footer {
 }
 ::-webkit-scrollbar-track {     
   -webkit-box-shadow: inset 0 0 6px #333;
-  border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {     
   border-radius: 10px;
