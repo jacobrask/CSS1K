@@ -15,7 +15,7 @@ body {
 }
 
 h1 {
-    font: 800 10em/1.4 Palatino,serif;
+    font: 800 10em/1.6 Palatino,serif;
     color: #98a2b1;
     text-shadow: .9mm .7mm .1mm #fff;
     left: -.7%;
@@ -54,7 +54,7 @@ nav {
 }
 
 nav > *, footer {
-    padding: 0 5mm;
+    padding: 0 8mm;
     font-weight: 800
 }
 
