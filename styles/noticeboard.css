@@ -1,28 +1,17 @@
 body {
   font-family: serif;
-}
-h1:before, h1:after {
-  content : '';
-  display : block;
-  border-style: solid; 
-  border-color: #ff0 transparent;
-  position : absolute;
-  bottom : -30px;
-}
-h1:before {
-  border-width: 30px 0 0 40px; 
-}
-h1:after {
-  border-width: 30px 40px 0 0 ; 
-  right: 0;
+  background: -webkit-gradient(
+    linear, 
+    left top, 
+    left bottom, 
+    color-stop(0%,#fff), 
+    color-stop(100%, #e5e5e5));
 }
 h1 {
   position : relative;
-  background-color : #00f;
   margin : auto;
   text-align : center;
   top : 50px;
-  width : 800px;
 }
 nav {
   border : 1px solid yellow;
@@ -32,7 +21,7 @@ nav {
   overflow : auto;
 }
 article {
-  background: #fff;
+  background : #fefefe;
   padding : 20px;
   height : 760px;
   width : 680px;
