@@ -124,7 +124,7 @@ nav ul:after{
 
 body>header,article{float:left;width:35%}
 a{color:#f14}
-h1{font-size:6em}
+h1{font-size:5em}
 nav h2:after{content:" ↕";opacity:.5}
 h1,nav{text-align:right;overflow:hidden;position:relative}
 
@@ -133,5 +133,5 @@ nav li{list-style:none;margin:1em}
 nav a{margin:-3px 0;display:block}
 nav a+a{color:#fff}
 
-article{margin:248px 0 0 50px;background:rgba(0,0,0,.2);padding:0 30px}
+article{margin:208px 0 0 50px;background:rgba(0,0,0,.2);padding:0 30px}
 footer{padding:20px 0 40px 37%;clear:both;font-size:80%}
