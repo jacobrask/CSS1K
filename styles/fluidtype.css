@@ -1,0 +1,105 @@
+/* CSS1K entry
+ * "Fluid Type" by Eduardo Shiota Yasuda (http://eshiota.com)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
+
+body {
+  color: #666;
+  background: #eaeaea;
+  font: normal normal 62.5%/1em Garamond, serif;
+  text-shadow: 0 1px 0 #fff;
+}
+
+a,
+a:visited { color: #79b; }
+
+body > * {
+  margin: 0 auto;
+  width: 60%;
+}
+
+h1 {
+  font-size: 9.6em;
+  margin: 1.2em 0 0;
+}
+
+h2 {
+  font-size: 4em;
+  margin-bottom: 0.5em;
+}
+
+section h2 { font-size: 2.4em; }
+
+h1,
+h2 {
+  text-align: center;
+  line-height: 1em;
+}
+
+h2:before,
+h2:after {
+  content: "~";
+  padding: 0 0.3em;
+}
+
+p, ul, ol {
+  font-size: 1.6em;
+  line-height: 1.4em;
+}
+
+nav {
+  background: rgba(99,99,99,0.95);
+  position: absolute;
+  top: 0;
+  left: 5%;
+  -moz-border-radius: 0 0 10px 10px;
+  -webkit-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+  width: 90%;
+}
+
+nav h2 {
+  font-size: 2.4em;
+  color: #fff;
+  text-shadow: 0 -1px 0 #000;
+}
+
+nav ul {
+  padding: 0.5em 2em;
+  -moz-columns: 4 auto;
+  -webkit-columns: 4 auto;
+  -moz-column-gap: 1.9em;
+  -webkit-column-gap: 1.9em;
+  font-size: 1.4em;
+  font-family: sans-serif;
+  display: none;
+}
+
+nav:hover ul { display: block; }
+
+nav li { margin-bottom: 1em; }
+
+nav a,
+nav a:visited {
+  color: #fff;
+  text-shadow: none;
+  display: block;
+  font-weight: bold;
+}
+
+nav a:hover { color: #ddd; }
+
+nav a + a { font-weight: normal; font-size: 0.9em; }
+
+nav a + a:before { content: 'by '; }
+
+article { overflow: auto; }
+
+section {
+  float: left;
+  width: 48%;
+  padding: 0 2% 0 0;
+}
+
+section + section { padding: 0 0 0 2%; }
+
+footer { text-align: center; }
