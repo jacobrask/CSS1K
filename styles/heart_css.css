@@ -21,9 +21,9 @@ nav a:last-child:before{content:'/  '}
 ul {margin-left:-45px;}
 ol {margin-left:-20px;}
 ul li {display:block; padding-left:5px;}
-ul li, article a {-webkit-border-radius:3px; -moz-border-radius:3px;}
+ul li, article a {border-radius:3px;}
 ul li:hover a, article a {color:#fff;}
-ul li:hover {background-color:#8cd; -webkit-transition:ease-in-out .4s; -moz-transition:ease-in-out .4s;}
+ul li:hover {background-color:#8cd; -webkit-transition:ease-in-out .4s; -moz-transition:ease-in-out .4s; -o-transition:ease-in-out .4s; transition:ease-in-out .4s;}
 
 article a {background-color:#8cd; padding:0 4px;}
 article h2 {display:inline-block;}
