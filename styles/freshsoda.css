@@ -1,6 +1,10 @@
 /* CSS1K entry
- * "Blue Bubbles" by Jan Ortgies (http://jungundwillich.de)
+ * "Fresh Soda" by Jan Ortgies (http://jungundwillich.de)
  * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
+
+html {
+	overflow-x: hidden;
+}
 
 body {
     font: 4.2mm/1.35 Calibri,sans-serif;
@@ -10,7 +14,6 @@ body {
     background:      -o-linear-gradient(top, #fff, #dce5f2);
     background:         linear-gradient(top, #fff, #dce5f2);
     counter-reset: l;
-    overflow-x: hidden;
     margin: 0;
 }
 
@@ -28,16 +31,13 @@ h1:before {
 }
 
 h1:before, *:after {
-    color: transparent;
+	color: rgba(0,0,0,0);
 }
 
 
 h1, article {
     margin: 0 auto;
     width: 15cm;
-    -moz-hyphens: auto;
-    -webkit-hyphens: auto;
-    hyphens: auto;
 }
 
 h2 {
