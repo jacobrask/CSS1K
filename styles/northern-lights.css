@@ -27,8 +27,31 @@ body{
         #f14 30%,
         #e1b 60%,
         #0ae 99%
-    )
-}
+    );
+    background: -o-radial-gradient(
+        50% 0,
+        circle closest-corner,
+        rgba(0,0,0,0),
+        #000
+    ), 
+    -o-linear-gradient(
+        right center,
+        #f14 30%,
+        #e1b 60%,
+        #0ae 99%
+    );
+    background: radial-gradient(
+        50% 0,
+        circle closest-corner,
+        rgba(0,0,0,0),
+        #000
+    ), 
+    linear-gradient(
+        right center,
+        #f14 30%,
+        #e1b 60%,
+        #0ae 99%
+    );}
 
 abbr:after,p a:before{
     content:"";
@@ -48,6 +71,18 @@ abbr:after,p a:before{
         to(rgba(0,0,0,0))
     );
     background-image:-moz-linear-gradient(
+        right center,
+        rgba(0,0,0,0) 0,
+        #000 50%,
+        rgba(0,0,0,0) 99%
+    );
+    background-image:-o-linear-gradient(
+        right center,
+        rgba(0,0,0,0) 0,
+        #000 50%,
+        rgba(0,0,0,0) 99%
+    );
+    background-image:linear-gradient(
         right center,
         rgba(0,0,0,0) 0,
         #000 50%,
