@@ -1,0 +1,31 @@
+/* CSS1K entry
+ * "heartcss" by Choy Kum Jin (kumjin.choy@gmail.com)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
+
+body {background-color:#e9eee8; padding:5px 30px; color:#7e7e7e;}
+h1, h2 {text-shadow:0 -1px 1px rgba(0,0,0,0.25); font-family:times;}
+h1 {color:#fff; font-style:italic; font-size:3em; letter-spacing:-2px; text-transform:lowercase;}
+h2 {border-bottom:2px dashed #fff; color:#5e5e5e; padding:4px 0; font-size:1em;}
+a {text-decoration:none;}
+
+header, article {float:left; width:410px;}
+h1:before {content:"I \2665  "}
+
+nav {width:310px;}
+ul li, p, ol {font-size:.9em; line-height:1.5;}
+nav h2:before {content:"\21AA  "}
+nav a {color:#888; display:inline-block; margin:2px 0;}
+nav a:first-child {font-weight:bold;}
+nav a:last-child:before{content:'/  '}
+
+ul {margin-left:-45px;}
+ol {margin-left:-20px;}
+ul li {display:block; padding-left:5px;}
+ul li, article a {border-radius:3px;}
+ul li:hover a, article a {color:#fff;}
+ul li:hover {background-color:#8cd; -webkit-transition:ease-in-out .4s; -moz-transition:ease-in-out .4s; -o-transition:ease-in-out .4s; transition:ease-in-out .4s;}
+
+article a {background-color:#8cd; padding:0 4px;}
+article h2 {display:inline-block;}
+footer {text-align:center; clear:both;}
+footer a {color:#5e5e5e;}
