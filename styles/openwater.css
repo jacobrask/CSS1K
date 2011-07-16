@@ -1,8 +1,9 @@
 body {
 	background: #000;
 	color: #FFF;
-	font: 85% Cambria;
+	font: 85% Calibri;
 	margin: 0;
+	overflow-x: hidden;
 }
 body > header {
 	background-color: #D1E8FF;
@@ -12,17 +13,37 @@ body > header {
 	position: relative;
 	padding: 1px;
 }
+body > header:after {
+	background-image: -webkit-gradient(radial, 40 -15, 50, 40 -49, 91, from(transparent), to(#355DD4));
+	background-size: 79px 100%;
+	bottom: 0;
+	content: '';
+	height: 50px;
+	left: -40px;
+	position: absolute;
+	width: 140%;
+	z-index: 1;
+}
 h1 {
-	border-bottom: 15px solid #000;
+	border-bottom: 20px solid #211;
 	bottom: 0;
 	font-size: 7em;
-	line-height: 1em;
+	line-height: .7em;
 	left: -150px;
 	margin: 0 0 0 50%;
 	position: absolute;
 	text-align: center;
 	width: 330px;
-	-webkit-animation: logo 5s infinite linear;
+	z-index: 2;
+	-webkit-animation: logo 10s infinite linear;
+}
+h1:after {
+	border: 40px solid transparent;
+	border-bottom: 20px solid #778;
+	border-top-width: 0;
+	content: '';
+	display: block;
+	margin-top: -10px;
 }
 @-webkit-keyframes logo {
 	0% {
@@ -51,19 +72,50 @@ article {
 	padding: 5px 0;
 	position: relative;
 }
-/*
 article:before {
-	background-image: -webkit-radial-gradient(top right, #0029A3, #E5F2FF);
+	background-image: -webkit-gradient(radial, 40 -30, 50, 40 -50, 71, from(rgba(0,0,0,0)), to(#0029A3));
+	background-size: 79px 100%;
 	content: '';
-	height: 20px;
+	height: 30px;
 	position: absolute;
-	top: -15px;
+	top: -25px;
 	width: 100%;
+	z-index: 3;
 }
-*/
 article > header, section, footer p {
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
 }
-
+article a, footer a {
+	color: #FFF;
+	display: inline-block;
+}
+article a:before, footer a:before {
+	content: '♥';
+	float: left;
+	font-size: 1.1em;
+	margin: -.2em -.4em 0 .2em;
+	opacity: 0.8;
+	-webkit-transform: rotate(-90deg);
+}
+article a:after, footer a:after {
+	border-radius: .5em;
+	border: solid #FFF;
+	border-width: .5em .6em .4em;
+	border-right-color: transparent;
+	content: '';
+	display: block;
+	float: left;
+	margin: .25em .2em 0 0;
+	-webkit-background-clip: padding-box;
+}
+article a:nth-child(2n):before {
+	float: right;
+	margin: -.2em .2em 0 -.5em;
+	-webkit-transform: rotate(90deg);
+}
+article a:nth-child(2n):after {
+	float: right;
+	-webkit-transform: rotate(180deg);
+}
