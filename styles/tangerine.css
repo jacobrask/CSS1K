@@ -1,0 +1,98 @@
+/* CSS1K entry
+ * "Tangerine" by Ben Court (http://twitter.com/TheBenCourt)
+ * This file is unminified for legibility */
+
+body {
+	background: #f90;
+	font:14px "HelveticaNeue-Light",sans-serif;
+	color: #444;
+	text-shadow:0 1px 1px #fb5, 0 -1px 0 #dd8500;
+	line-height:20px;
+}
+article {
+	position:fixed;
+	top:0;
+	right:0;
+}
+article header {
+	padding:20px 10px;
+	text-align:right;
+}
+h1,h2 {
+	color:#EE8F00;
+	margin:0;
+	font-size: 2.8em;
+}
+body > header {
+	position:relative;
+	width:220px;
+}
+
+h1 {
+	background:#f90;
+	position:fixed;
+	font-size: 4em;
+	padding:20px 0;
+	z-index:999;
+	top:0;
+	left:0;
+}
+nav h2 {
+	position:fixed;
+	background:#f90;
+	z-index:900;
+	padding:20px 0;
+	width:200px;
+	top:50px;
+	left:0;
+}
+nav ul {
+	position:absolute;
+	left:-999px;
+	margin-top:120px;
+	transition:left 1s ease;
+	-webkit-transition:left 1s ease;
+	-moz-transition:left 1s ease;
+	-o-transition:left 1s ease;
+}
+
+header:hover nav ul {
+	left:0;
+}
+
+section {
+	width:460px;
+	float:left;
+	margin:0 30px;
+}
+
+footer {
+	position:fixed;
+	clear:both;
+	bottom:0;
+	right:0;
+}
+
+ul,ol { padding: 0 0 1em 0; }
+ol li { margin:5px 0; }
+li { margin-bottom:20px;}
+a {
+	color: #FFF;
+	text-decoration:none;
+	text-shadow:none;
+}
+a:hover { text-decoration:underline; }
+nav a:last-child {
+	display:block;
+	position:absolute;
+	left:-200px;
+	transition:left .5s ease;
+	-webkit-transition:left .5s ease;
+	-moz-transition:left .5s ease;
+	-o-transition:left .5s ease;
+	width:200px;
+}
+nav li:hover a:last-child {
+	color:#444;
+	left:0;
+}
