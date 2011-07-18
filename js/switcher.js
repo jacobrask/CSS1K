@@ -39,20 +39,21 @@
     // loop through stylesheet links and build style switcher
     // skip first one (default stylesheet)
     for(var i = 1; styles.length > i; i++) {
-        s = styles[i];
+        if (/^stylesheet/.test(styles[i].getAttribute('rel'))) {
+            s = styles[i];
+            styleName = s.getAttribute('title');
+            styleId = s.getAttribute('data-id');
+            styleLink = styleName.link('#' + styleId);
 
-        styleName = s.getAttribute('title');
-        styleId = s.getAttribute('data-id');
-        styleLink = styleName.link('#' + styleId); 
+            authorName = s.getAttribute('data-author-name');
+            authorUrl = s.getAttribute('data-author-url');
+            authorLink = authorName.link(authorUrl);
 
-        authorName = s.getAttribute('data-author-name');
-        authorUrl = s.getAttribute('data-author-url');
-        authorLink = authorName.link(authorUrl);
-
-        li = document.createElement('li');
-        li.innerHTML = styleLink + ' ' + authorLink;
-        
-        nav.appendChild(li);
+            li = document.createElement('li');
+            li.innerHTML = styleLink + ' ' + authorLink;
+ 
+            nav.appendChild(li);
+        }
     }
 
 })();
