@@ -1,0 +1,86 @@
+/* CSS1K entry
+ * "HTML5 Colors" by Michael Garrett Jones (http://theweblife.com)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
+html, body {
+	height: 100%;
+}
+a, html {
+	color: #FFF;
+}
+html {
+	font: 13px Tahoma;
+	background: -webkit-radial-gradient(black 15%, transparent 16%) 0 0, -webkit-radial-gradient(black 15%, transparent 16%) 8px 8px;
+	background: -moz-radial-gradient(black 15%, transparent 16%) 0 0, -moz-radial-gradient(black 15%, transparent 16%) 8px 8px;
+	background: -o-radial-gradient(black 15%, transparent 16%) 0 0, -o-radial-gradient(black 15%, transparent 16%) 8px 8px;
+	background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 8px 8px;
+	background-color:#282828;
+	background-size:16px 16px;
+}
+body {
+	background-color: rgba(239, 100, 41, 0.15);
+	width: 890px;
+	margin: 0 auto;
+	padding: 30px;
+	border: solid #999;
+	border-width: 0 3px;
+}
+h2 {
+	padding: 5px 20px;
+	border-radius: 3em 1em;
+}
+header, article {
+	float: left;
+}
+article header p {
+	font: italic 24px Georgia;
+	padding: 0 20px;
+	margin-right: 20px;
+}
+section+section {
+	clear:both;
+}
+article header {
+	width: 48%;
+}
+header+section {
+	float: right;
+	width: 48%;
+}
+nav ul {
+	overflow: hidden;
+	height: 569px;
+}
+nav ul:hover {
+	overflow:auto;
+}
+body> header {
+	width: 200px;
+	margin-right: 40px;
+}
+p {
+	line-height: 150%;
+}
+header h1 {
+	font-size: 50px;
+	margin-bottom: -10px;
+	text-shadow: 0px 0px 5px #ED794B;
+}
+article {
+	width: 650px;
+}
+nav li, article h2, article h1 {
+    background: -webkit-linear-gradient(top, #ed794b 0%,#ed794b 52%,#ef6429 53%,#e34f27 100%);
+	background: -moz-linear-gradient(top, #ed794b 0%,#ed794b 52%,#ef6429 53%,#e34f27 100%);
+	background: -o-linear-gradient(top, #ed794b 0%,#ed794b 52%,#ef6429 53%,#e34f27 100%);
+	background: linear-gradient(top, #ed794b 0%,#ed794b 52%,#ef6429 53%,#e34f27 100%);
+}
+nav li {
+	margin: 0 5px 2px -40px;
+	padding: 8px 20px;	
+    border-radius: 5px; 
+	list-style: none;
+}
+ul> li a {
+	display:block;
+	text-decoration: none;
+}
