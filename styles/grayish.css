@@ -1,0 +1,103 @@
+/* CSS1K entry
+ * "Grayed" by Praveen Vijayan (http://decodize.com)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
+ html,body{
+	height:100%;
+	font: 95%/1.5 sans-serif;
+	background-color: gray;
+	background-image: -webkit-linear-gradient(0, transparent 58%, rgba(255,255,255,.5) 58%);
+	background-image: -moz-linear-gradient(0, transparent 58%, rgba(255,255,255,.5) 58%);
+	background-size: 50px;
+	overflow:hidden;
+	margin:0;
+}
+h1 {
+    -webkit-transform:rotate(-90deg);
+    -webkit-transform-origin:center center;
+    -moz-transform:rotate(-90deg);
+    -moz-transform-origin:center center;
+    -ms-transform:rotate(-90deg);
+    -ms-transform-origin:center center;
+    -o-transform:rotate(-90deg);
+    -o-transform-origin:center center;
+    transform:rotate(-90deg);
+    transform-origin:center center;
+	font-size:430%;
+    margin:5em 0;
+	color:#fff;
+	text-shadow: 2px 2px 0px #333;
+}
+h2{
+	margin:2% 0;	
+	font-size:120%;
+}
+ul {
+	list-style:none;
+}
+a {
+    color: #888;
+    text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+header{
+	position:absolute;
+	width:10%;
+}
+article header, section{
+	width:30%;
+	float:left;
+	padding:1%;
+	background:#fff;
+	margin:1% 0 0 1%;
+	position:static;
+	height:500px;
+}
+article header{
+	width:20%;
+	margin-left:9em;
+}
+nav h2 {
+	padding:1%;
+	margin:0 0 1%;
+	color:#fff;
+}
+p{
+	margin:0 0 4% 0;	
+}
+nav {
+    background:rgba(50, 50, 50, 0.8);
+    left: 10%;
+    position: fixed;
+    bottom:0;
+	height:7.5%;
+	overflow:hidden;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+nav:hover{
+	height:100%;
+	overflow:auto;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	transform: scale(1);
+}
+nav:hover h2{
+	background:gray;
+}
+nav li{
+	float:left;
+	width:30%;
+	margin-bottom:4px;
+}
+nav a {
+    color: #fff;
+	text-shadow: 0px 0px 2px #000000;
+	font-size: 90%;
+}
+footer {
+	float:left;
+	margin:6px 0 0 128px;
+}
