@@ -1,0 +1,16 @@
+body{font-size: 100%;}
+* {
+	font: normal 1em Georgia, 'Times New Roman', Times, serif;
+	}
+a[href="#Keller"] {color: red;}
+/* fonts to try
+Menlo (from wolfr theme)
+
+font-family: Consolas, Monaco, monospace; http://local.css1k.com/#sourcy
+http://local.css1k.com/#adaptype
+http://local.css1k.com/#spartan
+
+crazy! http://local.css1k.com/#yelo
+
+http://local.css1k.com/#stripes
+*/
