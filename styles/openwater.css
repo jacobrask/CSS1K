@@ -1,3 +1,6 @@
+/* CSS1K entry
+ * "Open Water" by Gilmore Davidson (https://github.com/gilmoreorless)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
 body {
 	background: #000;
 	font: 85% Calibri, Arial;
@@ -13,19 +16,37 @@ body > header {
 	background: #CEF;
 	height: 150px;
 }
-@-moz-keyframes logo {
+@-moz-keyframes L {
+	30% {
+		-moz-transform: translate(5%, 5px);
+	}
 	50% {
-		-moz-transform: translateY(5px);
+		-moz-transform: translate(4%, 0);
+	}
+	80% {
+		-moz-transform: translate(-1%, 5px);
 	}
 }
-@-webkit-keyframes logo {
+@-webkit-keyframes L {
+	30% {
+		-webkit-transform: translate(5%, 5px);
+	}
 	50% {
-		-webkit-transform: translateY(5px);
+		-webkit-transform: translate(4%, 0);
+	}
+	80% {
+		-webkit-transform: translate(-1%, 5px);
 	}
 }
-@keyframes logo {
+@keyframes L {
+	30% {
+		transform: translate(5%, 5px);
+	}
 	50% {
-		transform: translateY(5px);
+		transform: translate(4%, 0);
+	}
+	80% {
+		transform: translate(-1%, 5px);
 	}
 }
 h1 {
@@ -37,12 +58,9 @@ h1 {
 	position: absolute;
 	text-align: center;
 	width: 330px;
-	/*
-	z-index: 4;
-	*/
-	-moz-animation: logo 5s linear infinite;
-	-webkit-animation: logo 5s linear infinite;
-	animation: logo 5s linear infinite;
+	-moz-animation: L 9s ease-in-out infinite;
+	-webkit-animation: L 9s ease-in-out infinite;
+	animation: L 9s ease-in-out infinite;
 }
 h1:after {
 	border: 40px solid transparent;
@@ -55,28 +73,14 @@ h1:after {
 nav {
 	overflow: hidden;
 	position: absolute;
-	left: 5%;
-	top: 150px;
-	width: 180px;
+	left: 3%;
+	top: 155px;
+	width: 20%;
 	z-index: 8;
 }
 ul {
 	padding: 0;
 }
-/*
-ul li {
-	border: 2px solid #FFF;
-	border-radius: 100px;
-	float: right;
-	list-style: none;
-	margin: 10px;
-	padding: 15px;
-}
-ul a {
-	display: block;
-	font-size: .9em;
-}
-*/
 ul a:first-child {
 	font-weight: bold;
 	margin-right: 5%;
@@ -94,7 +98,7 @@ article {
 	background: linear-gradient(top, #039 0%,#000 100%);
 	padding: 5px 0;
 }
-/*article:before, */article:after {
+article:after {
 	background: #039;
 	background: -moz-repeating-radial-gradient(40px -30px, circle, transparent, transparent 50px, #039 53px, #039);
 	background: -webkit-gradient(radial, 40 -30, 50, 40 -50, 71, from(transparent), to(#039));
@@ -103,22 +107,74 @@ article {
 	content: '';
 	height: 40px;
 	position: absolute;
-	top: -20px;
+	top: -25px;
 	width: 100%;
 	z-index: 6;
 }
-/*
+article > *, footer p {
+	margin: 0 auto;
+	width: 50%;
+}
+
+
+
+/***
+ * This section contains two parts I would have love to have included,
+ *  but couldn't fit within the 1K limit.
+ *
+ * Uncomment the sections to see the effects.
+ */
+
+/**
+ * 1. Background waves for a better depth perception effect.
+ *
+
+h1 {
+	z-index: 4;
+}
 article:before {
 	background: #35D;
 	background: -moz-repeating-radial-gradient(27px -7px, circle, transparent, transparent 30px, #35D 35px, #35D);
 	background: -webkit-gradient(radial, 27 -10, 33, 27 -32, 60, from(transparent), to(#35D));
 	background: repeating-radial-gradient(27px -7px, circle, transparent, transparent 30px, #35D 35px, #35D);
 	background-size: 52px 100%;
-	top: -35px;
+	content: '';
+	height: 40px;
+	position: absolute;
+	top: -40px;
+	width: 100%;
 	z-index: 2;
 }
 */
-article > *, footer p {
-	margin: 0 auto;
-	width: 50%;
+
+/**
+ * 2. Fish
+ *
+
+article a, footer a {
+	color: #FFF;
+	display: inline-block;
 }
+article a:before, footer a:before {
+	content: '♥';
+	float: left;
+	font-size: 1.3em;
+	margin: -.2em -.3em 0 .2em;
+	opacity: 0.8;
+	-moz-transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+article a:after, footer a:after {
+	border-radius: .5em;
+	border: solid #FFF;
+	border-width: .5em .6em .4em;
+	border-right-color: transparent;
+	content: '';
+	display: block;
+	float: left;
+	margin: .25em .2em 0 0;
+}
+*/
