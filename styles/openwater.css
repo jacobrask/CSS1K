@@ -1,0 +1,178 @@
+/* CSS1K entry
+ * "Open Water" by Gilmore Davidson (https://github.com/gilmoreorless)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
+body {
+	background: #000;
+	font: 85% Calibri, Arial;
+	margin: 0;
+}
+body, a {
+	color: #FFF;
+}
+body > * {
+	position: relative;
+}
+body > header {
+	background: #CEF;
+	height: 150px;
+}
+@-moz-keyframes L {
+	30% {
+		-moz-transform: translate(5%, 5px);
+	}
+	50% {
+		-moz-transform: translate(4%, 0);
+	}
+	80% {
+		-moz-transform: translate(-1%, 5px);
+	}
+}
+@-webkit-keyframes L {
+	30% {
+		-webkit-transform: translate(5%, 5px);
+	}
+	50% {
+		-webkit-transform: translate(4%, 0);
+	}
+	80% {
+		-webkit-transform: translate(-1%, 5px);
+	}
+}
+@keyframes L {
+	30% {
+		transform: translate(5%, 5px);
+	}
+	50% {
+		transform: translate(4%, 0);
+	}
+	80% {
+		transform: translate(-1%, 5px);
+	}
+}
+h1 {
+	border-bottom: 30px solid #000;
+	bottom: 0;
+	color: #000;
+	font-size: 6em;
+	margin: 0 0 0 35%;
+	position: absolute;
+	text-align: center;
+	width: 330px;
+	-moz-animation: L 9s ease-in-out infinite;
+	-webkit-animation: L 9s ease-in-out infinite;
+	animation: L 9s ease-in-out infinite;
+}
+h1:after {
+	border: 40px solid transparent;
+	border-bottom: 20px solid #778;
+	content: '';
+	display: block;
+	margin-top: -.9em;
+}
+
+nav {
+	overflow: hidden;
+	position: absolute;
+	left: 3%;
+	top: 155px;
+	width: 20%;
+	z-index: 8;
+}
+ul {
+	padding: 0;
+}
+ul a:first-child {
+	font-weight: bold;
+	margin-right: 5%;
+}
+
+
+article {
+	background: #039;
+	background: -moz-linear-gradient(top, #039 0%, #000 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#039), color-stop(100%,#000));
+	background: -webkit-linear-gradient(top, #039 0%,#000 100%);
+	background: -o-linear-gradient(top, #039 0%,#000 100%);
+	background: linear-gradient(top, #039 0%,#000 100%);
+	padding: 5px 0;
+}
+article:after {
+	background: #039;
+	background: -moz-repeating-radial-gradient(40px -30px, circle, transparent, transparent 50px, #039 53px, #039);
+	background: -webkit-gradient(radial, 40 -30, 50, 40 -50, 71, from(transparent), to(#039));
+	background: repeating-radial-gradient(40px -30px, circle, transparent, transparent 50px, #039 53px, #039);
+	background-size: 79px 100%;
+	content: '';
+	height: 40px;
+	position: absolute;
+	top: -25px;
+	width: 100%;
+	z-index: 6;
+}
+article > *, footer p {
+	margin: 0 auto;
+	width: 50%;
+}
+
+
+
+/***
+ * This section contains two parts I would have love to have included,
+ *  but couldn't fit within the 1K limit.
+ *
+ * Uncomment the sections to see the effects.
+ */
+
+/**
+ * 1. Background waves for a better depth perception effect.
+ *
+
+h1 {
+	z-index: 4;
+}
+article:before {
+	background: #35D;
+	background: -moz-repeating-radial-gradient(27px -7px, circle, transparent, transparent 30px, #35D 35px, #35D);
+	background: -webkit-gradient(radial, 27 -10, 33, 27 -32, 60, from(transparent), to(#35D));
+	background: repeating-radial-gradient(27px -7px, circle, transparent, transparent 30px, #35D 35px, #35D);
+	background-size: 52px 100%;
+	content: '';
+	height: 40px;
+	position: absolute;
+	top: -40px;
+	width: 100%;
+	z-index: 2;
+}
+*/
+
+/**
+ * 2. Fish
+ *
+
+article a, footer a {
+	color: #FFF;
+	display: inline-block;
+}
+article a:before, footer a:before {
+	content: '♥';
+	float: left;
+	font-size: 1.3em;
+	margin: -.2em -.3em 0 .2em;
+	opacity: 0.8;
+	-moz-transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+article a:after, footer a:after {
+	border-radius: .5em;
+	border: solid #FFF;
+	border-width: .5em .6em .4em;
+	border-right-color: transparent;
+	content: '';
+	display: block;
+	float: left;
+	margin: .25em .2em 0 0;
+}
+*/
