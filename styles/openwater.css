@@ -94,7 +94,7 @@ article {
 	background: -webkit-linear-gradient(top, #039 0%,#000 100%);
 	background: -o-linear-gradient(top, #039 0%,#000 100%);
 	background: -ms-linear-gradient(top, #039 0%,#000 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#039', endColorstr='#000011',GradientType=0 );
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003399', endColorstr='#000011',GradientType=0 );
 	background: linear-gradient(top, #039 0%,#000 100%);
 	padding: 5px 0;
 }
