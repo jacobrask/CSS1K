@@ -1,0 +1,107 @@
+/* CSS1K entry
+ * "BleuBleu" by Leighton Rodney (http://www.leightonrodney.com)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
+body
+{
+	margin:0;
+	padding:0;
+	background: #8EC1DA;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size:15px;
+	width:100%;
+}
+h1
+{
+	font-size:600%;
+	margin-top:60px;
+	margin-bottom:-10px;
+}
+nav h2
+{
+	color:#FFF;
+	width:56%;
+	margin:45px 0 0 70px;
+	padding:15px 0 0 40px;
+	background-color: rgba(0, 0, 0, 0.9);
+}
+nav>ul
+{
+	display:none;
+}
+nav>h2
+{
+	display:none;
+}
+nav:hover>h2
+{
+	display:block;
+}
+nav:hover>ul
+{
+	display:block;
+}
+header nav
+{
+	height:45px;
+	width:100%;
+	background: #45484d;
+	background: -webkit-linear-gradient(top, #45484d 0%, #000000 100%);
+	background: -moz-linear-gradient(top, #45484d 0%, #000000 100%);
+	background: -o-linear-gradient(top, #45484d 0%, #000000 100%);
+	background: linear-gradient(top, #45484d 0%, #000000 100%);
+	position:fixed;
+	top:-5px;
+	cursor:pointer;
+}
+ul
+{
+	list-style:none;
+	width:56%;
+	height:auto;
+	background-color: rgba(0, 0, 0, 0.9);
+	margin-left:70px;
+	margin-top:0px;
+	padding:0 20px 20px 20px;
+	float:left;
+	clear:both;
+}
+ul li
+{
+	float:left;
+	margin:15px;
+	padding:5px;
+}
+ul li a
+{
+	color:#FFF;
+	font-size:13px;
+}
+ul li a:hover
+{
+	text-decoration:none;
+}
+ul li:hover
+{
+	background-color: rgba(142, 193, 218, 0.8);
+}
+article,footer,h1,h2,a
+{
+	color:#222;
+}
+a:hover
+{
+	color:#FFF;	
+}
+article p,footer p,ol,h1,h2
+{
+	width:760px;
+	margin-left:70px;
+}
+footer
+{
+	font-size:12px;
+}
+
+
+
+
