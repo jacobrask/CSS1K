@@ -1,3 +1,6 @@
+/* CSS1K entry
+ * "Toolbar" by Maxim Chervonny (http://chervonny.ru/en/)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
 BODY {
 	position:relative;
 	margin:0;
@@ -10,43 +13,40 @@ BODY>HEADER,
 FOOTER {
 	position:fixed;
 	top:0;
-	right:50px;
-	left:50px;
-	padding:0 49px;
-	background:#A7A7A7;
+	right:5%;
+	left:5%;
+	background:#AAA;
 	background:-webkit-linear-gradient(#CCC 0%, #AAA 100%) 0 0;
 	background:-moz-linear-gradient(#CCC 0%, #AAA 100%) 0 0;
 	background:-ms-linear-gradient(#CCC 0%, #AAA 100%) 0 0;
 	background:-o-linear-gradient(#CCC 0%, #AAA 100%) 0 0;
 	background:linear-gradient(#CCC 0%, #AAA 100%) 0 0;
-	-webkit-box-shadow:0 3px 4px #666;
-	-moz-box-shadow:0 3px 4px #666;
-	-ms-box-shadow:0 3px 4px #666;
-	box-shadow:0 3px 4px #666;
+	-webkit-box-shadow:0 2px 3px #666;
+	box-shadow:0 2px 3px #666;
 	text-shadow:0 1px 0 #DDD;
 	}
 FOOTER {
 	top:auto;
 	bottom:0;
-	-webkit-box-shadow:0 3px 4px #666;
-	-moz-box-shadow:0 3px 4px #666;
-	-ms-box-shadow:0 3px 4px #666;
-	box-shadow:0 -3px 4px #666;
+	-webkit-box-shadow:0 -2px 3px #666;
+	box-shadow:0 -2px 3px #666;
+	padding:0 49px;
 	}
 A {
 	color:#000;
 	}
-A:hover {
+A:hover,
+NAV A:last-child {
 	text-decoration:none;
 	}
 H1 {
 	float:left;
-	margin:15px 0;
+	margin:15px 49px;
 	font-size:24px;
 	}
 NAV {
 	float:right;
-	padding-left:120px;
+	padding:0 49px 0 185px;
 	}
 NAV H2 {
 	margin:18px 0;
@@ -61,16 +61,16 @@ NAV UL {
 	position:absolute;
 	top:56px;
 	right:0;
+	height:500%;
 	display:none;
 	margin:0;
 	padding:0;
 	background:#AAA;
-	-webkit-box-shadow:0 5px 4px #666;
-	-moz-box-shadow:0 5px 4px #666;
-	-ms-box-shadow:0 5px 4px #666;
-	box-shadow:0 5px 4px #666;
+	-webkit-box-shadow:0 4px 3px #666;
+	box-shadow:0 4px 3px #666;
 	list-style:none;
 	text-align:left;
+	overflow-y:scroll;
 	}
 NAV:hover UL {
 	display:block;
@@ -84,18 +84,15 @@ NAV A:first-child {
 	float:left;
 	margin:0 50px 0 0;
 	}
-NAV A:last-child {
-	text-decoration:none;
-	}
 NAV A:last-child:before {
 	content:"by ";
 	}
 ARTICLE {
-	padding:50px 99px;
+	padding:5% 9%;
 	}
 ARTICLE HEADER,
 SECTION {
 	display:block;
-	margin:50px 0;
+	margin:5% 0;
 	}
 
