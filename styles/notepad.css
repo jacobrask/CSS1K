@@ -18,6 +18,7 @@ body {
     -webkit-box-shadow: 0 1px 20px rgba(0,0,0,.75);
 	box-shadow: 0 1px 20px rgba(0,0,0,.75);
     margin: 0 auto;
+    float: left;
     background: -webkit-repeating-linear-gradient(transparent, transparent 29px, rgba(26,146,208,0.2) 29px, rgba(26,146,208,0.2) 30px);
     background: -moz-repeating-linear-gradient(transparent, transparent 29px, rgba(26,146,208,0.2) 29px, rgba(26,146,208,0.2) 30px);
     background: -ms-repeating-linear-gradient(transparent, transparent 29px, rgba(26,146,208,0.2) 29px, rgba(26,146,208,0.2) 30px);
