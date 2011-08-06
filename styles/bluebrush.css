@@ -26,8 +26,11 @@ body>header {
 	padding: 10px;
 	border-right: 1px solid #93e9e9;
 	background: #cff;
-	background: -webkit-repeating-linear-gradient(0deg, #cff, #cff 30px, #a6ffff 30px,
-		#a6ffff 60px);
+	background: -webkit-repeating-linear-gradient(0deg, #cff, #cff 30px, #a6ffff 30px, #a6ffff 60px);
+	background: -moz-repeating-linear-gradient(0deg, #cff, #cff 30px, #a6ffff 30px, #a6ffff 60px);
+	background: -ms-repeating-linear-gradient(0deg, #cff, #cff 30px, #a6ffff 30px, #a6ffff 60px);
+	background: -o-repeating-linear-gradient(0deg, #cff, #cff 30px, #a6ffff 30px, #a6ffff 60px);
+	background: repeating-linear-gradient(0deg, #cff, #cff 30px, #a6ffff 30px, #a6ffff 60px);
 	text-align: center;
 }
 h1 {
@@ -47,6 +50,7 @@ body>header::before {
 nav h2 {
 	color: #fff;
 	margin-bottom: 5px;
+	-webkit-box-shadow: inset -1px 1px 3px #666;
 	box-shadow: inset -1px 1px 3px #666;
 	background: rgba(0, 0, 0, .2);
 	border-radius: 10px;
@@ -64,6 +68,7 @@ nav li {
 	padding: 3px;
 	margin: 6px;
 	background: #fff;
+	-webkit-box-shadow: 0px 12px 15px -11px #666;
 	box-shadow: 0px 12px 15px -11px #666;
 }
 nav a:first-child {
