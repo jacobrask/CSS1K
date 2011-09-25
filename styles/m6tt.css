@@ -1,0 +1,107 @@
+/* CSS1K entry
+ * "m6tt" by Matt Woodfield (http://m6tt.com)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
+
+* {
+  margin: 0;
+  padding: 0;
+  font: normal italic 100% georgia;
+  color: #999;
+  text-shadow: 0 1px 1px #fff;
+}
+h2,
+footer,
+header,
+nav,
+section,
+article {
+  display: block;
+  margin: 20px 0;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+body { margin: 0 3%; }
+h1 {
+  text-transform: lowercase;
+  font-size: 5em;
+}
+
+h1,
+h2,
+a,
+abbr {
+  color: #555;
+}
+
+a:hover {
+  color: #333;
+}
+
+code {
+  color:green;
+}
+
+ul li {
+  cursor: pointer;
+  float: left;
+  margin: 0 20px 20px 20px;
+  border-radius: 40px;
+  width: 10px;
+  height: 10px;
+  background: orange;
+  position: relative;
+}
+ul li:nth-child(odd) {
+  margin-right: 10px;
+  background: red;
+}
+ul li:nth-child(3n+3) {
+  margin-right: 35px;
+  background: green;
+}
+ul li:nth-child(3n+2) {
+  width: 20px;
+  height: 20px;
+}
+ul li:nth-child(4n+2) {
+  margin-right: 50px;
+  background: blue;
+}
+
+ul li:hover {
+  text-indent: 0;
+}
+
+ul a {
+  display: none;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  min-width: 150px;
+  z-index: 2;
+}
+
+ul li:hover a {
+  display: block;
+}
+
+ul a+a {
+  padding-top: 27px;
+  font-size: 0.8em;
+  z-index: 1;
+  background: #fff;
+}
+
+article {
+  padding: 30px 0;
+  clear: both;
+}
+
+footer {
+  width: 100%;
+  padding: 10px;
+  font-size: 0.8em;
+}
