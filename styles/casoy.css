@@ -37,6 +37,13 @@ nav a:last-child {
 	float:right;
 	color: #DBD2B1;
 }
+nav a:last-child:hover{
+	color: #A56657;
+}
+
+nav a:hover{
+	color: #DBD2B1;
+}
 
 header h1{
 	width:280px;
