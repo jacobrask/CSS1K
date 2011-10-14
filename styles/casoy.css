@@ -51,6 +51,7 @@ header h1{
 }
 
 article{
+	margin-left:300px;
 	width: 600px;
 	float:left;
 	position:fixed;
@@ -58,6 +59,7 @@ article{
 }
 
 footer{
+	margin-left:300px;
 	position:fixed;
 	bottom:5px;
 	padding-left: 15px;
