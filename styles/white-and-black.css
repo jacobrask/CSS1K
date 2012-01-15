@@ -1,0 +1,97 @@
+/* CSSK entry
+ * "White & Black" by Mickaël RAYBAUD-ROIG (http://skami18.github.com)
+ * This is the source, the minified file is in "white-and-black-min.css" */
+
+body {
+    display: block;
+    width: 55%;
+    margin: 5% auto;
+    padding: 0;
+
+	color: black;
+	background-color: white;
+    border: 1px solid silver;
+    box-shadow: .35em .35em 1em gray;
+
+    font: 16px/1.4em "Times New Roman", georgia, serif;
+	letter-spacing: 0.05em;
+}
+
+body>header {
+    width: 100%;
+    margin: 0;
+    padding: .1% 0;
+
+    border-bottom: 1px solid silver;
+}
+
+
+header h1 {
+    font-size: 5em;
+    text-align: center;
+}
+
+header h1:last-letter {
+    color: red;
+}
+
+nav {
+    float: left;
+    width: 25%;
+    padding: .5%;
+    margin: 0;
+
+    border-right: 1px solid silver;
+}
+
+h2 {
+    text-align:center;
+}
+
+nav ul {
+    list-style-type: square;
+}
+
+nav ul {
+    position: relative;
+}
+
+nav ul li a:first-child {
+    color: inherit;
+    font-weight: bold;
+}
+
+nav ul li a:last-child:before { content: 'by '; }
+
+nav ul li a:last-child {
+    font-size: .8em;
+}
+
+article {
+    float: right;
+    width: 70%;
+    padding: 0.5% 1%;
+    margin: 0;
+}
+
+
+a {
+    text-decoration: none;
+    border-bottom: 1px dotted gray;
+}
+
+a:hover {
+    border-bottom: 1px solid gray;
+}
+
+code { font: .9em/1em monospace}
+
+footer {
+    clear: both;
+    width: 100%;
+    padding: .5% 0;
+    border-top: 1px solid silver;
+
+    font-size: .75em;
+    text-align: center;
+}
