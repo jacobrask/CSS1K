@@ -1,0 +1,104 @@
+/* CSS1K entry
+ * Bookshelf by SelenIT (http://github.com/SelenIT)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
+
+*{
+	padding:0;
+	margin:0;
+}
+:not(li),ul *{
+	overflow:hidden
+}
+a,h1,h2{
+	color:#bb6
+}
+html{
+	padding:1em 0 0 1em;
+	background:#eee;
+	overflow-y:scroll
+}
+body{
+	background:#444;
+	font:14px/17px georgia
+}
+nav,[role]>header,section+section{
+	box-shadow:inset 0 3em 3em -3em #000;
+	padding-top:2em
+}
+nav,*+section{
+	min-height:81mm;
+	overflow-x:scroll;
+	padding:0
+}
+h1,h2,footer{
+	position:absolute;
+	padding:18px;
+	right:50%
+}
+nav ul{
+	list-style:none;
+	text-align:center;
+	-moz-transform:rotate(-90deg);
+	-webkit-transform:rotate(-90deg);
+	-o-transform:rotate(-90deg);
+	-ms-transform:rotate(-90deg);
+	transform:rotate(-90deg);
+	-moz-transform-origin:0 0;
+	-webkit-transform-origin:0 0;
+	-o-transform-origin:0 0;
+	-ms-transform-origin:0 0;
+	transform-origin:0 0;
+	margin:3in 0 -99in
+}
+nav li{
+	width:6cm;
+	border-radius:3px/1em;
+	background:#410;
+	-webkit-box-shadow:inset 0 0 6px #110;
+	-moz-box-shadow:inset 0 0 6px #110;
+	-ms-box-shadow:inset 0 0 6px #110;
+	box-shadow:inset 0 0 6px #110;
+	border:1px solid;
+	padding:3px
+}
+nav li:hover{
+	-moz-transform:rotate(1deg);
+	-webkit-transform:rotate(1deg);
+	-o-transform:rotate(1deg);
+	-ms-transform:rotate(1deg);
+	transform:rotate(1deg);
+	margin:0 9px
+}
+nav a{
+	text-decoration:none;
+	display:block;
+	letter-spacing:1px
+}
+h2,nav a:first-child{
+	font-weight:bold;
+	text-transform:uppercase;
+	font-size:18px
+}
+nav a:hover{
+	color:#ffa
+}
+[role]>*>:not(h2){
+	margin:auto;
+	border-left:9cm solid #410;
+	border-right:6px double #bb6;
+	width:7cm;
+	padding:8px 2em;
+	background:#fff;
+	-webkit-box-shadow:inset 9px 0 5px -6px #110;
+	-moz-box-shadow:inset 9px 0 5px -6px #110;
+	-ms-box-shadow:inset 9px 0 5px -6px #110;
+	box-shadow:inset 9px 0 5px -6px #110
+}
+h1{
+	top:7in;
+	font:2cm/1 georgia
+}
+footer{
+	top:88em;
+	width:6cm
+}

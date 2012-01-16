@@ -1,0 +1,75 @@
+/* CSS1K entry
+ * "Casoy" by Robert Boloc (http://twitter.com/robertboloc)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
+
+body{
+	background: #2F312C;
+	color: #DBD2B1;
+	font-family: Arial;
+	font-size: 13px;
+}
+
+nav{
+	float:left;
+	clear:both;
+}
+
+nav ,header h1{
+	width:300px;
+	background:#BB9E66;
+	border-right:1px solid #333;
+	margin: -10px 0 0 -10px;
+	padding-top:10px;
+}
+
+nav h2,header h1{
+	padding-left: 20px;
+}
+
+nav ul{
+	list-style-type:none;
+	padding:0 20px 0 20px;
+	font-weight:bold;
+}
+
+nav ul li{
+	margin-top:5px;
+	border-bottom: 1px dashed #2F312C;
+}
+
+nav a:last-child {
+	float:right;
+	color: #DBD2B1;
+}
+nav a:last-child:hover{
+	color: #A56657;
+}
+
+nav a:hover{
+	color: #DBD2B1;
+}
+
+header h1{
+	width:280px;
+	color: #A56657;
+}
+
+article{
+	margin-left:300px;
+	width: 600px;
+	float:left;
+	position:fixed;
+	padding: 0 0 0 15px;
+}
+
+footer{
+	margin-left:300px;
+	position:fixed;
+	bottom:5px;
+	padding-left: 15px;
+}
+
+a{
+	text-decoration:none;
+	color:#A56657;
+}
