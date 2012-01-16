@@ -54,6 +54,9 @@ nav li{
 	width:6cm;
 	border-radius:3px/1em;
 	background:#410;
+	-webkit-box-shadow:inset 0 0 6px #110;
+	-moz-box-shadow:inset 0 0 6px #110;
+	-ms-box-shadow:inset 0 0 6px #110;
 	box-shadow:inset 0 0 6px #110;
 	border:1px solid;
 	padding:3px
@@ -86,6 +89,9 @@ nav a:hover{
 	width:7cm;
 	padding:8px 2em;
 	background:#fff;
+	-webkit-box-shadow:inset 9px 0 5px -6px #110;
+	-moz-box-shadow:inset 9px 0 5px -6px #110;
+	-ms-box-shadow:inset 9px 0 5px -6px #110;
 	box-shadow:inset 9px 0 5px -6px #110
 }
 h1{
