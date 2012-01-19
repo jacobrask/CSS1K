@@ -2,3 +2,120 @@
  * "PhotoBox" by Stinkyink (http://stinkyinkshop.co.uk)
  * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
 
+html {
+ background-color: #000;
+ color: #666;
+ font-family: helvetica,sans-serif; 
+}
+
+body {
+ width: 920px;
+ margin: 0 auto;
+ background-color: #222; 
+ padding: 20px;
+}
+
+ul {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+ text-align: center; 
+ display: none;
+}
+
+nav:hover ul {
+ display: block; 
+}
+
+nav:hover h2 {
+ color: #fff;
+ cursor: pointer; 
+}
+
+ul li {
+  display: inline-block;
+  width: 140px;
+  height: 140px;
+  margin: 10px;
+  border: 5px solid #fff;
+  border-bottom: 45px solid #fff;
+  position: relative;
+  font-size: 12px;
+  box-shadow: 0 5px 5px #111;
+}
+
+ul li a:first-child {
+ color: #fff;
+ position: absolute;
+ text-align: center;
+ width: 140px;
+ height: 80px;
+ padding-top: 60px;
+ display: block;
+}
+
+ul li a:last-child {
+  color: #000;
+  position: absolute;
+  bottom: -45px;
+  left: 0;
+  width: 140px;
+  height: 35px;
+}
+
+h1 {
+ color: #000;
+ font-size: 100px;
+ margin: -45px 0 0 -30px;
+ padding: 0;
+ letter-spacing: -10px;
+}
+
+nav h2 {
+ background-color: #000;
+ color: #333;
+ width: 960px;
+ padding: 10px;
+ font-size: 30px;
+ font-weight: normal;
+ margin: -25px 0 20px -20px;
+ text-align: center;
+}
+
+nav h2:before {
+  content:'▼';
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+article,footer {
+ font-size: 12px;
+ line-height: 20px;
+ color: #666; 
+}
+
+a {
+ color: #999; 
+}
+
+a:hover {
+ color: #fff; 
+}
+
+footer {
+ border-top: 1px solid #333;
+ text-align: center; 
+ margin: 20px 0 0 0; 
+}
+
+footer p {
+ padding: 20px 0 0 0;
+ margin: 0;
+}
+
+article h2 {
+ color: #ccc;
+ font-size: 24px;
+ font-weight: normal;
+ margin: 30px 0; 
+}
