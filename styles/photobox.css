@@ -3,16 +3,21 @@
  * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
 
 html {
- background-color: #000;
+ background: #000;
  color: #666;
- font-family: helvetica,sans-serif; 
+ font-family: helvetica; 
 }
 
 body {
  width: 920px;
  margin: 0 auto;
- background-color: #222; 
+ background: #222; 
  padding: 20px;
+}
+
+p, li {
+  font-size: 12px;
+  line-height: 20px;
 }
 
 ul {
@@ -27,11 +32,6 @@ nav:hover ul {
  display: block; 
 }
 
-nav:hover h2 {
- color: #fff;
- cursor: pointer; 
-}
-
 ul li {
   display: inline-block;
   width: 140px;
@@ -40,7 +40,6 @@ ul li {
   border: 5px solid #fff;
   border-bottom: 45px solid #fff;
   position: relative;
-  font-size: 12px;
   box-shadow: 0 5px 5px #111;
 }
 
@@ -68,11 +67,10 @@ h1 {
  font-size: 100px;
  margin: -45px 0 0 -30px;
  padding: 0;
- letter-spacing: -10px;
 }
 
 nav h2 {
- background-color: #000;
+ background: #000;
  color: #333;
  width: 960px;
  padding: 10px;
@@ -84,22 +82,10 @@ nav h2 {
 
 nav h2:before {
   content:'▼';
-  font-size: 20px;
-  padding-right: 10px;
-}
-
-article,footer {
- font-size: 12px;
- line-height: 20px;
- color: #666; 
 }
 
 a {
  color: #999; 
-}
-
-a:hover {
- color: #fff; 
 }
 
 footer {
@@ -115,7 +101,5 @@ footer p {
 
 article h2 {
  color: #ccc;
- font-size: 24px;
- font-weight: normal;
  margin: 30px 0; 
 }
