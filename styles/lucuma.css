@@ -40,12 +40,12 @@ color: #a32323;
 padding-right: 5px;
 }
 
-nav ul	{
+ul	{
 background: #fff;
 overflow: hidden;
 }
 
-nav li	{
+ul li	{
 display: inline-block;
 width: 31%;
 padding: 8px;
@@ -54,12 +54,12 @@ text-align: left;
 vertical-align: top;
 }
 
-li a:last-child	{
+ul li a:last-child	{
 font-size: .8em;
 color: #222;
 }
 
-li a:last-child:before	{
+ul li a:last-child:before	{
 content: "by "
 }
 
@@ -73,10 +73,6 @@ padding-top: 30px;
 
 a	{
 color: #a32323;
-}
-
-ol	{
-padding-top: 20px;
 }
 
 ol li	{
@@ -98,7 +94,6 @@ padding: 0 5%;
 h2 + p	{
 text-indent: 1em;
 }
-
 
 footer	{
 border-top: 1px dashed #ccc;
