@@ -48,7 +48,7 @@ overflow: hidden;
 ul li	{
 display: inline-block;
 width: 30%;
-padding: 8px;
+padding: 8px 0;
 line-height: 1.2;
 text-align: left;
 vertical-align: top;
