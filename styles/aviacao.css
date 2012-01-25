@@ -1,0 +1,115 @@
+﻿/* CSS1K entry
+ * "Aviação" by Joselito Júnior (http://joselitojunior.com)
+ * This file is unminified for legibility, for size proof add '-min' to the end of the filename */
+
+body{
+  background:#eee;
+  width:960px;color:#333;
+  font-family:Georgia;
+  margin:0 auto;
+}
+    
+a{
+  color:#6A6C37;
+  text-decoration:none;
+  font-weight:700;
+}
+
+header h1,section,article header,nav{
+  box-shadow:0 0 1px rgba(0,0,0,0.25);
+}
+  
+h1,h2,h3 {
+  font-weight:400;
+  color:#CF4517;
+  margin:0;
+  padding:0
+}
+  
+header {
+  margin:10px 0
+}
+  
+body > header {
+  float:left;
+  width:300px;
+  height:140px
+}
+  
+article header {
+  float:right;
+  width:630px;
+  height:130px;
+  background:#fff;
+  text-align:center;
+  padding:10px
+}
+  
+article header h2 {
+  font-size:2em;
+  text-align:center;
+  font-style:italic;
+  padding:10px
+}
+  
+header h1 {
+  background-color:#DC4D00;
+  color:#fff;
+  font-size:4em;
+  text-align:center;
+  padding:10px
+}
+  
+section {
+  width:455px;
+  background:#fff;
+  padding:10px;
+  float:right
+}
+  
+section:nth-child(2n) {
+  float:left;margin:0 10px 0 0
+}
+
+nav{
+  background:#595B2F;
+  width:300px;
+  margin:10px 0
+}
+
+nav h2{
+  color:#fff;
+  text-align:center;
+  padding:10px
+}
+
+nav h2::after{
+  content:' ▼'
+}
+
+nav:hover{
+  position:absolute;
+  width:960px;
+  top:0
+}
+
+nav ul{
+  display:none;
+  list-style:none
+}
+
+nav a{
+  color:#fff
+}
+
+nav a:nth-child(2n+1){
+  font-size:1.5em
+}
+
+nav:hover ul{
+  display:block
+}
+
+footer{
+  clear:both
+}
