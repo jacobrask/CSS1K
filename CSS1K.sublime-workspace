@@ -1,0 +1,185 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"back",
+				"background	background-color: hex"
+			],
+			[
+				"list",
+				"list	list-style: type position image"
+			],
+			[
+				"text",
+				"text	text-transform: capitalize/upper/lower"
+			],
+			[
+				"bor",
+				"border	border-right-color: color"
+			],
+			[
+				"font",
+				"font	font: style variant weight size/line-height font-family"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 87.0,
+		"selected_items":
+		[
+			[
+				"Package Control: In",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Re",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 115.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Dominic/Sites/git/CSS1K/less/ebhoren.less",
+		"/Users/Dominic/Sites/git/CSS1K/styles/ebhoren.css",
+		"/Users/Dominic/Sites/git/CSS1K/styles/paper.css",
+		"/Users/Dominic/Library/Application Support/Sublime Text 2/Packages/User/Base File.sublime-settings",
+		"/Users/Dominic/Library/Application Support/Sublime Text 2/Packages/User/Global.sublime-settings",
+		"/Users/Dominic/Sites/git/CSS1K/styles/oldie.css",
+		"/Users/Dominic/Sites/git/CSS1K/styles/stripes.css",
+		"/Users/Dominic/Sites/git/CSS1K/index.html",
+		"/Users/Dominic/Sites/git/CSS1K/styles/typhon.css",
+		"/Users/Dominic/Sites/git/CSS1K/styles/ebhoren-v2.css",
+		"/Users/Dominic/Sites/git/CSS1K/CSS1K.sublime-project",
+		"/Users/Dominic/Library/Application Support/Sublime Text 2/Packages/Default/Base File.sublime-settings"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"a"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"ebho",
+				"styles/ebhoren.css"
+			],
+			[
+				"ebhore",
+				"styles/ebhoren.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 280.0,
+	"status_bar_visible": true
+}
