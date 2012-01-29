@@ -12,7 +12,7 @@ var switchStyle = function() {
                  : data
     );
   });
-  if (window.location.host === 'css1k.com') {
+  if (window.location.host === 'css1k.com' && styleSlug !== 'default') {
     _gaq.push(['_trackPageview', styleSlug]);
   }
 };
