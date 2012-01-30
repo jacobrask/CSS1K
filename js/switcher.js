@@ -1,5 +1,9 @@
 (function() {
-
+$("abbr").each(function() {
+	$(this).text()==="CSS"?$(this).attr("title", "Cascading Style Sheets")
+	:$(this).text()==="K"?$(this).attr("title", "Kibibyte")
+	:$(this).attr("title", "Unified Resource Identificator")
+});
 var hash = window.location.hash;
 
 var switchStyle = function() {
