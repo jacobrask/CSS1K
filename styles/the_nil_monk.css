@@ -60,6 +60,6 @@ footer {
 article header { font: 2em/1 sans-serif }
 section {
     width: 37%;
-    padding: 10px;
+    padding-right: 20px;
     float: left;
 }
