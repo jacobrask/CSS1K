@@ -1,0 +1,15 @@
+body{background:#eee;color:#212121;margin:0 auto;font:100% serif;}
+header{height:215px;}
+h1{position:relative;top:49px;margin:0 auto;background:#212121;color:#eee;text-align:center;font-size:6em;letter-spacing:10px;-moz-transform:skew(0deg,-5deg);-webkit-transform:skew(0,-5deg);-o-transform:skew(0deg,-5deg);-ms-transform:skew(0deg,-5deg);transform:skew(0deg,-5deg);}
+nav{float:left;margin-top:116px;width:360px;}
+nav h2{text-transform:uppercase;margin-left:40px;}
+nav ul li{height:40px;list-style:none;}
+nav ul li a{float:left;color:#212121;clear:left;font-size:12px;text-decoration:none;}
+footer{padding:20px 0;padding-left:40px;}
+article{margin:0 40px;}
+article header h2{text-align:right;color:rgb(186,10,10);font-size:2em;letter-spacing:1px;}
+h2{font-size:1em;text-transform:uppercase;}
+ol{list-style:none;line-height:21px;letter-spacing:1px;}
+article header p{text-align:right;font-size:1.5em;letter-spacing:1px;margin:0;}
+section h2{font-size:3em;letter-spacing:5px;}
+section p{letter-spacing:1px;line-height:21px;}
