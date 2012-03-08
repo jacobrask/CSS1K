@@ -1,0 +1,230 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="A demonstration of what can be accomplished visually through just 1 K of CSS.">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>CSS1K</title>
+    <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <style>@import url('styles/default.css');</style>
+    <script src="js/prefixfree.min.js"></script>
+    <script>
+        if (window.location.host === 'css1k.com') {
+            var _gaq=[['_setAccount','UA-8018150-3'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'));
+        }
+    </script>
+    <link rel="alternate" href="http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=css1k" type="application/rss+xml" title="CSS1K news on Twitter">
+</head>
+<body>
+
+<header>
+
+    <h1>CSS1K</h1>
+    <nav>
+        <h2>Select a design</h2>
+        <ul>
+            <li><a href="./">Default</a>
+                <a href="http://twitter.com/jacobrask">Jacob Rask</a></li>
+            <li><a href="#stripes">Stripes</a>
+                <a href="http://vasilis.nl">Vasilis van Gemert</a></li>
+            <li><a href="#notepad">Notepad</a>
+                <a href="http://twitter.com/eworm_">Wout Mager</a></li>
+            <li><a href="#bbubles">Bbubles</a>
+                <a href="http://cssing.org.ua">akella & Genn</a></li>
+            <li><a href="#swiss">Swiss</a>
+                <a href="http://chrsl.net">Chris Lee</a></li>
+            <li><a href="#turnaround">Turn around</a>
+                <a href="http://www.basvandorst.nl">Bas van Dorst</a></li>
+            <li><a href="#whirl">Whirl</a>
+                <a href="https://twitter.com/iamvdo">Vincent De Oliveira</a></li>
+            <li><a href="#bundler_inspired">BundlerInspired</a>
+                <a href="https://github.com/PhilG">PhilG</a></li>
+            <li><a href="#oldie">Oldie</a>
+                <a href="http://pointlessone.org">Alexander Mankuta</a></li>
+            <li><a href="#typhon">Typhon</a>
+                <a href="http://eswat.ca">ESWAT</a></li>
+            <li><a href="#cube">Cube</a>
+                <a href="http://be.net/iurevych">Sergii Iurevych</a></li>
+            <li><a href="#northern-lights">Northern Lights</a>
+                <a href="http://potapoff.org">Igor «SkAZi» Potapov</a></li>
+            <li><a href="#skewed">Skewed</a>
+                <a href="http://twitter.com/sntxrrr">Paul Steffens</a></li>
+            <li><a href="#moonlight">Moonlight</a>
+                <a href="http://twitter.com/derSchepp">Christian "Schepp" Schaefer</a></li>
+            <li><a href="#typewriter">Typewriter</a>
+                <a href="http://thisbythem.com">Lance Alton Troxel</a></li>
+            <li><a href="#oldschool">Old School</a>
+                <a href="http://romanliutikov.com">Roman Liutikov</a></li>
+            <li><a href="#m6tt">m6tt</a>
+                <a href="http://m6tt.com">Matt Woodfield</a></li>
+            <li><a href="#1024-bytes">1024-bytes</a>
+                <a href="http://github.com/faisalman">Faisalman</a></li>
+            <li><a href="#molokai">Molokai</a>
+                <a href="http://designtomarkup.com">Kien Nguyen</a></li>
+            <li><a href="#android">Android</a>
+                <a href="http://agat.in">Aleksej Romanovskij</a></li>
+            <li><a href="#bookshelf">Bookshelf</a>
+                <a href="https://github.com/SelenIT">SelenIT</a></li>
+            <li><a href="#geocities">GeoCities</a>
+                <a href="https://github.com/asavartsov/">Alexey Savartsov</a></li>
+            <li><a href="#imbatman">I'm Batman</a>
+                <a href="./">Paul Reid</a></li>
+            <li><a href="#facetime">Facetime</a>
+                <a href="http://twitter.com/bnijenhuis">Bernard Nijenhuis</a></li>
+            <li><a href="#cloudy">Cloudy</a>
+                <a href="http://twitter.com/putnik">Sergey Leschina</a></li>
+            <li><a href="#greymatter">Grey Matter</a>
+                <a href="http://pepelsbey.net">Vadim Makeev</a></li>
+            <li><a href="#blue_square">Blue square</a>
+                <a href="http://twitter.com/hsablonniere">Hubert Sablonnière</a></li>
+            <li><a href="#helvetipink">HelvetiPink</a>
+                <a href="http://billkeller.name">Bill Keller</a></li>
+            <li><a href="#tangerine">Tangerine</a>
+                <a href="http://twitter.com/TheBenCourt">Ben Court</a></li>
+            <li><a href="#summersun">Summer Sun</a>
+                <a href="http://twitter.com/tanya_peasgood">Tanya Peasgood</a></li>
+            <li><a href="#lessismore">Less is More</a>
+                <a href="http://twitter.com/rob_balfre">Rob Balfre</a></li>
+            <li><a href="#inset">Inset</a>
+                <a href="http://www.hachemuda.com">Guillermo Latorre</a></li>
+            <li><a href="#legible">Legible</a>
+                <a href="http://lumens.se">Reimund Trost</a></li>
+            <li><a href="#greenlemon">Green Lemon</a>
+                <a href="http://twitter.com/d_radunz">Dirk Radunz</a></li>
+            <li><a href="#wired">Wired</a>
+                <a href="http://www.digitalwaxworks.com">Brett DeWoody</a></li>
+            <li><a href="#juizstar">Juiz Star</a>
+                <a href="http://www.creativejuiz.fr">Geoffrey Crofte</a></li>
+            <li><a href="#wolfr">Wolfr</a>
+                <a href="http://twitter.com/wolfr_">Johan Ronsse</a></li>
+            <li><a href="#fortyeight1k">fortyeight1k</a>
+                <a href="http://michael.haschke.biz">Michael Haschke</a></li>
+            <li><a href="#columns">Columns</a>
+                <a href="http://rmcreative.ru">Alexander Makarov</a></li>
+            <li><a href="#trainspotting">Trainspotting</a>
+                <a href="http://www.hboaventura.com">Henrique Boaventura</a></li>
+            <li><a href="#ribbon">ribbon</a>
+                <a href="http://oodavid.com">David King</a></li>
+            <li><a href="#solarized">Solarized</a>
+                <a href="http://twitter.com/heirenton">heirenton</a></li>
+            <li><a href="#openwater">Open Water</a>
+                <a href="https://github.com/gilmoreorless">Gilmore Davidson</a></li>
+            <li><a href="#html5colors">HTML5 Colors</a>
+                <a href="http://www.theweblife.com">Michael Garrett Jones</a></li>
+            <li><a href="#heart_css">heart css</a>
+                <a href="https://github.com/kjchoy">Choy Kum Jin</a></li>
+            <li><a href="#sourcy">Sourcy</a>
+                <a href="http://kizu.ru/en/">Roman Komarov</a></li>
+            <li><a href="#terminal">Terminal</a>
+                <a href="http://twitter.com/PanyaKor">Mikhail Korepanov</a></li>
+            <li><a href="#goodnight_moon">Goodnight Moon</a>
+                <a href="http://livingcode.org">Dethe Elza</a></li>
+            <li><a href="#fancy">Fancy"</a>
+                <a href="http://www.trustweb.it">Michele Cipriani</a></li>
+            <li><a href="#textlevels">Text Levels</a>
+                <a href="http://www.patrickmann.com">Patrick Mann</a></li>
+            <li><a href="#yelo">Yelo</a>
+                <a href="http://bartdebruin.nl">Bart de Bruin</a></li>
+            <li><a href="#spartan">Spartan</a>
+                <a href="http://trentm.com">Trent Mick</a></li>
+            <li><a href="#paper">paper</a>
+                <a href="http://daniel-rauber.de">Daniel Rauber</a></li>
+            <li><a href="#lucuma">Lúcuma</a>
+                <a href="http://twitter.com/germanmartinez">Germán Martínez</a></li>
+            <li><a href="#freshsoda">Fresh Soda</a>
+                <a href="http://jungundwillich.de">Jan Ortgies</a></li>
+            <li><a href="#ev">Ev</a>
+                <a href="http://evangeneer.net">Mathieu Rochette</a></li>
+            <li><a href="#b4ya11y">B4y & A11y</a>
+                <a href="http://twitter.com/etBen">Benoit Klein</a></li>
+            <li><a href="#adaptype">Adaptype</a>
+                <a href="http://vasilis.nl">Vasilis van Gemert</a></li>
+            <li><a href="#bleubleu">BleuBleu</a>
+                <a href="http://www.leightonrodney.com">Leighton Rodney</a></li>
+            <li><a href="#simpl">Simpl</a>
+                <a href="http://www.neofyt.com">Neofyt</a></li>
+            <li><a href="#mitchiru">Mitchiru</a>
+                <a href="http://banquo.de">Michael Fritz</a></li>
+            <li><a href="#casoy">Casoy</a>
+                <a href="http://twitter.com/robertboloc">Robert Boloc</a></li>
+            <li><a href="#thesimpleswede">The Simple Swede</a>
+                <a href="http://www.tobiasphoto.com">Tobias Akeblom</a></li>
+            <li><a href="#photobox">PhotoBox</a>
+                <a href="http://stinkyinkshop.co.uk">Stinkyink</a></li>
+            <li><a href="#desktop">Desktop</a>
+                <a href="http://webmolot.com">Webmolot</a></li>
+            <li><a href="#expandable">Expandable</a>
+                <a href="http://twitter.com/curlybrace">Dennis Madvedovsky</a></li>
+            <li><a href="#bluebrush">BlueBrush</a>
+                <a href="https://twitter.com/jennyhao">Jenny Hao</a></li>
+            <li><a href="#noticeboard">Notice Board</a>
+                <a href="http://www.about.me/niharsawant">Nihar Sawant</a></li>
+            <li><a href="#aapl">AAPL</a>
+                <a href="http://twitter.com/joffreyjaffeux">Joffrey Jaffeux</a></li>
+            <li><a href="#yollaw">Yollaw</a>
+                <a href="http://franzose.in">Yan Ivanov</a></li>
+            <li><a href="#stretchy">Stretchy</a>
+                <a href="http://twitter.com/mistadikay">Denis Koltsov</a></li>
+            <li><a href="#smile">smile</a>
+                <a href="http://twitter.com/realmuecke">Michael Scharnagl</a></li>
+            <li><a href="#toolbar">Toolbar</a>
+                <a href="http://chervonny.ru/en/">Maxim Chervonny</a></li>
+            <li><a href="#roundrect">Round Rect</a>
+                <a href="http://www.bitstorm.org">Edwin Martin</a></li>
+            <li><a href="#therhythm">The Rhythm</a>
+                <a href="http://kizu.ru/en/">Roman Komarov</a></li>
+            <li><a href="#simplebox">SimpleBox</a>
+                <a href="http://raelmax.com">Rael Max</a></li>
+           </ul>
+    </nav>
+
+</header>
+
+
+<article role="main">
+
+    <header>
+        <h2>The Beauty in <abbr>CSS</abbr> Design</h2>
+        <p>A demonstration of what can be accomplished with only 1 <abbr title="Kibibyte">K</abbr> (<dfn title="1024 bytes">Kibibyte</dfn>) of <abbr>CSS</abbr>. Select any design from the list to load it into this page.</p>
+    </header>
+
+    <section>
+        <h2>So What is This About?</h2>
+        <p>Back in 2003 (that's 9 years ago!) <a href="http://mezzoblue.com">Dave Shea</a> launched the <a href="http://www.csszengarden.com"><cite><abbr>CSS</abbr> Zen Garden</cite></a>. It showcased what was possible with <abbr>CSS</abbr>-based designs, leading to an explosion in the use of CSS on the web. More recently, <a href="http://qfox.nl">Peter van der Zee</a> created <a href="http://js1k.com">JS1k</a>, a competition to build cool applications with no more than 1 <abbr>K</abbr> of JavaScript.</p>
+        <p>At lot has happened since the Zen Garden days, and today you can do almost anything with only <abbr>CSS</abbr>. As <abbr>CSS</abbr> use is growing, so is the average <abbr>CSS</abbr> file size. Popular sites have in average <a href="http://httparchive.org/interesting.php#mostcss">27 <abbr>K</abbr> of <abbr>CSS</abbr></a>, but some use up to a megabyte of style sheets!</p>
+        <p>Do we need that much? <b>CSS1K</b> invites you to show that web developers are more inventive than ever, and that limitations can sparkle creativity.</p>
+    </section>
+
+    <section>
+        <h2>Participation</h2>
+        <ol>
+            <li>Submissions must consist of only <abbr>CSS</abbr>
+            <li>Submissions may be up to 1 <abbr title="Kibibyte">K</abbr> (1024 bytes) minified
+            <li>Vendor prefixes are <em>not</em> counted to the total number of bytes &ndash; submit your code unprefixed and we will add necesssary prefixes
+            <li>Any external resources and images, including <code>data</code> <abbr>URI</abbr>'s, <code>@font-face</code> and <code>@import</code>'s, are forbidden
+            <li>The page <a href="http://dowebsitesneedtolookexactlythesameineverybrowser.com">does not</a> have to look the same in every browser, but graceful degradation is encouraged
+            <li>The submitted code is licensed under the <a href="http://www.opensource.org/licenses/mit-license.php">MIT License</a>
+        </ol>
+        <p>To participate, fork <a href="https://github.com/jacobrask/CSS1K/">CSS1K</a> at GitHub and send your submission as a pull request. You are free to update your style at any time by sending a new pull request. Please specify the name of the style, your own name, and an URL you want us to link to (such as your homepage). If you don't have a GitHub account, you can send in your submission via <a href="mailto:admin@css1k.com?subject=CSS1K Submission [Design name]">e-mail</a>.</p>
+        <p>New entries and updates will be announced by <a href="http://twitter.com/CSS1K">@CSS1K on Twitter</a>.</p>
+    </section>
+
+</article>
+
+
+<footer>
+
+    <p>
+        Licensed under the <a href="http://www.opensource.org/licenses/mit-license.php" rel="license">MIT license</a>.
+        Hosted and managed at <a href="https://github.com/jacobrask/CSS1K">GitHub</a>.
+    </p>
+
+</footer>
+
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="js/switcher.js"></script>
+
+</body>
+</html>
