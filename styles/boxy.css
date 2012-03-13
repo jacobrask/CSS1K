@@ -12,9 +12,6 @@ section, footer, nav {
 	height:150px;
 	padding:15px;
 	overflow:hidden;
-	-webkit-transition:height .5s, background .5s, color .5s, width .5s;
-	-moz-transition:height .5s, background .5s, color .5s, width .5s;
-	-o-transition:height .5s, background .5s, color .5s, width .5s;
 	transition:height .5s, background .5s, color .5s, width .5s;} 
 section:hover, footer:hover, nav:hover{
 	height:100%;
