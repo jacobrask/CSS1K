@@ -22,11 +22,21 @@ section:hover, footer:hover, nav:hover{
 	color:#000;
 	width:300px;
 	height:300px;
-	overflow:auto;
-	}
-header nav {
-	display:block;
-	position:absolute;
-	top:200px;} 
-h1 { 
-	font-size:5em;} 
+	overflow:auto;}
+header nav {position:relative;} 
+h1 {font-size:5em;} 
+header h2{position:absolute;
+top:53px;
+left:30%;}
+nav h2{position:static;}
+ul, ol{margin:0;
+padding:0;}
+li{display:inline;
+list-style:none;
+margin:0;
+padding:5px 0 5px 0;
+float:left;}
+a:visited{color:#333}
+a:hover{color:#CCC}
+a:active{color:#666}
+a{color:#999}
