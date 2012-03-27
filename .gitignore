@@ -3,3 +3,4 @@
 *.sublime-project
 *.sw?
 .sass-cache
+.idea
