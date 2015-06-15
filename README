@@ -1,11 +1,3 @@
-A demonstration of what can be accomplished through only 1 K of CSS.
+CSS1K is now hosted at https://github.com/selfthinker/CSS1K/ by @selfthinker.
 
-Fork to participate!
-
-Available at http://css1k.com
-
-News at http://twitter.com/css1k
-
-Vendor prefixes are added automatically with PrefixFree, so submit your file minified and without any vendor prefixed properties.
-
-Remember that the file has to be 1024 bytes or less.
+This repository will no longer be updated.
